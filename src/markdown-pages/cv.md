@@ -1,4 +1,6 @@
 ---
+date: "2019-05-04"
+path: "/cv"
 title: CV de Gabriel Brun
 subtitle: Développeur Web JavaScript
 description: >-
@@ -34,4 +36,3 @@ experience:
     ismycurrentjob: true
     job: Développeur React.js
 ---
-

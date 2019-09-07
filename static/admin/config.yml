@@ -6,26 +6,27 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  # - name: "experience"
-  #   label: "Experience ou plutot Blog"
-  #   folder: "src/pages/experience"
+  # - name: "creation"
+  #   label: "Creation"
+  #   folder: "src/markdown-pages/creation"
   #   create: true
   #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
   #   fields:
   #     - {
-  #         label: "Job",
-  #         name: "job",
+  #         label: "Image",
+  #         name: "img",
   #         widget: "string",
-  #         default: "Développeur",
+  #         default: "default url",
   #       }
   #     - {
-  #       label: "Company",
-  #       name: "company",
+  #       label: "App Link",
+  #       name: "link",
   #       widget: "string",
   #     }
-  #     - { label: "Begin", name: "begin", widget: "datetime" }
-  #     - { label: "End", name: "end", widget: "datetime" }
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Creation date", name: "date", widget: "datetime" }
   #     - { label: "Body", name: "body", widget: "markdown" }
+  # - name: "blog" # for later...
   - name: "pages"
     label: "Pages"
     files:

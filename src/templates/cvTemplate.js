@@ -8,17 +8,63 @@ export default function Template({
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
+  const {
+    date,
+    title,
+    subtitle,
+    description,
+    objectif,
+    skills,
+    experience,
+  } = frontmatter
+
+  const mainSkills = skills.main
+    .map(mainSkill => {
+      return mainSkill.title + ": " + mainSkill.rate + "/5"
+    })
+    .join(" ")
+
+  const otherSkills = skills.other
+    .map(mainSkill => {
+      return mainSkill.title
+    })
+    .join(" ")
+
+  const jobs = experience.map((xp, index) => {
+    const { job, company, begin, ismycurrentjob, end, body } = xp
+    return (
+      <div key={index}>
+        <div>{job}</div>
+        <div>{company}</div>
+        <div>{begin}</div>
+        <div>{ismycurrentjob}</div>
+        <div>{end}</div>
+        <div>{body}</div>
+        <br />
+      </div>
+    )
+  })
+
   return (
     <Layout>
       <SEO title="Page two" />
       <div className="blog-post-container">
         <div className="blog-post">
-          <h1>{frontmatter.title}</h1>
-          <h2>Mise à jour le {frontmatter.date}</h2>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <h2>{title}</h2>
+          <p>Mise à jour le {date}</p>
+          <h3>{subtitle}</h3>
+          <p>{description}</p>
+
+          <h3>Objectif: {objectif}</h3>
+
+          <h3>Compétences:</h3>
+          <h4>Principales: {mainSkills}</h4>
+          <h4>Autres: {otherSkills}</h4>
+
+          <h3>Experiences:</h3>
+          {jobs}
+
+          {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
         </div>
       </div>
     </Layout>
@@ -33,6 +79,26 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        subtitle
+        description
+        objectif
+        skills {
+          main {
+            title
+            rate
+          }
+          other {
+            title
+          }
+        }
+        experience {
+          job
+          company
+          begin
+          ismycurrentjob
+          end
+          body
+        }
       }
     }
   }

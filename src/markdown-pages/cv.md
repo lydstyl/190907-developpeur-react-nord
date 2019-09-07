@@ -34,7 +34,7 @@ experience:
       CAROLL avec la solution Demandware / SalesForce Commerce Cloud qui
       ressemble à Node.js.
 
-      * Travail en front et en back.
+      * Travailler en front et en back.
 
       * Utiliser Saas et gulp.js
 
@@ -57,7 +57,7 @@ experience:
       * context et Redux
 
 
-      Création d'applications, notamment :
+      Créer des applications, notamment :
 
 
       * Ce CV + portfolio en Gatsby.js: Jam Stack avec une connexion à un CMS
@@ -74,4 +74,3 @@ experience:
     job: Développeur React.js
 ---
 
-\*\* Du fait de la garde alternée de mes enfant à 50%, je peux travailler tous les jours sauf le mercredi, 1 semaine à temps plein et l'autre semaine en termniant à 17h. Cela représente environ 80% d'un temps plein.

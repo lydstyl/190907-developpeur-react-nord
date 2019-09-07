@@ -33,17 +33,60 @@ collections:
         label: "CV"
         name: "cv"
         fields:
-          - { label: "Title", name: "title", widget: "text" }
-          # - {
-          #     label: "Template Key",
-          #     name: "templateKey",
-          #     widget: "hidden",
-          #     default: "index-page",
-          #   }
-          # - { label: Title, name: title, widget: string }
-          # - { label: Sub title, name: subtitle, widget: string }
-          # - { label: Description, name: description, widget: text }
-          # - { label: Objectif, name: objectif, widget: string }
-          # - { label: Main skills, name: mainskills, widget: list }
-          # - {label: Skills, name: skills, widget: object, fields: [{label: Main, name: main, widget: list, fields: [{ label: Title, name: title, widget: string}, {label: Rate, name: rate, widget: number}]}, {label: Other, name: other, widget: list, fields: [{label: Title, name: title, widget: string}]}]}
-          # - { label: Experience, name: experience, widget: list, fields: [{label: "Job", name: "job", widget: "string", default: "Développeur"}, {label: "Company", name: "company", widget: "string"}, { label: "Begin", name: "begin", widget: "datetime" }, {label: "Is my current job", name: "ismycurrentjob", widget: "boolean"}, { label: "End", name: "end", widget: "datetime" }, { label: "Body", name: "body", widget: "markdown" }]}
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Sub title, name: subtitle, widget: string }
+          - { label: Description, name: description, widget: text }
+          - { label: Objectif, name: objectif, widget: string }
+          - {
+              label: Skills,
+              name: skills,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Main,
+                    name: main,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Rate, name: rate, widget: number },
+                      ],
+                  },
+                  {
+                    label: Other,
+                    name: other,
+                    widget: list,
+                    fields: [{ label: Title, name: title, widget: string }],
+                  },
+                ],
+            }
+          - {
+              label: Experience,
+              name: experience,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: "Job",
+                    name: "job",
+                    widget: "string",
+                    default: "Développeur",
+                  },
+                  { label: "Company", name: "company", widget: "string" },
+                  { label: "Begin", name: "begin", widget: "datetime" },
+                  {
+                    label: "Is my current job",
+                    name: "ismycurrentjob",
+                    widget: "boolean",
+                  },
+                  { label: "End", name: "end", widget: "datetime" },
+                  { label: "Body", name: "body", widget: "markdown" },
+                ],
+            }

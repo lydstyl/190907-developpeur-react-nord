@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Basic CV`,
-    description: `Basic CV to learn how to connect with CMS`,
+    title: `Developpeur React.js Nord`,
+    description: `CV et Portfolio de Gabriel BRUN, developpeur JavaScript.`,
     author: `Gabriel BRUN`,
   },
   plugins: [

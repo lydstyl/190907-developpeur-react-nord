@@ -2,12 +2,11 @@
 path: /cv
 date: 2019-09-07T20:15:00.000Z
 title: Gabriel Brun
-subtitle: Développeur Web React.js
 description: >-
   Autodidacte, je me suis initié seul avec Python / Django, PHP et VBA. J'ai
   ensuite suivi une formation de développeur full-stack avant de travailler 2
   années en JavaScript front et Back.
-objectif: Coder en React.js tous les jours sauf le mercredi *
+objectif: Coder en React.js tous les jours sauf le mercredi **
 skills:
   main:
     - rate: 5
@@ -69,9 +68,10 @@ experience:
       Stack avec API REST en Node.js et base de donnée MongoDB
 
       * [Dominic System](https://dominic-system.herokuapp.com/): MERN Stack
-    company: EN FORMATION POUR CDI OU FREELANCE DEBUT 2020
+    company: FORMATION POUR CDI OU FREELANCE FIN 2019
     end: 2019-09-07T18:30:09.422Z
     ismycurrentjob: true
     job: Développeur React.js
 ---
 
+\*\* Du fait de la garde alternée de mes enfant à 50%, je peux travailler tous les jours sauf le mercredi, 1 semaine à temps plein et l'autre semaine en termniant à 17h. Cela représente environ 80% d'un temps plein.

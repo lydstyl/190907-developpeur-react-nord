@@ -7,6 +7,7 @@ const Header = ({ siteTitle }) => (
     style={{
       background: `rebeccapurple`,
       marginBottom: `1.45rem`,
+      color: `white`,
     }}
   >
     <div
@@ -30,12 +31,43 @@ const Header = ({ siteTitle }) => (
       <Link
         to="cv"
         style={{
-          color: `white`,
           textDecoration: `none`,
+          color: `white`,
+          marginRight: `5px`,
         }}
       >
         CV
       </Link>
+      <a
+        style={{
+          textDecoration: `none`,
+          color: `white`,
+          marginRight: `5px`,
+        }}
+        href="tel:+33781154503"
+      >
+        Tél. 07 81 15 45 03
+      </a>
+      <a
+        style={{
+          textDecoration: `none`,
+          color: `white`,
+          marginRight: `5px`,
+        }}
+        href="mailto:lydstyl@gmail.com"
+      >
+        lydstyl@gmail.com
+      </a>
+      <a
+        href="https://github.com/lydstyl"
+        style={{
+          textDecoration: `none`,
+          color: `white`,
+          marginRight: `5px`,
+        }}
+      >
+        Github
+      </a>
     </div>
   </header>
 )

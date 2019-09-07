@@ -43,7 +43,6 @@ collections:
           - { label: Path, name: path, widget: hidden, default: "/cv" }
           - { label: Date de mise à jour, name: date, widget: datetime }
           - { label: Title, name: title, widget: string }
-          - { label: Sub title, name: subtitle, widget: string }
           - { label: Description, name: description, widget: text }
           - { label: Objectif, name: objectif, widget: string }
           - {

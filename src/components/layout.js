@@ -35,7 +35,37 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>© {new Date().getFullYear()}, Built with Gatsby</footer>
+        <footer>
+          <a
+            style={{
+              textDecoration: `none`,
+              marginRight: `5px`,
+            }}
+            href="tel:+33781154503"
+          >
+            Tél. 07 81 15 45 03
+          </a>
+          <a
+            style={{
+              textDecoration: `none`,
+              marginRight: `5px`,
+            }}
+            href="mailto:lydstyl@gmail.com"
+          >
+            lydstyl@gmail.com
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/lydstyl"
+            style={{
+              textDecoration: `none`,
+              marginRight: `5px`,
+            }}
+          >
+            Github
+          </a>
+        </footer>
       </div>
     </>
   )

@@ -3,10 +3,10 @@ path: /
 date: 2019-09-07T20:15:00.000Z
 title: CV
 description: >-
-  Bonjour je m'appelle Gabriel Brun. Je suis autodidacte et je me suis initié seul avec Python / Django, PHP et VBA. J'ai
+  Bonjour, je m'appelle Gabriel Brun. Je suis autodidacte et je me suis initié seul avec Python / Django, PHP et VBA. J'ai
   ensuite suivi une formation de développeur full-stack avant de travailler plus de 2
   années en JavaScript front et Back.
-objectif: coder en React.js tous les jours sauf le mercredi. ** Car je dois m'occuper de mes enfants et 1 semaine sur 2 je devrait partir à 17h maximum.
+objectif: coder en React.js tous les jours sauf le mercredi.
 skills:
   main:
     - rate: 5
@@ -56,22 +56,8 @@ experience:
 
       * context et Redux
 
-
-      Créer des applications, notamment :
-
-
-      * Ce CV + portfolio en Gatsby.js: Jam Stack avec une connexion à un CMS
-
-      * [Github Finder](https://gabriel-brun-github-finder.netlify.com/)
-
-      * [Contact Keeper](https://fathomless-plains-22742.herokuapp.com): MERN
-      Stack avec API REST en Node.js et base de donnée MongoDB
-
-      * [Dominic System](https://dominic-system.herokuapp.com/): MERN Stack
     company: FORMATION POUR CDI OU FREELANCE FIN 2019
     end: 2019-09-07T18:30:09.422Z
     ismycurrentjob: true
     job: Développeur React.js
 ---
-
-\*\* Car je doit m'occuper de 2 enfants et 1 semaine sur 2 je devrait partir à 17h maximum.

@@ -1,10 +1,10 @@
 ---
-img: "https://github.githubassets.com/images/modules/open_graph/github-octocat.png"
+img: "http://www.cegecol.com/media/contact.jpg"
 link: "https://fathomless-plains-22742.herokuapp.com"
 title: "Contact Keeper"
 date: "2019-09-01"
 body: "Cette app pourra devenir votre carnet de contact."
-path: "/creation/contactkeeper"
+path: "/creation/contact-keeper"
 ---
 
-Test du html contact keeper
+MERN Stack avec API REST en Node.js et base de donnée MongoDB

@@ -16,7 +16,7 @@ collections:
           label: "Image",
           name: "img",
           widget: "string",
-          default: "your image url",
+          default: "https://content-static.upwork.com/blog/uploads/sites/3/2015/05/05084031/MOB_native-vs-web-app-whats-the-diff-which-do-i-need_M.png"
         }
       - {
         label: "App Link",
@@ -26,8 +26,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Creation date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Path", name: "path", widget: "string" }
-  # - name: "blog" # for later...
+      - { label: "Path", name: "path", widget: "string", default: "/creation/xxx" }
+  # - name: "blog" # maybe for later...
   - name: "pages"
     label: "Pages"
     files:
@@ -35,12 +35,6 @@ collections:
         label: "CV"
         name: "cv"
         fields:
-          # - {
-          #     label: "Template Key",
-          #     name: "templateKey",
-          #     widget: "hidden",
-          #     default: "index-page",
-          #   }
           - { label: Path, name: path, widget: hidden, default: "/cv" }
           - { label: Date de mise à jour, name: date, widget: datetime }
           - { label: Title, name: title, widget: string }

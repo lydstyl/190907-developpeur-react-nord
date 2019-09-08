@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import remark from "remark"
@@ -20,10 +20,17 @@ export default function Template({
       <p>Mise à jour le {date}</p>
 
       <img src={img} alt="img" />
-      <a href={link}>Lien de la création</a>
+      {link && (
+        <a target="_blank" rel="noopener noreferrer" href={link}>
+          Lien de la création
+        </a>
+      )}
+
       <p>{body}</p>
 
       <div dangerouslySetInnerHTML={{ __html: html }} />
+
+      <Link to="/portfolio">Retour</Link>
     </Layout>
   )
 }

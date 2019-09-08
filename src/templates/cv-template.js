@@ -34,16 +34,25 @@ export default function Template({
       .processSync(xp.body)
       .toString()
 
+    let endDate = end
+    if (ismycurrentjob) {
+      endDate = "maintenant"
+    }
+
     return (
       <div key={index}>
-        <h4>{job}</h4>
-        <div>{company}</div>
-        <div>{begin}</div>
-        <div>{ismycurrentjob}</div>
-        <div>{end}</div>
+        <div className="d-flex justify-content-around">
+          <h4>
+            <i className="fas fa-user-tie"></i> {job}
+          </h4>
+          <span>
+            <i className="far fa-building"></i>{" "}
+            <span className="mr-5">{company} </span>
+            <i className="far fa-calendar-alt"></i> {begin} à {endDate}
+          </span>
+        </div>
+
         <div dangerouslySetInnerHTML={{ __html: body }}></div>
-        <br />
-        <br />
       </div>
     )
   })
@@ -51,16 +60,35 @@ export default function Template({
   return (
     <Layout showPortfolioLink="true">
       <SEO title={title} />
-      <p>Mise à jour le {date}</p>
-      <p>{description}</p>
-      <h2>Objectif: {objectif}</h2>
+      <div className="shadow p-3 mt-5 bg-white rounded">
+        <p>Mise à jour le {date}</p>
+        <p>{description}</p>
+      </div>
+      <h2 className="shadow p-3 mt-5 bg-white rounded">
+        <i class="fas fa-bullseye"></i> Objectif: {objectif}
+      </h2>
 
-      <h2>Compétences:</h2>
-      <h3>Principales: {mainSkills}</h3>
-      <h3>Autres: {otherSkills}</h3>
-
-      <h2>Experiences:</h2>
-      {jobs}
+      <div className="shadow p-3 mt-5 bg-white rounded">
+        <h2>
+          <i class="far fa-check-square"></i> Compétences:
+        </h2>
+        <ul>
+          <li>
+            <h3>Principales:</h3>
+            <p>{mainSkills}</p>
+          </li>
+          <li>
+            <h3>Autres:</h3>
+            <p>{otherSkills}</p>
+          </li>
+        </ul>
+      </div>
+      <div className="shadow p-3 mt-5 bg-white rounded">
+        <h2>
+          <i class="fas fa-briefcase"></i> Experiences:
+        </h2>
+        {jobs}
+      </div>
 
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>

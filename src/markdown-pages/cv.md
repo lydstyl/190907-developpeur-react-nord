@@ -8,8 +8,7 @@ description: >-
   développeur full-stack avant de travailler plus de 2 années en JavaScript
   front et Back.
 objectif: >-
-  coder en React.js ou en Gatsby.js pour un client dans le Nord de la France (ou
-  en remote) tous les jours sauf le mercredi.
+  coder en React.js dans le Nord à temps partiel.
 skills:
   main:
     - rate: 5
@@ -48,15 +47,13 @@ experience:
     job: Développeur JavaScript
   - begin: 2019-08-01T18:30:09.401Z
     body: |-
-      Formation sur React.js:
 
       * class component
       * functional component
       * hooks (useState, useEffect, useRef)
       * context et Redux
-    company: FORMATION POUR CDI OU FREELANCE FIN 2019
+    company: FORMATION REACT.JS
     end: 2019-09-07T18:30:09.422Z
     ismycurrentjob: true
     job: Développeur React.js
 ---
-

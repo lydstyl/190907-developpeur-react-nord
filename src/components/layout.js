@@ -24,53 +24,33 @@ const Layout = ({ children, showPortfolioLink }) => {
   `)
 
   return (
-    <>
+    <div className="container">
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      />
+
       <Header
         siteTitle={data.site.siteMetadata.title}
         showPortfolioLink={showPortfolioLink}
       />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          <a
-            style={{
-              textDecoration: `none`,
-              marginRight: `5px`,
-            }}
-            href="tel:+33781154503"
-          >
-            Tél. 07 81 15 45 03
-          </a>
-          <a
-            style={{
-              textDecoration: `none`,
-              marginRight: `5px`,
-            }}
-            href="mailto:lydstyl@gmail.com"
-          >
-            lydstyl@gmail.com
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/lydstyl"
-            style={{
-              textDecoration: `none`,
-              marginRight: `5px`,
-            }}
-          >
-            Github
-          </a>
-        </footer>
-      </div>
-    </>
+      <main siteTitle={data.site.siteMetadata.title}>{children}</main>
+      <footer className="shadow p-3 mt-5 mb-5 bg-white rounded d-flex justify-content-around">
+        <a className="" href="tel:+33781154503">
+          <i className="fas fa-mobile-alt"></i> 07 81 15 45 03
+        </a>
+        <a class="" href="mailto:lydstyl@gmail.com">
+          <i class="far fa-envelope"></i> lydstyl@gmail.com
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/lydstyl"
+        >
+          <i class="fab fa-github"></i> Github
+        </a>
+      </footer>
+    </div>
   )
 }
 

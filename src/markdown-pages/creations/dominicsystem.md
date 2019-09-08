@@ -4,7 +4,7 @@ link: "https://dominic-system.herokuapp.com/"
 title: "Dominic System"
 date: "2019-09-08"
 body: "Cette app vous permettra de booster votre mémoire des nombres."
-path: "/creation/dominicsystem"
+path: "/creation/domi"
 ---
 
 Test du html Dominic System md

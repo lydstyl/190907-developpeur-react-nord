@@ -10,7 +10,7 @@ const path = require(`path`)
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  const cvTemplate = path.resolve(`src/templates/cvTemplate.js`)
+  const cvTemplate = path.resolve(`src/templates/cv-template.js`)
 
   const result = await graphql(`
     {

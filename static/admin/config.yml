@@ -16,18 +16,19 @@ collections:
           label: "Image",
           name: "img",
           widget: "string",
-          default: "https://content-static.upwork.com/blog/uploads/sites/3/2015/05/05084031/MOB_native-vs-web-app-whats-the-diff-which-do-i-need_M.png"
+          default: "https://content-static.upwork.com/blog/uploads/sites/3/2015/05/05084031/MOB_native-vs-web-app-whats-the-diff-which-do-i-need_M.png",
         }
-      - {
-        label: "App Link",
-        name: "link",
-        widget: "string",
-        required: "false"
-      }
+      - { label: "App Link", name: "link", widget: "string", required: false }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Creation date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown", required: "false" }
-      - { label: "Path", name: "path", widget: "string", default: "/creation/xxx" }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+      - {
+          label: "Path",
+          name: "path",
+          widget: "string",
+          default: "/creation/xxx",
+          pattern: ["^/creation/.", "Must begin with /creation/"],
+        }
   # - name: "blog" # maybe for later...
   - name: "pages"
     label: "Pages"

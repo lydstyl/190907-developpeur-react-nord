@@ -34,6 +34,11 @@ export default function Template({
       .processSync(xp.body)
       .toString()
 
+    // console.log("end", typeof end, end)
+    // let test = Date.parse(end)
+    // console.log("test", test, typeof test)
+    // console.log(test.getFullYear())
+
     let endDate = end
     if (ismycurrentjob) {
       endDate = "maintenant"

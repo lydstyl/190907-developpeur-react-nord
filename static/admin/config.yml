@@ -20,7 +20,12 @@ collections:
         }
       - { label: "App Link", name: "link", widget: "string", required: false }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Creation date", name: "date", widget: "datetime" }
+      - {
+          label: "Creation date",
+          name: "date",
+          widget: "datetime",
+          format: "L",
+        }
       - { label: "Body", name: "body", widget: "markdown", required: false }
       - {
           label: "Path",
@@ -38,7 +43,12 @@ collections:
         name: "cv"
         fields:
           - { label: Path, name: path, widget: hidden, default: "/cv" }
-          - { label: Date de mise à jour, name: date, widget: datetime }
+          - {
+              label: Date de mise à jour,
+              name: date,
+              widget: datetime,
+              format: "L",
+            }
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: text }
           - { label: Objectif, name: objectif, widget: string }
@@ -79,13 +89,23 @@ collections:
                     default: "Développeur",
                   },
                   { label: "Company", name: "company", widget: "string" },
-                  { label: "Begin", name: "begin", widget: "datetime" },
+                  {
+                    label: "Begin",
+                    name: "begin",
+                    widget: "datetime",
+                    format: "L",
+                  },
                   {
                     label: "Is my current job",
                     name: "ismycurrentjob",
                     widget: "boolean",
                   },
-                  { label: "End", name: "end", widget: "datetime" },
+                  {
+                    label: "End",
+                    name: "end",
+                    widget: "datetime",
+                    format: "L",
+                  },
                   { label: "Body", name: "body", widget: "markdown" },
                 ],
             }

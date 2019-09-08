@@ -9,7 +9,7 @@ const SecondPage = () => (
     <SEO title="Portfolio" />
     <h2>Portfolio</h2>
     <p>Welcome to my portfolio</p>
-    <Link to="/">Go back to the homepage</Link>
+    <Link to="/">Retourner au CV</Link>
   </Layout>
 )
 

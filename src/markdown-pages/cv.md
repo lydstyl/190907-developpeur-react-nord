@@ -1,12 +1,12 @@
 ---
 path: /
 date: 2019-09-07T20:15:00.000Z
-title: Gabriel Brun
+title: CV
 description: >-
-  Autodidacte, je me suis initié seul avec Python / Django, PHP et VBA. J'ai
-  ensuite suivi une formation de développeur full-stack avant de travailler 2
+  Bonjour je m'appelle Gabriel Brun. Je suis autodidacte et je me suis initié seul avec Python / Django, PHP et VBA. J'ai
+  ensuite suivi une formation de développeur full-stack avant de travailler plus de 2
   années en JavaScript front et Back.
-objectif: Coder en React.js tous les jours sauf le mercredi **
+objectif: coder en React.js tous les jours sauf le mercredi. ** Car je dois m'occuper de mes enfants et 1 semaine sur 2 je devrait partir à 17h maximum.
 skills:
   main:
     - rate: 5
@@ -73,3 +73,5 @@ experience:
     ismycurrentjob: true
     job: Développeur React.js
 ---
+
+\*\* Car je doit m'occuper de 2 enfants et 1 semaine sur 2 je devrait partir à 17h maximum.

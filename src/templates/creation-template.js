@@ -30,7 +30,9 @@ export default function Template({
 
       <div dangerouslySetInnerHTML={{ __html: html }} />
 
-      <Link to="/portfolio">Retour</Link>
+      <Link className="btn btn-secondary btn-sm align-top" to="/portfolio">
+        Retour
+      </Link>
     </Layout>
   )
 }

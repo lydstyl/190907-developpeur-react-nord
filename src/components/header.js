@@ -3,44 +3,19 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle, showPortfolioLink }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-      color: `white`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-      {showPortfolioLink && (
-        <Link
-          to="portfolio"
-          style={{
-            textDecoration: `none`,
-            color: `white`,
-            marginRight: `5px`,
-          }}
-        >
-          Voir mon Portfolio
-        </Link>
-      )}
-    </div>
+  <header className="text-center">
+    <h1 className="d-inline align-text-bottom mr-4">{siteTitle}</h1>
+    {!showPortfolioLink && (
+      <Link className="btn btn-secondary btn-sm align-top" to="/">
+        Voir le CV
+      </Link>
+    )}
+
+    {showPortfolioLink && (
+      <Link className="btn btn-secondary btn-sm align-top" to="portfolio">
+        Voir le Portfolio
+      </Link>
+    )}
   </header>
 )
 

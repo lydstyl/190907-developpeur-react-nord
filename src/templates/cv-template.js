@@ -50,17 +50,16 @@ export default function Template({
 
   return (
     <Layout showPortfolioLink="true">
-      <SEO title="CV" />
-      <h2>{title}</h2>
+      <SEO title={title} />
       <p>Mise à jour le {date}</p>
       <p>{description}</p>
-      <h3>Objectif: {objectif}</h3>
+      <h2>Objectif: {objectif}</h2>
 
-      <h3>Compétences:</h3>
-      <h4>Principales: {mainSkills}</h4>
-      <h4>Autres: {otherSkills}</h4>
+      <h2>Compétences:</h2>
+      <h3>Principales: {mainSkills}</h3>
+      <h3>Autres: {otherSkills}</h3>
 
-      <h3>Experiences:</h3>
+      <h2>Experiences:</h2>
       {jobs}
 
       <div dangerouslySetInnerHTML={{ __html: html }} />

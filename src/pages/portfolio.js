@@ -16,7 +16,6 @@ const Portfolio = ({
   return (
     <Layout>
       <SEO title="Portfolio" />
-      <h2>Portfolio</h2>
       <p>Bienvenue sur mon portfolio.</p>
       <p>Ci-dessous mes dernières créations.</p>
       {Posts}

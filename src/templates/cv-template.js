@@ -49,7 +49,7 @@ export default function Template({
   })
 
   return (
-    <Layout>
+    <Layout showPortfolioLink="true">
       <SEO title="CV" />
       <h2>{title}</h2>
       <p>Mise à jour le {date}</p>

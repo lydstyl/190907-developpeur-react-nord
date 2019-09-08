@@ -4,6 +4,4 @@
 
 ## Todo
 
-- toggled link CV / Porfolio
 - nice front with Bootstrap
-- faire en sorte que body soit le html des .md

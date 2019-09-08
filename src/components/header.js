@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, showPortfolioLink }) => (
   <header
     style={{
       background: `rebeccapurple`,
@@ -28,16 +28,18 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <Link
-        to="portfolio"
-        style={{
-          textDecoration: `none`,
-          color: `white`,
-          marginRight: `5px`,
-        }}
-      >
-        Portfolio
-      </Link>
+      {showPortfolioLink && (
+        <Link
+          to="portfolio"
+          style={{
+            textDecoration: `none`,
+            color: `white`,
+            marginRight: `5px`,
+          }}
+        >
+          Voir mon Portfolio
+        </Link>
+      )}
     </div>
   </header>
 )

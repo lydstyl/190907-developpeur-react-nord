@@ -1,8 +1,9 @@
-# This will be my CV and Portfolio.
+# This is my new CV and Portfolio.
 
-## It is not finished. [See it now.](https://developpeur-react-nord.netlify.com)
+## It is not finished yet. [See it now.](https://www.developpeur-react-nord.com/)
 
 ## Todo
 
-- nice front with Bootstrap
+- date format
+- content
 - SEO voir woorank

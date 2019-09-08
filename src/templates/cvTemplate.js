@@ -50,24 +50,20 @@ export default function Template({
 
   return (
     <Layout>
-      <SEO title="Page two" />
-      <div className="blog-post-container">
-        <div className="blog-post">
-          <h2>{title}</h2>
-          <p>Mise à jour le {date}</p>
-          <p>{description}</p>
-          <h3>Objectif: {objectif}</h3>
+      <SEO title="CV" />
+      <h2>{title}</h2>
+      <p>Mise à jour le {date}</p>
+      <p>{description}</p>
+      <h3>Objectif: {objectif}</h3>
 
-          <h3>Compétences:</h3>
-          <h4>Principales: {mainSkills}</h4>
-          <h4>Autres: {otherSkills}</h4>
+      <h3>Compétences:</h3>
+      <h4>Principales: {mainSkills}</h4>
+      <h4>Autres: {otherSkills}</h4>
 
-          <h3>Experiences:</h3>
-          {jobs}
+      <h3>Experiences:</h3>
+      {jobs}
 
-          <div dangerouslySetInnerHTML={{ __html: html }} />
-        </div>
-      </div>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )
 }

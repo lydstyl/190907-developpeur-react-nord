@@ -29,14 +29,14 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <Link
-        to="cv"
+        to="portfolio"
         style={{
           textDecoration: `none`,
           color: `white`,
           marginRight: `5px`,
         }}
       >
-        CV
+        Portfolio
       </Link>
       <a
         style={{

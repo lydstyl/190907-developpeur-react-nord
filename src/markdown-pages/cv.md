@@ -1,5 +1,5 @@
 ---
-path: /cv
+path: /
 date: 2019-09-07T20:15:00.000Z
 title: Gabriel Brun
 description: >-
@@ -73,4 +73,3 @@ experience:
     ismycurrentjob: true
     job: Développeur React.js
 ---
-

@@ -6,26 +6,27 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  # - name: "creation"
-  #   label: "Creation"
-  #   folder: "src/markdown-pages/creation"
-  #   create: true
-  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-  #   fields:
-  #     - {
-  #         label: "Image",
-  #         name: "img",
-  #         widget: "string",
-  #         default: "default url",
-  #       }
-  #     - {
-  #       label: "App Link",
-  #       name: "link",
-  #       widget: "string",
-  #     }
-  #     - { label: "Title", name: "title", widget: "string" }
-  #     - { label: "Creation date", name: "date", widget: "datetime" }
-  #     - { label: "Body", name: "body", widget: "markdown" }
+  - name: "creations"
+    label: "Creations"
+    folder: "src/markdown-pages/creations"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {
+          label: "Image",
+          name: "img",
+          widget: "string",
+          default: "your image url",
+        }
+      - {
+        label: "App Link",
+        name: "link",
+        widget: "string",
+      }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Creation date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Path", name: "path", widget: "string" }
   # - name: "blog" # for later...
   - name: "pages"
     label: "Pages"

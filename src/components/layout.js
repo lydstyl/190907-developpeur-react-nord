@@ -34,20 +34,20 @@ const Layout = ({ children, showPortfolioLink }) => {
         siteTitle={data.site.siteMetadata.title}
         showPortfolioLink={showPortfolioLink}
       />
-      <main siteTitle={data.site.siteMetadata.title}>{children}</main>
+      <main>{children}</main>
       <footer className="shadow p-3 mt-5 mb-5 bg-white rounded d-flex justify-content-around">
         <a className="" href="tel:+33781154503">
           <i className="fas fa-mobile-alt"></i> 07 81 15 45 03
         </a>
-        <a class="" href="mailto:lydstyl@gmail.com">
-          <i class="far fa-envelope"></i> lydstyl@gmail.com
+        <a href="mailto:lydstyl@gmail.com">
+          <i className="far fa-envelope"></i> lydstyl@gmail.com
         </a>
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/lydstyl"
         >
-          <i class="fab fa-github"></i> Github
+          <i className="fab fa-github"></i> Github
         </a>
       </footer>
     </div>

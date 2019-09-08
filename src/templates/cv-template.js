@@ -70,12 +70,12 @@ export default function Template({
         <p>{description}</p>
       </div>
       <h2 className="shadow p-3 mt-5 bg-white rounded">
-        <i class="fas fa-bullseye"></i> Objectif: {objectif}
+        <i className="fas fa-bullseye"></i> Objectif: {objectif}
       </h2>
 
       <div className="shadow p-3 mt-5 bg-white rounded">
         <h2>
-          <i class="far fa-check-square"></i> Compétences:
+          <i className="far fa-check-square"></i> Compétences:
         </h2>
         <ul>
           <li>
@@ -90,7 +90,7 @@ export default function Template({
       </div>
       <div className="shadow p-3 mt-5 bg-white rounded">
         <h2>
-          <i class="fas fa-briefcase"></i> Experiences:
+          <i className="fas fa-briefcase"></i> Experiences:
         </h2>
         {jobs}
       </div>

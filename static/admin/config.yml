@@ -22,10 +22,11 @@ collections:
         label: "App Link",
         name: "link",
         widget: "string",
+        required: "false"
       }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Creation date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown", required: "false" }
       - { label: "Path", name: "path", widget: "string", default: "/creation/xxx" }
   # - name: "blog" # maybe for later...
   - name: "pages"

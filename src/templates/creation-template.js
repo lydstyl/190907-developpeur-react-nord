@@ -16,23 +16,34 @@ export default function Template({
   return (
     <Layout>
       <SEO title={title} />
-      <h2>{title}</h2>
-      <p>Mise à jour le {date}</p>
+      <div className="shadow p-3 mt-5 mb-5 bg-white rounded">
+        <h2>{title}</h2>
+        <p>Mise à jour le {date}</p>
+      </div>
 
-      <img src={img} alt="img" />
+      <div className="shadow p-3 mb-5 bg-white rounded">
+        <img
+          src={img}
+          alt="img"
+          style={{ display: "block", maxWidth: "100%", margin: "auto" }}
+        />
+      </div>
+
       {link && (
-        <a target="_blank" rel="noopener noreferrer" href={link}>
-          Lien de la création
-        </a>
+        <div className="shadow p-3 mb-5 bg-white rounded">
+          <a target="_blank" rel="noopener noreferrer" href={link}>
+            Lien de la création
+          </a>
+        </div>
       )}
 
-      <p>{body}</p>
-
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-
-      <Link className="btn btn-secondary btn-sm align-top" to="/portfolio">
-        Retour
-      </Link>
+      <div className="shadow p-3 mb-5 bg-white rounded">
+        {body}
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <Link className="btn btn-secondary btn-sm align-top" to="/portfolio">
+          Retour
+        </Link>
+      </div>
     </Layout>
   )
 }

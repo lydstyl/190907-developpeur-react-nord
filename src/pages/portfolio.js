@@ -16,9 +16,11 @@ const Portfolio = ({
   return (
     <Layout>
       <SEO title="Portfolio" />
-      <p>Bienvenue sur mon portfolio.</p>
-      <p>Ci-dessous mes dernières créations.</p>
-      {Posts}
+      <div className="shadow p-3 mt-5 mb-5 bg-white rounded">
+        <p>Bienvenue sur mon portfolio.</p>
+        <p>Ci-dessous mes dernières créations.</p>
+      </div>
+      <ul className="shadow p-3 mt-5 mb-5 pl-5 bg-white rounded">{Posts}</ul>
     </Layout>
   )
 }

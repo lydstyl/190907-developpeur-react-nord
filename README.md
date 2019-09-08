@@ -5,3 +5,4 @@
 ## Todo
 
 - nice front with Bootstrap
+- SEO voir woorank

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Developpeur React.js Nord`,
-    description: `CV et Portfolio de Gabriel BRUN, developpeur JavaScript.`,
+    description: `CV et Portfolio de Gabriel BRUN, developpeur JavaScript, React.js, Gatsby.js, Node.js et Express.js dans le Nord de la France.`,
     author: `Gabriel BRUN`,
   },
   plugins: [

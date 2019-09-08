@@ -11,6 +11,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const cvTemplate = path.resolve(`src/templates/cv-template.js`)
+  const creationTemplate = path.resolve(`src/templates/creation-template.js`)
 
   const result = await graphql(`
     {
@@ -36,9 +37,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const path = node.frontmatter.path
+
     createPage({
       path: node.frontmatter.path,
-      component: cvTemplate,
+      component: path.includes("creation") ? creationTemplate : cvTemplate,
       context: {}, // additional data can be passed via context
     })
   })

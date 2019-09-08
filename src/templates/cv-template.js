@@ -34,11 +34,6 @@ export default function Template({
       .processSync(xp.body)
       .toString()
 
-    // console.log("end", typeof end, end)
-    // let test = Date.parse(end)
-    // console.log("test", test, typeof test)
-    // console.log(test.getFullYear())
-
     let endDate = end
     if (ismycurrentjob) {
       endDate = "maintenant"
@@ -46,15 +41,19 @@ export default function Template({
 
     return (
       <div key={index}>
-        <div className="d-flex justify-content-around">
-          <h4>
-            <i className="fas fa-user-tie"></i> {job}
-          </h4>
-          <span>
+        <div className="row">
+          <div className="col-md">
+            <h4>
+              <i className="fas fa-user-tie"></i> {job}
+            </h4>
+          </div>
+          <div className="col-md">
             <i className="far fa-building"></i>{" "}
             <span className="mr-5">{company} </span>
+          </div>
+          <div className="col-md-6">
             <i className="far fa-calendar-alt"></i> {begin} à {endDate}
-          </span>
+          </div>
         </div>
 
         <div dangerouslySetInnerHTML={{ __html: body }}></div>

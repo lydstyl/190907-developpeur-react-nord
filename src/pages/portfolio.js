@@ -20,7 +20,9 @@ const Portfolio = ({
         <p>Bienvenue sur mon portfolio.</p>
         <p>Ci-dessous mes dernières créations.</p>
       </div>
-      <ul className="shadow p-3 mt-5 mb-5 pl-5 bg-white rounded">{Posts}</ul>
+      <ul className="list-unstyled shadow p-3 mt-5 mb-5 bg-white rounded">
+        {Posts}
+      </ul>
     </Layout>
   )
 }

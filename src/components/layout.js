@@ -35,20 +35,28 @@ const Layout = ({ children, showPortfolioLink }) => {
         showPortfolioLink={showPortfolioLink}
       />
       <main>{children}</main>
-      <footer className="shadow p-3 mt-5 mb-5 bg-white rounded d-flex justify-content-around">
-        <a className="" href="tel:+33781154503">
-          <i className="fas fa-mobile-alt"></i> 07 81 15 45 03
-        </a>
-        <a href="mailto:lydstyl@gmail.com">
-          <i className="far fa-envelope"></i> lydstyl@gmail.com
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/lydstyl"
-        >
-          <i className="fab fa-github"></i> Github
-        </a>
+      <footer className="shadow p-3 mt-5 mb-5 bg-white rounded">
+        <div className="row">
+          <div className="col-md">
+            <a className="" href="tel:+33781154503">
+              <i className="fas fa-mobile-alt"></i> 07 81 15 45 03
+            </a>
+          </div>
+          <div className="col-md">
+            <a href="mailto:lydstyl@gmail.com">
+              <i className="far fa-envelope"></i> lydstyl@gmail.com
+            </a>
+          </div>
+          <div className="col-md">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/lydstyl"
+            >
+              <i className="fab fa-github"></i> Github
+            </a>
+          </div>
+        </div>
       </footer>
     </div>
   )

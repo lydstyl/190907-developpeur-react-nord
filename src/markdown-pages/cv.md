@@ -24,6 +24,7 @@ skills:
     - title: Git
     - title: JQuery
     - title: Vanilla JS
+    - title: Ajax
     - title: MySQL Firebase
     - title: Wordpress
     - title: Python Django

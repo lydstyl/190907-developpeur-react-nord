@@ -18,7 +18,7 @@ export default function Template({
       <SEO title={title} />
       <div className="shadow p-3 mt-5 mb-5 bg-white rounded">
         <h2>{title}</h2>
-        <p>Mise à jour le {date}</p>
+        <p>Cette création a débuté le {date}</p>
       </div>
 
       <div className="shadow p-3 mb-5 bg-white rounded">
@@ -29,19 +29,18 @@ export default function Template({
         />
       </div>
 
-      {link && (
-        <div className="shadow p-3 mb-5 bg-white rounded">
-          <a target="_blank" rel="noopener noreferrer" href={link}>
-            Lien de la création
-          </a>
-        </div>
-      )}
-
-      <div className="shadow p-3 mb-5 bg-white rounded">
+      <div className="shadow p-3 mb-5 bg-white rounded text-justify">
+        {link && (
+          <div className="mb-3 text-right">
+            <a target="_blank" rel="noopener noreferrer" href={link}>
+              Lien vers la création en ligne
+            </a>
+          </div>
+        )}
         {body}
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <Link className="btn btn-secondary btn-sm align-top" to="/portfolio">
-          Retour
+          Retour à la liste des créations
         </Link>
       </div>
     </Layout>
@@ -53,7 +52,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD/MM/YYYY")
         img
         link
         title

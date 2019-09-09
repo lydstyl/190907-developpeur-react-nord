@@ -7,4 +7,4 @@ body: "Cette app pourra devenir votre carnet de contact."
 path: "/creation/contact-keeper"
 ---
 
-MERN Stack avec API REST en Node.js et base de donnée MongoDB
+Au niveau technique, j'ai utilisé la MERN Stack (MongoDB, Express.js, React.js et Node.js). Il y a une API REST qui permet d'interagir avec la base de données.

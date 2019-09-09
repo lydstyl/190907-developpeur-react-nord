@@ -7,4 +7,4 @@ date: 2019-08-01T13:00:53.323Z
 path: /creation/github-finder
 ---
 
-Un app connectée à l'API de Github
+Une web app en React.js connectée à l'API de Github. Elle vous permet de trouver des développeurs et d'obtenir des informations sur eux.

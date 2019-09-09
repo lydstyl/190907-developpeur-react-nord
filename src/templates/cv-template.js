@@ -17,13 +17,13 @@ export default function Template({
     .map(mainSkill => {
       return mainSkill.title + ": " + mainSkill.rate + "/5"
     })
-    .join(" ")
+    .join(", ")
 
   const otherSkills = skills.other
     .map(mainSkill => {
       return mainSkill.title
     })
-    .join(" ")
+    .join(", ")
 
   const jobs = experience.map((xp, index) => {
     const { job, company, begin, ismycurrentjob, end } = xp
@@ -42,16 +42,16 @@ export default function Template({
     return (
       <div key={index}>
         <div className="row">
-          <div className="col-md">
+          <div className="col-md-5">
             <h4>
               <i className="fas fa-user-tie"></i> {job}
             </h4>
           </div>
-          <div className="col-md">
+          <div className="col-md-4">
             <i className="far fa-building"></i>{" "}
             <span className="mr-5">{company} </span>
           </div>
-          <div className="col-md-6">
+          <div className="col-md">
             <i className="far fa-calendar-alt"></i> {begin} à {endDate}
           </div>
         </div>

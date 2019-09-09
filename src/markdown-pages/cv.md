@@ -1,6 +1,6 @@
 ---
 path: /
-date: 2019-09-07T20:15:00.000Z
+date: 2019-09-09T20:15:00.000Z
 title: CV
 description: >-
   Bonjour, je m'appelle Gabriel Brun. Je suis autodidacte et je me suis initié
@@ -12,27 +12,29 @@ objectif: >-
 skills:
   main:
     - rate: 4
-      title: React.js Vanilla JS
-    - rate: 3
-      title: Node.js
+      title: HTML CSS Bootstrap
     - rate: 4
-      title: HTML CSS Sass Bootstrap
+      title: React.js
+    - rate: 3
+      title: Node.js Express.js MongoDB
   other:
     - title: API REST
-    - title: MySQL MongoDB Firebase
-    - title: Git
     - title: Gatsby.js
     - title: Netlify CMS
+    - title: Git
     - title: JQuery
+    - title: Vanilla JS
+    - title: MySQL Firebase
     - title: Wordpress
     - title: Python Django
     - title: PHP Codeigniter
     - title: SalesForce Commerce Cloud (JavaScript)
-    - title: Webpack Gulp
     - title: Pug ISML Smarty
     - title: Foundation
+    - title: Webpack Gulp
+    - title: Sass
 experience:
-  - begin: mars 2017
+  - begin: 2017-03-09T20:15:00.000Z
     body: >-
       * Contribuer à la création et à l'évolution des sites : BASH, BABYLISS et
       CAROLL avec la solution Demandware / SalesForce Commerce Cloud qui
@@ -44,10 +46,10 @@ experience:
 
       * Créer et réaliser des tests fonctionnels
     company: ALTIMA
-    end: juin 2019
+    end: 2019-06-09T20:15:00.000Z
     ismycurrentjob: false
     job: Développeur JavaScript
-  - begin: juillet 2019
+  - begin: 2019-07-09T20:15:00.000Z
     body: |-
 
       * Class component
@@ -55,7 +57,7 @@ experience:
       * Hooks (useState, useEffect, useRef)
       * Context et Redux
     company: FORMATION REACT.JS
-    end: 2019-09-07T18:30:09.422Z
+    end: 2019-09-09T20:15:00.000Z
     ismycurrentjob: true
     job: Développeur React.js
 ---

@@ -61,15 +61,18 @@ export default function Template({
     )
   })
 
+  console.log(typeof date, date)
+
   return (
     <Layout showPortfolioLink="true">
       <SEO title={title} />
       <div className="shadow p-3 mt-5 bg-white rounded">
-        <p>Mise à jour le {date}</p>
-        <p>{description}</p>
+        <p className="text-right font-italic">Mise à jour le {date}</p>
+        <p className="text-justify">{description}</p>
       </div>
       <h2 className="shadow p-3 mt-5 bg-white rounded">
-        <i className="fas fa-bullseye"></i> Objectif: {objectif}
+        <i className="fas fa-bullseye"></i> Objectif:{" "}
+        <span style={{ fontSize: "1.5rem" }}>{objectif}</span>
       </h2>
 
       <div className="shadow p-3 mt-5 bg-white rounded">
@@ -104,7 +107,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD/MM/YYYY")
         path
         title
         description
@@ -121,9 +124,9 @@ export const pageQuery = graphql`
         experience {
           job
           company
-          begin
+          begin(formatString: "MM/YYYY")
           ismycurrentjob
-          end
+          end(formatString: "MM/YYYY")
           body
         }
       }

@@ -32,7 +32,12 @@ export default function Template({
       <div className="shadow p-3 mb-5 bg-white rounded text-justify">
         {link && (
           <div className="mb-3 text-right">
-            <a target="_blank" rel="noopener noreferrer" href={link}>
+            <a
+              className="text-decoration-none"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={link}
+            >
               Lien vers la création en ligne
             </a>
           </div>

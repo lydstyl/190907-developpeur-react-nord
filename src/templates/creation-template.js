@@ -26,7 +26,7 @@ export default function Template({
         />
       </div>
 
-      <div className="shadow p-3 mb-5 bg-white rounded text-justify">
+      <div className="creation-html shadow p-3 mb-5 bg-white rounded text-justify">
         {link && (
           <div className="mb-3 text-right">
             <a

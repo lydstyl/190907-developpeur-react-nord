@@ -10,7 +10,7 @@ export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter } = markdownRemark
   const { date, title, description, objectif, skills, experience } = frontmatter
 
   const mainSkills = skills.main
@@ -94,8 +94,6 @@ export default function Template({
         </h2>
         {jobs}
       </div>
-
-      <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )
 }
@@ -103,7 +101,6 @@ export default function Template({
 export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
       frontmatter {
         date(formatString: "DD/MM/YYYY")
         path

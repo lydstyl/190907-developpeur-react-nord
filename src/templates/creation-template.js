@@ -2,16 +2,13 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import remark from "remark"
-// import recommended from "remark-preset-lint-recommended"
-// import remarkHtml from "remark-html"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
-  const { date, img, link, title, body } = frontmatter
+  const { date, img, link, title } = frontmatter
 
   return (
     <Layout>
@@ -42,7 +39,6 @@ export default function Template({
             </a>
           </div>
         )}
-        {body}
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <Link className="btn btn-secondary btn-sm align-top" to="/portfolio">
           Retour à la liste des créations
@@ -61,7 +57,6 @@ export const pageQuery = graphql`
         img
         link
         title
-        body
         path
       }
     }

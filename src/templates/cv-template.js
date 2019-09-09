@@ -61,8 +61,6 @@ export default function Template({
     )
   })
 
-  console.log(typeof date, date)
-
   return (
     <Layout showPortfolioLink="true">
       <SEO title={title} />
@@ -82,11 +80,11 @@ export default function Template({
         <ul>
           <li>
             <h3>Principales:</h3>
-            <p>{mainSkills}</p>
+            <p className="text-justify">{mainSkills}</p>
           </li>
           <li>
             <h3>Autres:</h3>
-            <p>{otherSkills}</p>
+            <p className="text-justify">{otherSkills}</p>
           </li>
         </ul>
       </div>

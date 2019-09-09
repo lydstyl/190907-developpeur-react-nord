@@ -1,3 +1,7 @@
 body {
   background-color: #eae9e7;
 }
+.creation-html img {
+  display: block;
+  margin: auto;
+}

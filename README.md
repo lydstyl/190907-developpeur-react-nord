@@ -1,9 +1,7 @@
-# This is my new CV and Portfolio.
+# This is my new resume and Portfolio.
 
-## It is not finished yet. [See it now.](https://www.developpeur-react-nord.com/)
+## [Let's see it.](https://www.developpeur-react-nord.com/)
 
 ## Todo
 
-- date format
-- content
 - SEO voir woorank

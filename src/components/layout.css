@@ -1,6 +1,25 @@
 body {
   background-color: #eae9e7;
 }
+.cv-description-box img {
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  .cv-description-box {
+    min-height: 233px;
+  }
+  .cv-description-box img {
+    float: right;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+  }
+  .cv-description-box p.text-justify {
+    margin-top: 2rem;
+  }
+}
 .creation-html img {
   display: block;
   margin: auto;

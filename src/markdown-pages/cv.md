@@ -52,10 +52,9 @@ experience:
     job: Développeur JavaScript
   - begin: 2019-07-09T20:15:00.000Z
     body: |-
-
       * Class component
       * Functional component
-      * Hooks (useState, useEffect, useRef)
+      * Hooks (useState, useEffect, useRef, useReducer)
       * Context et Redux
     company: FORMATION REACT.JS
     end: 2019-09-09T20:15:00.000Z

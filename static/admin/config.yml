@@ -59,6 +59,16 @@ collections:
                       ],
                   },
                   {
+                    label: Goal,
+                    name: goal,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Rate, name: rate, widget: number },
+                      ],
+                  },
+                  {
                     label: Other,
                     name: other,
                     widget: list,

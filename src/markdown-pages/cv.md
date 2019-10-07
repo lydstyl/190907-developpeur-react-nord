@@ -9,21 +9,41 @@ description: >-
 objectif: coder en React.js dans le Nord à temps partiel.
 skills:
   main:
+    - rate: 5
+      title: HTML / CSS / Sass
     - rate: 4
-      title: HTML CSS
-    - rate: 4
-      title: React.js
+      title: JavaScript / React.js
     - rate: 3
-      title: Node.js Express.js MongoDB
+      title: Firebase
+    - rate: 3
+      title: Gatsby.js
+    - rate: 3
+      title: Node.js & Express.js
+    - rate: 1
+      title: MongoDB & MySQL & PostgreSQL
+    - rate: 0
+      title: Svelte.js
+  goal:
+    - rate: 5
+      title: HTML / CSS / Sass
+    - rate: 5
+      title: JavaScript & React.js
+    - rate: 4
+      title: Firebase
+    - rate: 4
+      title: Gatsby.js
+    - rate: 4
+      title: Node.js / Express.js
+    - rate: 3
+      title: MongoDB & MySQL & PostgreSQL
+    - rate: 2
+      title: Svelte.js
   other:
     - title: API REST
-    - title: Gatsby.js
     - title: Netlify CMS
     - title: Git
     - title: JQuery
-    - title: Vanilla JS
     - title: Ajax
-    - title: MySQL Firebase
     - title: Wordpress
     - title: Python Django
     - title: PHP Codeigniter
@@ -33,7 +53,6 @@ skills:
     - title: Materialize
     - title: Foundation
     - title: Webpack Gulp
-    - title: Sass
 experience:
   - begin: 2017-03-09T20:15:00.000Z
     body: >-
@@ -61,4 +80,3 @@ experience:
     ismycurrentjob: true
     job: Développeur React.js
 ---
-

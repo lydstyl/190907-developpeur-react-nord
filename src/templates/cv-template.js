@@ -6,6 +6,8 @@ import remark from "remark"
 import recommended from "remark-preset-lint-recommended"
 import remarkHtml from "remark-html"
 
+import { Radar } from "react-chartjs-2"
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
@@ -18,6 +20,29 @@ export default function Template({
       return mainSkill.title + ": " + mainSkill.rate + "/5"
     })
     .join(", ")
+
+  const radarData = {
+    labels: skills.main.map(skill => skill.title),
+    datasets: [
+      {
+        data: skills.main.map(skill => skill.rate),
+        backgroundColor: "rgba(67, 223, 103, 0.3)",
+        borderColor: "rgba(67, 223, 103, 1)",
+        borderWidth: 3,
+        label: "Actuelles",
+        lineTension: 0.2,
+      },
+      {
+        data: skills.goal.map(skill => skill.rate),
+        backgroundColor: "rgba(47, 223, 103, 0.1)",
+        borderColor: "rgba(67, 223, 103, 0.3)",
+        borderWidth: 3,
+        label: "Objectif",
+        lineTension: 0.2,
+        borderDash: [5],
+      },
+    ],
+  }
 
   const otherSkills = skills.other
     .map(mainSkill => {
@@ -85,6 +110,9 @@ export default function Template({
           <li>
             <h3>Principales:</h3>
             <p className="text-justify">{mainSkills}</p>
+            <div className="radar">
+              <Radar data={radarData} />
+            </div>
           </li>
           <li>
             <h3>Autres:</h3>
@@ -113,6 +141,10 @@ export const pageQuery = graphql`
         objectif
         skills {
           main {
+            title
+            rate
+          }
+          goal {
             title
             rate
           }

@@ -14,13 +14,11 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter } = markdownRemark
   const { date, title, description, objectif, skills, experience } = frontmatter
-
   const mainSkills = skills.main
     .map(mainSkill => {
       return mainSkill.title + ": " + mainSkill.rate + "/5"
     })
     .join(", ")
-
   const radarData = {
     labels: skills.main.map(skill => skill.title),
     datasets: [
@@ -65,7 +63,7 @@ export default function Template({
     }
 
     return (
-      <div key={index}>
+      <div key={index} className="jobs">
         <div className="row">
           <div className="col-md-5">
             <h4>
@@ -102,14 +100,14 @@ export default function Template({
         <span style={{ fontSize: "1.5rem" }}>{objectif}</span>
       </h2>
 
-      <div className="shadow p-3 mt-5 bg-white rounded">
+      <div className="skills shadow p-3 mt-5 bg-white rounded">
         <h2>
           <i className="far fa-check-square"></i> Compétences:
         </h2>
         <ul>
           <li>
             <h3>Principales:</h3>
-            <p className="text-justify">{mainSkills}</p>
+            <p className="mainSkills text-justify">{mainSkills}</p>
             <div className="radar">
               <Radar data={radarData} />
             </div>

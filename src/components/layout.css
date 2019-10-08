@@ -25,3 +25,45 @@ body {
   max-width: 100%;
   margin: auto;
 }
+
+.radar {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mainSkills {
+    display: none;
+  }
+  .radar {
+    display: block;
+  }
+}
+
+.cv-description-box,
+.jobs li {
+  line-height: 30px;
+}
+
+@media print {
+  .cv-description-box {
+    min-height: 233px;
+  }
+  .cv-description-box img {
+    float: right;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+  }
+  .cv-description-box p.text-justify {
+    margin-top: 2rem;
+  }
+  .mainSkills {
+    display: none;
+  }
+  .radar {
+    display: block;
+  }
+  .skills {
+    page-break-after: always;
+  }
+}

@@ -9,32 +9,32 @@ description: >-
 objectif: coder en React.js dans le Nord à temps partiel.
 skills:
   main:
-    - rate: 5
+    - rate: 9
       title: HTML / CSS / Sass
-    - rate: 4
+    - rate: 8
       title: JavaScript / React.js
-    - rate: 3
+    - rate: 6
       title: Firebase
-    - rate: 3
+    - rate: 6
       title: Gatsby.js
-    - rate: 3
+    - rate: 6
       title: Node.js & Express.js
-    - rate: 1
+    - rate: 4
       title: MongoDB & MySQL & PostgreSQL
     - rate: 0
       title: Svelte.js
   goal:
-    - rate: 5
+    - rate: 10
       title: HTML / CSS / Sass
-    - rate: 5
+    - rate: 9
       title: JavaScript & React.js
-    - rate: 4
+    - rate: 8
       title: Firebase
-    - rate: 4
+    - rate: 8
       title: Gatsby.js
-    - rate: 4
+    - rate: 6
       title: Node.js / Express.js
-    - rate: 3
+    - rate: 6
       title: MongoDB & MySQL & PostgreSQL
     - rate: 2
       title: Svelte.js

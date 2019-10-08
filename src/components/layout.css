@@ -82,3 +82,8 @@ body {
     display: block;
   }
 }
+
+.not-found img {
+  display: block;
+  margin: auto;
+}

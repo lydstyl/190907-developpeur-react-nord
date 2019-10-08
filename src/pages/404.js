@@ -6,8 +6,17 @@ import SEO from "../components/seo"
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div className="not-found">
+      <h2 className="shadow p-3 mt-5 bg-white rounded">
+        Cette page n'éxiste pas
+      </h2>
+      <div className="shadow p-3 mt-5 bg-white rounded">
+        <img
+          src="https://media2.giphy.com/media/9J7tdYltWyXIY/200.webp?cid=790b7611bf75a52944289c836e1dffb6728a0bb583a20ef5&rid=200.webp"
+          alt="image not found"
+        />
+      </div>
+    </div>
   </Layout>
 )
 

@@ -4,25 +4,10 @@ date: 2019-09-09T20:15:00.000Z
 title: CV
 description: >-
   Bonjour, je m'appelle Gabriel Brun. Je suis autodidacte et je me suis initié
-  seul avec Python, PHP et VBA. J'ai ensuite suivi une formation de développeur
+  seul avec Python et PHP. J'ai ensuite suivi une formation de développeur
   full-stack avant de travailler plus de 2 années en JavaScript front et back.
 objectif: coder en React.js dans le Nord à temps partiel.
 skills:
-  main:
-    - rate: 9
-      title: HTML / CSS / Sass
-    - rate: 8
-      title: JavaScript / React.js
-    - rate: 6
-      title: Firebase
-    - rate: 6
-      title: Gatsby.js
-    - rate: 6
-      title: Node.js & Express.js
-    - rate: 4
-      title: MongoDB & MySQL & PostgreSQL
-    - rate: 0
-      title: Svelte.js
   goal:
     - rate: 10
       title: HTML / CSS / Sass
@@ -37,6 +22,21 @@ skills:
     - rate: 6
       title: MongoDB & MySQL & PostgreSQL
     - rate: 2
+      title: Svelte.js
+  main:
+    - rate: 9
+      title: HTML / CSS / Sass
+    - rate: 8
+      title: JavaScript / React.js
+    - rate: 6
+      title: Firebase
+    - rate: 6
+      title: Gatsby.js
+    - rate: 6
+      title: Node.js & Express.js
+    - rate: 4
+      title: MongoDB & MySQL & PostgreSQL
+    - rate: 0
       title: Svelte.js
   other:
     - title: API REST
@@ -80,3 +80,4 @@ experience:
     ismycurrentjob: true
     job: Développeur React.js
 ---
+

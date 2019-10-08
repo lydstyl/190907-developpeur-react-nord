@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import remark from "remark"
@@ -97,7 +97,12 @@ export default function Template({
       </div>
       <h2 className="shadow p-3 mt-5 bg-white rounded">
         <i className="fas fa-bullseye"></i> Objectif:{" "}
-        <span style={{ fontSize: "1.5rem" }}>{objectif}</span>
+        <span style={{ fontSize: "1.5rem" }}>{objectif} </span>
+        <span>
+          <Link className="btn btn-secondary btn-sm" to="agenda">
+            Voir mes disponibilités
+          </Link>
+        </span>
       </h2>
 
       <div className="skills shadow p-3 mt-5 bg-white rounded">

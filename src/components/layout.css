@@ -67,3 +67,18 @@ body {
     page-break-after: always;
   }
 }
+
+.mobile-calendar {
+  display: block;
+}
+.calendar {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .mobile-calendar {
+    display: none;
+  }
+  .calendar {
+    display: block;
+  }
+}

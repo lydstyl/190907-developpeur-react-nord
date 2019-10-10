@@ -1,11 +1,25 @@
 import React from "react"
-import { Link } from "gatsby"
+import { useStaticQuery, Link, graphql } from "gatsby"
 
-const Objectif = ({ objectif }) => {
+const Objectif = () => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        markdownRemark(fileAbsolutePath: { regex: "/cv/" }) {
+          frontmatter {
+            objectif
+          }
+        }
+      }
+    `
+  )
+
   return (
     <h2 className="shadow p-3 mt-5 bg-white rounded">
       <i className="fas fa-bullseye"></i> Objectif:{" "}
-      <span style={{ fontSize: "1.5rem" }}>{objectif} </span>
+      <span style={{ fontSize: "1.5rem" }}>
+        {data.markdownRemark.frontmatter.objectif}{" "}
+      </span>
       <span>
         <Link className="btn btn-secondary btn-sm" to="agenda">
           Voir mes disponibilités

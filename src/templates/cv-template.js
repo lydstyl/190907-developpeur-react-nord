@@ -21,7 +21,7 @@ export default function Template({
 
       <CVDescriptionBox description={description} date={date} />
 
-      <Objectif objectif={objectif} />
+      <Objectif />
 
       <Skills skills={skills} />
 
@@ -38,7 +38,6 @@ export const pageQuery = graphql`
         path
         title
         description
-        objectif
         skills {
           main {
             title

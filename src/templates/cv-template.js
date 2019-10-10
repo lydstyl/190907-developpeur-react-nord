@@ -1,12 +1,10 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import { Radar } from "react-chartjs-2"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import remark from "remark"
-import recommended from "remark-preset-lint-recommended"
-import remarkHtml from "remark-html"
-
-import { Radar } from "react-chartjs-2"
+import Jobs from "../components/Jobs/Jobjs"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -47,42 +45,6 @@ export default function Template({
       return mainSkill.title
     })
     .join(", ")
-
-  const jobs = experience.map((xp, index) => {
-    const { job, company, begin, ismycurrentjob, end } = xp
-
-    let body = remark()
-      .use(recommended)
-      .use(remarkHtml)
-      .processSync(xp.body)
-      .toString()
-
-    let endDate = end
-    if (ismycurrentjob) {
-      endDate = "maintenant"
-    }
-
-    return (
-      <div key={index} className="jobs">
-        <div className="row">
-          <div className="col-md-5">
-            <h4>
-              <i className="fas fa-user-tie"></i> {job}
-            </h4>
-          </div>
-          <div className="col-md-4">
-            <i className="far fa-building"></i>{" "}
-            <span className="mr-5">{company} </span>
-          </div>
-          <div className="col-md">
-            <i className="far fa-calendar-alt"></i> {begin} à {endDate}
-          </div>
-        </div>
-
-        <div dangerouslySetInnerHTML={{ __html: body }}></div>
-      </div>
-    )
-  })
 
   return (
     <Layout showPortfolioLink="true">
@@ -127,7 +89,8 @@ export default function Template({
         <h2>
           <i className="fas fa-briefcase"></i> Experiences:
         </h2>
-        {jobs}
+
+        <Jobs experience={experience} />
       </div>
     </Layout>
   )

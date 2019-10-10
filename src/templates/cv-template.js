@@ -34,10 +34,8 @@ export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       frontmatter {
-        date(formatString: "DD/MM/YYYY")
         path
         title
-        description
         skills {
           main {
             title

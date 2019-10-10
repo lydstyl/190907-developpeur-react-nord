@@ -1,6 +1,22 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-const CVDescriptionBox = ({ description, date }) => {
+const CVDescriptionBox = () => {
+  const data = useStaticQuery(
+    graphql`
+      {
+        markdownRemark(fileAbsolutePath: { regex: "/cv/" }) {
+          frontmatter {
+            date(formatString: "DD/MM/YYYY")
+            description
+          }
+        }
+      }
+    `
+  )
+
+  const { date, description } = data.markdownRemark.frontmatter
+
   return (
     <div className="cv-description-box shadow p-3 mt-5 bg-white rounded">
       <img

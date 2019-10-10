@@ -11,7 +11,7 @@ import Experiences from "../components/Experiences/Experiences"
 export default function Template({
   data: {
     markdownRemark: {
-      frontmatter: { date, title, description, objectif, skills, experience },
+      frontmatter: { title, experience },
     },
   }, // data props is injected by the GraphQL query below and data.markdownRemark holds our post
 }) {
@@ -19,11 +19,11 @@ export default function Template({
     <Layout showPortfolioLink="true">
       <SEO title={title} />
 
-      <CVDescriptionBox description={description} date={date} />
+      <CVDescriptionBox />
 
       <Objectif />
 
-      <Skills skills={skills} />
+      <Skills />
 
       <Experiences experience={experience} />
     </Layout>
@@ -36,19 +36,7 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
-        skills {
-          main {
-            title
-            rate
-          }
-          goal {
-            title
-            rate
-          }
-          other {
-            title
-          }
-        }
+
         experience {
           job
           company

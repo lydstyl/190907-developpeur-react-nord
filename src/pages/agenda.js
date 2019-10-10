@@ -13,6 +13,7 @@ const NotFoundPage = () => (
 
     <div className="shadow p-3 mt-5 bg-white rounded">
       <iframe
+        title="Chart1"
         className="mobile-calendar"
         src="https://calendar.google.com/calendar/embed?showTitle=0&mode=AGENDA&showCalendars=0&bgcolor=%23eae9e7&src=jjuro8f0flunl7jqb58kbp797g%40group.calendar.google.com&ctz=Europe%2FParis"
         style={{ border: "0" }}
@@ -24,6 +25,7 @@ const NotFoundPage = () => (
       ></iframe>
 
       <iframe
+        title="Chart2"
         className="calendar"
         src="https://calendar.google.com/calendar/embed?showTitle=0&mode=WEEK&showCalendars=0&bgcolor=%23eae9e7&src=jjuro8f0flunl7jqb58kbp797g%40group.calendar.google.com&ctz=Europe%2FParis"
         style={{ border: "0" }}

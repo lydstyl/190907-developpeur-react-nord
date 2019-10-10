@@ -40,16 +40,16 @@ const Skills = () => {
     datasets: [
       {
         data: main.map(skill => skill.rate),
-        backgroundColor: "rgba(67, 223, 103, 0.3)",
-        borderColor: "rgba(67, 223, 103, 1)",
+        backgroundColor: "rgba(255, 193, 7, 0.3)", // #ffc107
+        borderColor: "rgba(255, 193, 7, 1)",
         borderWidth: 3,
         label: "Actuelles",
         lineTension: 0.2,
       },
       {
         data: goal.map(skill => skill.rate),
-        backgroundColor: "rgba(47, 223, 103, 0.1)",
-        borderColor: "rgba(67, 223, 103, 0.3)",
+        backgroundColor: "rgba(255, 193, 7, 0.1)",
+        borderColor: "rgba(255, 193, 7, 1)",
         borderWidth: 3,
         label: "Objectif",
         lineTension: 0.2,

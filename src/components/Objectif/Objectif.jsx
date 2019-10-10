@@ -21,7 +21,7 @@ const Objectif = () => {
         {data.markdownRemark.frontmatter.objectif}{" "}
       </span>
       <span>
-        <Link className="btn btn-secondary btn-sm" to="agenda">
+        <Link className="btn btn-secondary btn-sm" to="/agenda">
           Voir mes disponibilités
         </Link>
       </span>

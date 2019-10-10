@@ -8,6 +8,7 @@ const Header = ({ siteTitle, showPortfolioLink }) => (
       <i className="fas fa-code"></i> {siteTitle}{" "}
       <i className="fab fa-react"></i>
     </h1>
+
     {!showPortfolioLink && (
       <Link className="btn btn-secondary btn-sm align-top" to="/">
         Voir le CV
@@ -15,7 +16,7 @@ const Header = ({ siteTitle, showPortfolioLink }) => (
     )}
 
     {showPortfolioLink && (
-      <Link className="btn btn-secondary btn-sm align-top" to="portfolio">
+      <Link className="btn btn-secondary btn-sm align-top" to="/portfolio">
         Voir le Portfolio
       </Link>
     )}

@@ -21,7 +21,6 @@ const NotFoundPage = () => (
         height="400"
         frameBorder="0"
         scrolling="no"
-        showTitle="0"
       ></iframe>
 
       <iframe
@@ -33,7 +32,6 @@ const NotFoundPage = () => (
         height="600"
         frameBorder="0"
         scrolling="no"
-        showTitle="0"
       ></iframe>
     </div>
   </Layout>

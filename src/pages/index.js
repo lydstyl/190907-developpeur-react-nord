@@ -8,8 +8,6 @@ import Skills from "../components/Skills/Skills"
 import Experiences from "../components/Experiences/Experiences"
 
 export default function Template({ data }) {
-  console.log(data)
-
   return (
     <Layout showPortfolioLink="true">
       <SEO title="CV" />

@@ -3,8 +3,29 @@ import remark from "remark"
 import remarkHtml from "remark-html"
 import recommended from "remark-preset-lint-recommended"
 
-const Jobjs = ({ experience }) => {
-  const jobs = experience.map((xp, index) => {
+import { useStaticQuery, graphql } from "gatsby"
+
+const Jobs = () => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        markdownRemark(fileAbsolutePath: { regex: "/cv/" }) {
+          frontmatter {
+            experience {
+              job
+              company
+              begin(formatString: "MM/YYYY")
+              ismycurrentjob
+              end(formatString: "MM/YYYY")
+              body
+            }
+          }
+        }
+      }
+    `
+  )
+
+  const jobs = data.markdownRemark.frontmatter.experience.map((xp, index) => {
     const { job, company, begin, ismycurrentjob, end } = xp
 
     let body = remark()
@@ -43,4 +64,4 @@ const Jobjs = ({ experience }) => {
   return jobs
 }
 
-export default Jobjs
+export default Jobs

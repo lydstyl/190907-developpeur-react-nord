@@ -11,7 +11,7 @@ import Experiences from "../components/Experiences/Experiences"
 export default function Template({
   data: {
     markdownRemark: {
-      frontmatter: { title, experience },
+      frontmatter: { title },
     },
   }, // data props is injected by the GraphQL query below and data.markdownRemark holds our post
 }) {
@@ -25,7 +25,7 @@ export default function Template({
 
       <Skills />
 
-      <Experiences experience={experience} />
+      <Experiences />
     </Layout>
   )
 }
@@ -36,15 +36,6 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
-
-        experience {
-          job
-          company
-          begin(formatString: "MM/YYYY")
-          ismycurrentjob
-          end(formatString: "MM/YYYY")
-          body
-        }
       }
     }
   }

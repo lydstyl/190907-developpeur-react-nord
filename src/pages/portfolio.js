@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostLink from "../components/post-link"
@@ -16,10 +17,12 @@ const Portfolio = ({
   return (
     <Layout>
       <SEO title="Portfolio" />
+
       <div className="shadow p-3 mt-5 mb-5 bg-white rounded">
         <p>Bienvenue sur mon portfolio.</p>
         <p>Ci-dessous mes dernières créations.</p>
       </div>
+
       <ul className="list-unstyled shadow p-3 mt-5 mb-5 bg-white rounded">
         {Posts}
       </ul>

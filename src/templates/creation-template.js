@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -13,6 +14,7 @@ export default function Template({
   return (
     <Layout>
       <SEO title={title} />
+
       <div className="shadow p-3 mt-5 mb-5 bg-white rounded">
         <h2>{title}</h2>
         <p>Cette création a débuté le {date}</p>
@@ -39,7 +41,9 @@ export default function Template({
             </a>
           </div>
         )}
+
         <div dangerouslySetInnerHTML={{ __html: html }} />
+
         <Link className="btn btn-secondary btn-sm align-top" to="/portfolio">
           Retour à la liste des créations
         </Link>

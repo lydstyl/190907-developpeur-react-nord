@@ -36,6 +36,13 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Path",
+          name: "path",
+          widget: "string",
+          default: "/service/xxx",
+          pattern: ["^/service/.", "Must begin with /service/"],
+        }
       - { label: "Body", name: "body", widget: "markdown", required: false }
   # - name: "blog" # maybe for later...
   - name: "pages"

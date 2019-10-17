@@ -29,6 +29,14 @@ collections:
         }
       - { label: "App Link", name: "link", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown", required: false }
+  - name: "services"
+    label: "Services"
+    folder: "src/markdown-pages/services"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
   # - name: "blog" # maybe for later...
   - name: "pages"
     label: "Pages"

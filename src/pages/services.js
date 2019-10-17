@@ -13,7 +13,14 @@ export default function Template({
     allMarkdownRemark: { edges },
   },
 }) {
-  console.log("data", edges[0].node)
+  const services = edges.map(({ node: { id, frontmatter, excerpt } }) => {
+    return (
+      <ShadowBoxWrapper key={id}>
+        <h2>{frontmatter.title}</h2>
+        <div>{excerpt}</div>
+      </ShadowBoxWrapper>
+    )
+  })
 
   return (
     <Layout showPortfolioLink="true">
@@ -22,6 +29,8 @@ export default function Template({
       <ShadowBoxWrapper>
         <h2>Mes services</h2>
       </ShadowBoxWrapper>
+
+      {services}
 
       {/* <ShowcaseWebSite /> */}
 

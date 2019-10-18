@@ -1,6 +1,6 @@
 ---
 title: coucou test title
-path: /service/coucou
+path: /services/coucou
 ---
 
 Je suis un autre body

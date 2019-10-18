@@ -40,8 +40,8 @@ collections:
           label: "Path",
           name: "path",
           widget: "string",
-          default: "/service/xxx",
-          pattern: ["^/service/.", "Must begin with /service/"],
+          default: "/services/xxx",
+          pattern: ["^/services/.", "Must begin with /services/"],
         }
       - { label: "Body", name: "body", widget: "markdown", required: false }
   # - name: "blog" # maybe for later...

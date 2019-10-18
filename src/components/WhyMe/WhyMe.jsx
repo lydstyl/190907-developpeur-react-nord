@@ -26,6 +26,13 @@ const WhyMe = () => {
             <li>La performance est au maximum possible.</li>
             <li>La sécurité est au maximum possible.</li>
             <li>Votre site sera extremement scalable.</li>
+            <li>better security</li>
+            <li>less complexity and less bug</li>
+            <li>less ressources </li>
+            <li>cheaper hosting</li>
+            <li>faster performant</li>
+            <li>better SEO</li>
+            <li>no worry about constantly patching/upgrading WordPress</li>
           </ul>
         </li>
       </ul>

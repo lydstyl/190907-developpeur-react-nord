@@ -5,8 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import ShadowBoxWrapper from "../components/ShadowBoxWrapper/ShadowBoxWrapper"
-// import ShowcaseWebSite from "../components/ShowcaseWebSite/ShowcaseWebSite"
-import ReviewWebSite from "../components/ReviewWebSite/ReviewWebSite"
+import WhyMe from "../components/WhyMe/WhyMe"
 
 export default function Template({
   data: {
@@ -32,9 +31,7 @@ export default function Template({
 
       {services}
 
-      {/* <ShowcaseWebSite /> */}
-
-      <ReviewWebSite />
+      <WhyMe />
     </Layout>
   )
 }

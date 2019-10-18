@@ -1,6 +1,6 @@
 ---
 title: Site vitrine
-path: /service/site-vitrine
+path: /services/site-vitrine
 ---
 ## Site vitrine à partir de 499 €
 

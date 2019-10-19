@@ -1,0 +1,43 @@
+nav.top-menu {
+  height: 0;
+  transition: 0.4s;
+
+  & * {
+    display: none;
+  }
+
+  &.opened {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: inherit;
+    height: 200px;
+    justify-content: space-around;
+    transition: 0.4s;
+    * {
+      display: block;
+      width: 80%;
+      margin-bottom: 6px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &.opened {
+      flex-direction: row;
+      height: 200px;
+      justify-content: space-around;
+      transition: 0.4s;
+      * {
+        display: block;
+        width: 150px;
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  .close {
+    cursor: pointer;
+  }
+}
+header a.btn.open-menu.opened {
+  display: none;
+}

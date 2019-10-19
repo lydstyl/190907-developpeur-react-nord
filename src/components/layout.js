@@ -9,10 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Header from "./Header/Header"
 import "./layout.css"
 
-const Layout = ({ children, showPortfolioLink }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -30,10 +30,7 @@ const Layout = ({ children, showPortfolioLink }) => {
         href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
       />
 
-      <Header
-        siteTitle={data.site.siteMetadata.title}
-        showPortfolioLink={showPortfolioLink}
-      />
+      <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <footer className="shadow p-3 mt-5 mb-5 bg-white rounded">
         <div className="row">

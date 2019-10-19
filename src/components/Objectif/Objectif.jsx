@@ -22,7 +22,7 @@ const Objectif = () => {
       </span>
       <span>
         <Link className="btn btn-secondary btn-sm" to="/agenda">
-          Voir mes disponibilités
+          Disponibilités
         </Link>
       </span>
     </h2>

@@ -42,7 +42,6 @@ const Header = ({ siteTitle }) => {
           className={`btn open-menu btn-secondary btn-sm align-top ${
             menuOpened ? "opened" : ""
           }`}
-          href="#"
           onClick={triggerMenu}
         >
           Menu

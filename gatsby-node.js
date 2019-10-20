@@ -49,13 +49,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   // Create creations-list pages
   const posts = result.data.allMarkdownRemark.edges
-  const postsPerPage = 6
+  const postsPerPage = 9
   const numPages = Math.ceil(posts.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
       path: i === 0 ? `/portfolia` : `/portfolia/${i + 1}`,
       component: path.resolve(
-        "./src/templates/creations-template/creations-template.js"
+        "./src/templates/portfolio-template/portfolio-template.js"
       ),
       context: {
         limit: postsPerPage,

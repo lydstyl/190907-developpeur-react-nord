@@ -1,6 +1,11 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+
 import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import PostLink from "../../components/PostLink/PostLink"
+
+import "./portfolio-template.scss"
 
 export default class BlogList extends React.Component {
   render() {
@@ -10,7 +15,7 @@ export default class BlogList extends React.Component {
 
     const totalCreationNumber = this.props.data.allMarkdownRemark.totalCount
 
-    const maxCreationNumberPerCreationsPage = 6 // todo import this number
+    const maxCreationNumberPerCreationsPage = 9 // todo import this number
 
     const creationsPagesNumber = Math.ceil(
       totalCreationNumber / maxCreationNumberPerCreationsPage
@@ -22,19 +27,24 @@ export default class BlogList extends React.Component {
       creationsPagesLinks.push({ id: i, link: "/portfolia/" + i })
     }
 
+    const Posts = creations
+      // .filter(edge => edge.node.frontmatter.path.includes("creation")) // You can filter your posts based on some criteria
+      .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+
     return (
       <Layout>
-        {creations.map(({ node }) => {
-          const title = node.frontmatter.title
-          return (
-            <div key={node.id}>
-              <Link to={node.frontmatter.path}>{title}</Link>
-            </div>
-          )
-        })}
+        <SEO title="Portfolio" />
 
-        <br />
-        <br />
+        <div className="portfolio">
+          <div className="shadow p-3 mt-5 mb-5 bg-white rounded">
+            <p>Bienvenue sur mon portfolio.</p>
+            <p>Ci-dessous mes dernières créations.</p>
+          </div>
+
+          <ul className="post-box list-unstyled shadow p-3 mt-5 mb-5 bg-white rounded">
+            {Posts}
+          </ul>
+        </div>
 
         <div>
           <Link to="/portfolia">/portfolia</Link>

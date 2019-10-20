@@ -5,6 +5,10 @@
   margin-bottom: 16px;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+
+  transition: 2s;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -13,9 +17,15 @@
     display: block;
     width: 100%;
     min-height: $minH;
+    position: relative;
     .title-box {
+      position: absolute;
+      width: 100%;
       padding: 16px;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.6);
+      top: 50%;
+      transform: translateY(-50%);
+      transition: 2s;
       .title {
         color: white;
       }
@@ -23,5 +33,13 @@
   }
   a:hover {
     text-decoration: none;
+  }
+
+  &:hover {
+    .title-box {
+      background: rgba(0, 0, 0, 1);
+      top: 0;
+      transform: translateY(0);
+    }
   }
 }

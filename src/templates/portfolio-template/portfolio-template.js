@@ -40,9 +40,9 @@ export default class BlogList extends React.Component {
             <p>Ci-dessous mes dernières créations.</p>
           </div>
 
-          <ul className="post-box list-unstyled shadow p-3 mt-5 mb-5 bg-white rounded">
-            {Posts}
-          </ul>
+          <ShadowBoxWrapper>
+            <ul className="post-box list-unstyled ">{Posts}</ul>
+          </ShadowBoxWrapper>
 
           <ShadowBoxWrapper>
             <nav aria-label="...">

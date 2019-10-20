@@ -4,14 +4,13 @@ import { graphql, Link } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import PostLink from "../../components/PostLink/PostLink"
+import ShadowBoxWrapper from "../../components/ShadowBoxWrapper/ShadowBoxWrapper"
 
 import "./portfolio-template.scss"
 
 export default class BlogList extends React.Component {
   render() {
     const creations = this.props.data.allMarkdownRemark.edges
-
-    console.log(JSON.stringify(this.props.data, "", 3))
 
     const totalCreationNumber = this.props.data.allMarkdownRemark.totalCount
 
@@ -46,15 +45,24 @@ export default class BlogList extends React.Component {
           </ul>
         </div>
 
-        <div>
-          <Link to="/portfolio">/portfolio</Link>
-        </div>
-
-        {creationsPagesLinks.map(creationsPageLink => (
-          <div key={creationsPageLink.id}>
-            <Link to={creationsPageLink.link}>{creationsPageLink.link}</Link>
-          </div>
-        ))}
+        <ShadowBoxWrapper>
+          <nav aria-label="...">
+            <ul className="pagination pagination-lg justify-content-center">
+              <li className="page-item">
+                <Link className="page-link" to="/portfolio">
+                  1
+                </Link>
+              </li>
+              {creationsPagesLinks.map(creationsPageLink => (
+                <li key={creationsPageLink.id}>
+                  <Link className="page-link" to={creationsPageLink.link}>
+                    {creationsPageLink.id}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </ShadowBoxWrapper>
       </Layout>
     )
   }

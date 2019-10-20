@@ -1,0 +1,27 @@
+.PostLink {
+  $minH: 223px;
+
+  min-height: $minH;
+  margin-bottom: 16px;
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    min-height: $minH;
+    .title-box {
+      padding: 16px;
+      background: rgba(0, 0, 0, 0.4);
+      .title {
+        color: white;
+      }
+    }
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}

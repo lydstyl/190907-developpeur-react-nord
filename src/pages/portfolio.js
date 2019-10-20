@@ -3,7 +3,9 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PostLink from "../components/post-link"
+import PostLink from "../components/PostLink/PostLink"
+
+import "./portfolio.scss"
 
 const Portfolio = ({
   data: {
@@ -18,14 +20,16 @@ const Portfolio = ({
     <Layout>
       <SEO title="Portfolio" />
 
-      <div className="shadow p-3 mt-5 mb-5 bg-white rounded">
-        <p>Bienvenue sur mon portfolio.</p>
-        <p>Ci-dessous mes dernières créations.</p>
-      </div>
+      <div className="portfolio">
+        <div className="shadow p-3 mt-5 mb-5 bg-white rounded">
+          <p>Bienvenue sur mon portfolio.</p>
+          <p>Ci-dessous mes dernières créations.</p>
+        </div>
 
-      <ul className="list-unstyled shadow p-3 mt-5 mb-5 bg-white rounded">
-        {Posts}
-      </ul>
+        <ul className="post-box list-unstyled shadow p-3 mt-5 mb-5 bg-white rounded">
+          {Posts}
+        </ul>
+      </div>
     </Layout>
   )
 }
@@ -43,6 +47,7 @@ export const pageQuery = graphql`
             date(formatString: "DD/MM/YYYY")
             path
             title
+            img
           }
         }
       }

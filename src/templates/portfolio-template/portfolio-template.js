@@ -43,26 +43,26 @@ export default class BlogList extends React.Component {
           <ul className="post-box list-unstyled shadow p-3 mt-5 mb-5 bg-white rounded">
             {Posts}
           </ul>
-        </div>
 
-        <ShadowBoxWrapper>
-          <nav aria-label="...">
-            <ul className="pagination pagination-lg justify-content-center">
-              <li className="page-item">
-                <Link className="page-link" to="/portfolio">
-                  1
-                </Link>
-              </li>
-              {creationsPagesLinks.map(creationsPageLink => (
-                <li key={creationsPageLink.id}>
-                  <Link className="page-link" to={creationsPageLink.link}>
-                    {creationsPageLink.id}
+          <ShadowBoxWrapper>
+            <nav aria-label="...">
+              <ul className="pagination pagination-lg justify-content-center">
+                <li className="page-item">
+                  <Link className="page-link" to="/portfolio">
+                    1
                   </Link>
                 </li>
-              ))}
-            </ul>
-          </nav>
-        </ShadowBoxWrapper>
+                {creationsPagesLinks.map(creationsPageLink => (
+                  <li key={creationsPageLink.id}>
+                    <Link className="page-link" to={creationsPageLink.link}>
+                      {creationsPageLink.id}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </ShadowBoxWrapper>
+        </div>
       </Layout>
     )
   }

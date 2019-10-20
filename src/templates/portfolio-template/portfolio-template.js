@@ -24,7 +24,7 @@ export default class BlogList extends React.Component {
     const creationsPagesLinks = []
 
     for (let i = 2; i < creationsPagesNumber + 1; i++) {
-      creationsPagesLinks.push({ id: i, link: "/portfolia/" + i })
+      creationsPagesLinks.push({ id: i, link: "/portfolio/" + i })
     }
 
     const Posts = creations
@@ -47,7 +47,7 @@ export default class BlogList extends React.Component {
         </div>
 
         <div>
-          <Link to="/portfolia">/portfolia</Link>
+          <Link to="/portfolio">/portfolio</Link>
         </div>
 
         {creationsPagesLinks.map(creationsPageLink => (

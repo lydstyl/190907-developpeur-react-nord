@@ -4,6 +4,8 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import "./creation-template.scss"
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {

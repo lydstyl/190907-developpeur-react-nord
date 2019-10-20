@@ -44,5 +44,8 @@ header {
   }
   a:not([href]):not([tabindex]) {
     color: #fff;
+    &:hover {
+      color: #fff;
+    }
   }
 }

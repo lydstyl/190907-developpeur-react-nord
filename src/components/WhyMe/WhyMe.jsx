@@ -4,37 +4,25 @@ import ShadowBoxWrapper from "../ShadowBoxWrapper/ShadowBoxWrapper"
 const WhyMe = () => {
   return (
     <ShadowBoxWrapper>
-      <h2>Pourquoi passer par moi</h2>
+      <h2>Pourquoi passer par moi ?</h2>
+
+      <p>
+        Que ce soit un site Internet pour vous faire connaître, convertir des
+        prospects, trouver des clients ou une Web App qui augmente votre
+        performance au travail, je cherche la meilleure solution entièrement
+        personnalisée pour répondre au mieux à votre besoin.
+      </p>
+
       <ul>
+        <li>Mon objectif est de vous aider à développer votre business.</li>
         <li>
-          Que ce soit un site Internet pour vous faire connaitre, convertir des
-          prospects, trouver des clients ou une Web App qui pourra être par
-          exemple un outil qui vous fera gagner du temps, je vous proposerai la
-          meilleure solution entièrement personnalisée pour répondre au mieux à
-          votre besoin.
+          Je fais tout mon possible pour que vous soyez satisfait de mon
+          travail.
         </li>
-        <li>
-          J'utilise des technologies à la pointe vous permettant d'avoir un site
-          très rapide. Par exemple pour un site de type blog, il sera plus
-          rapide que n'importe quel site fait avec Wordpress. Ainsi, le
-          référencement naturel et l'experience du visiteur seront améliorés.
-        </li>
-        <li>
-          Avec la technologie Headless CMS:
-          <ul>
-            <li>Vous pouvez choisir votre CMS.</li>
-            <li>La performance est au maximum possible.</li>
-            <li>La sécurité est au maximum possible.</li>
-            <li>Votre site sera extremement scalable.</li>
-            <li>better security</li>
-            <li>less complexity and less bug</li>
-            <li>less ressources </li>
-            <li>cheaper hosting</li>
-            <li>faster performant</li>
-            <li>better SEO</li>
-            <li>no worry about constantly patching/upgrading WordPress</li>
-          </ul>
-        </li>
+        <li>Je suis votre interlocuteur unique.</li>
+        <li>Je me déplace et viens coder dans votre entreprise si besoin.</li>
+        <li>J'utilise des technologies récentes et solides.</li>
+        <li>Je mets l'accent sur la performance.</li>
       </ul>
     </ShadowBoxWrapper>
   )

@@ -14,6 +14,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     `src/templates/creation-template/creation-template.js`
   )
 
+  const serviceTemplate = path.resolve(
+    `src/templates/service-template/service-template.js`
+  )
+
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -40,9 +44,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     const path = node.frontmatter.path
 
+    const template = path.includes("/services/")
+      ? serviceTemplate
+      : creationTemplate
+
     createPage({
       path: node.frontmatter.path,
-      component: creationTemplate,
+      component: template,
       context: {}, // additional data can be passed via context
     })
   })

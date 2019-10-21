@@ -24,6 +24,10 @@ const Header = ({ siteTitle }) => {
             Portfolio
           </Link>
 
+          <Link className="btn btn-secondary btn-sm align-top" to="/services">
+            Services
+          </Link>
+
           <Link className="btn btn-secondary btn-sm align-top" to="/agenda">
             Disponibilités
           </Link>

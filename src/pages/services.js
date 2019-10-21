@@ -1,11 +1,10 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import ShadowBoxWrapper from "../components/ShadowBoxWrapper/ShadowBoxWrapper"
-import WhyMe from "../components/WhyMe/WhyMe"
 
 export default function Template({
   data: {
@@ -14,28 +13,26 @@ export default function Template({
 }) {
   const services = edges
     .filter(edge => edge.node.frontmatter.show)
-    .map(({ node: { id, frontmatter, excerpt } }) => {
+    .map(({ node: { id, frontmatter, excerpt, path } }) => {
       return (
         <ShadowBoxWrapper key={id}>
           <h2>{frontmatter.title}</h2>
-          <div>{excerpt}</div>
+          <div>
+            {excerpt} <Link to={frontmatter.path}>lire plus</Link>
+          </div>
         </ShadowBoxWrapper>
       )
     })
 
-  // .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
-
   return (
     <Layout showPortfolioLink="true">
-      <SEO title="CV" />
+      <SEO title="Services" />
 
       <ShadowBoxWrapper>
         <h2>Mes services</h2>
       </ShadowBoxWrapper>
 
       {services}
-
-      <WhyMe />
     </Layout>
   )
 }
@@ -49,10 +46,11 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 100)
           frontmatter {
             title
             show
+            path
           }
         }
       }

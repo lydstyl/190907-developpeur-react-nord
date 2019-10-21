@@ -28,12 +28,6 @@ const Header = ({ siteTitle }) => {
             Services
           </Link>
 
-          <Link className="btn btn-secondary btn-sm align-top" to="/agenda">
-            Disponibilités
-          </Link>
-
-          {/* <Link to="/services">Services</Link> */}
-
           <span className="close" onClick={triggerMenu}>
             X
           </span>

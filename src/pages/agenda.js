@@ -7,9 +7,7 @@ const NotFoundPage = () => (
   <Layout>
     <SEO title="Agenda de mes disponibilités" />
 
-    <h2 className="shadow p-3 mt-5 bg-white rounded">
-      Mes disponiblités à partir de janvier 2020
-    </h2>
+    <h2 className="shadow p-3 mt-5 bg-white rounded">Mes disponiblités</h2>
 
     <div className="shadow p-3 mt-5 bg-white rounded">
       <iframe

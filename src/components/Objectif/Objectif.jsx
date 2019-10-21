@@ -16,15 +16,15 @@ const Objectif = () => {
 
   return (
     <h2 className="shadow p-3 mt-5 bg-white rounded">
-      <i className="fas fa-bullseye"></i> Objectif:{" "}
+      <i className="fas fa-bullseye"></i> Objectif :{" "}
       <span style={{ fontSize: "1.5rem" }}>
         {data.markdownRemark.frontmatter.objectif}{" "}
       </span>
-      <span>
+      {/* <span>
         <Link className="btn btn-secondary btn-sm" to="/agenda">
           Disponibilités
         </Link>
-      </span>
+      </span> */}
     </h2>
   )
 }

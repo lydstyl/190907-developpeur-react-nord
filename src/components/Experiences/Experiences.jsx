@@ -6,7 +6,7 @@ const Experiences = () => {
   return (
     <div className="shadow p-3 mt-5 bg-white rounded">
       <h2>
-        <i className="fas fa-briefcase"></i> Experiences:
+        <i className="fas fa-briefcase"></i> Expériences :
       </h2>
 
       <Jobs />

@@ -12,14 +12,16 @@ export default function Template({
     allMarkdownRemark: { edges },
   },
 }) {
-  const services = edges.map(({ node: { id, frontmatter, excerpt } }) => {
-    return (
-      <ShadowBoxWrapper key={id}>
-        <h2>{frontmatter.title}</h2>
-        <div>{excerpt}</div>
-      </ShadowBoxWrapper>
-    )
-  })
+  const services = edges
+    .filter(edge => edge.node.frontmatter.show)
+    .map(({ node: { id, frontmatter, excerpt } }) => {
+      return (
+        <ShadowBoxWrapper key={id}>
+          <h2>{frontmatter.title}</h2>
+          <div>{excerpt}</div>
+        </ShadowBoxWrapper>
+      )
+    })
 
   // .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
@@ -50,6 +52,7 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 250)
           frontmatter {
             title
+            show
           }
         }
       }

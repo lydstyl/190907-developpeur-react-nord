@@ -46,7 +46,7 @@ export default function Template({
 
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
-        <Link className="btn btn-secondary btn-sm align-top" to="/portfolio">
+        <Link className="btn btn-secondary btn-sm align-top" to="/">
           Retour à la liste des créations
         </Link>
       </div>

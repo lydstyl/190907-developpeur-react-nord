@@ -16,11 +16,11 @@ const Header = ({ siteTitle }) => {
     <React.Fragment>
       <header className="text-center shadow p-3 mt-5 bg-white rounded">
         <nav className={`top-menu navbar ${menuOpened ? "opened" : ""}`}>
-          <Link className="btn btn-secondary btn-sm align-top" to="/">
+          <Link className="btn btn-secondary btn-sm align-top" to="/cv">
             CV
           </Link>
 
-          <Link className="btn btn-secondary btn-sm align-top" to="/portfolio">
+          <Link className="btn btn-secondary btn-sm align-top" to="/">
             Portfolio
           </Link>
 

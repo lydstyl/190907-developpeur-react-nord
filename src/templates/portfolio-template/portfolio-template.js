@@ -23,7 +23,7 @@ export default class BlogList extends React.Component {
     const creationsPagesLinks = []
 
     for (let i = 2; i < creationsPagesNumber + 1; i++) {
-      creationsPagesLinks.push({ id: i, link: "/portfolio/" + i })
+      creationsPagesLinks.push({ id: i, link: "/" + i })
     }
 
     const Posts = creations
@@ -48,7 +48,7 @@ export default class BlogList extends React.Component {
             <nav aria-label="...">
               <ul className="pagination pagination-lg justify-content-center">
                 <li className="page-item">
-                  <Link className="page-link" to="/portfolio">
+                  <Link className="page-link" to="/">
                     1
                   </Link>
                 </li>

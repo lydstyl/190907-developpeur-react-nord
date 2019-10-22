@@ -39,6 +39,12 @@ header {
       cursor: pointer;
     }
   }
+
+  .site-title {
+    color: black;
+    text-decoration: none;
+  }
+
   a.btn.open-menu.opened {
     display: none;
   }

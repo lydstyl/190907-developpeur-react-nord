@@ -32,10 +32,13 @@ const Header = ({ siteTitle }) => {
             X
           </span>
         </nav>
-        <h1 className="d-inline align-text-bottom mr-4">
-          <i className="fas fa-code"></i> {siteTitle}{" "}
-          <i className="fab fa-react"></i>
-        </h1>
+
+        <Link className="site-title" to="/">
+          <h1 className="d-inline align-text-bottom mr-4">
+            <i className="fas fa-code"></i> {siteTitle}{" "}
+            <i className="fab fa-react"></i>
+          </h1>
+        </Link>
 
         <a
           className={`btn open-menu btn-secondary btn-sm align-top ${

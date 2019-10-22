@@ -17,8 +17,8 @@ collections:
           label: "Path",
           name: "path",
           widget: "string",
-          default: "/creation/xxx",
-          pattern: ["^/creation/.", "Must begin with /creation/"],
+          default: "/portfolio/xxx",
+          pattern: ["^/portfolio/.", "Must begin with /portfolio/"],
         }
       - { label: "Creation date", name: "date", widget: "datetime" }
       - {

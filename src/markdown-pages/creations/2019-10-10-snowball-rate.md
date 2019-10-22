@@ -1,11 +1,12 @@
 ---
 title: Snowball Rate
-path: /creation/snowball-rate
+path: /portfolio/snowball-rate
 date: 2019-10-09T21:56:46.657Z
-img: 'http://womenintechcomm.org/wp-content/uploads/2018/10/snowball-1.jpg'
-link: 'https://snwoball-rate.netlify.com/'
+img: "http://womenintechcomm.org/wp-content/uploads/2018/10/snowball-1.jpg"
+link: "https://snwoball-rate.netlify.com/"
 ---
-J'ai souvent besoin de visualiser l'impacte d'un taux sur une valeur en fonction d'un certain temps. 
+
+J'ai souvent besoin de visualiser l'impacte d'un taux sur une valeur en fonction d'un certain temps.
 
 Cette application génère 2 graphiques modifiables en live afin de pouvoir comparer les 2 courbes.
 

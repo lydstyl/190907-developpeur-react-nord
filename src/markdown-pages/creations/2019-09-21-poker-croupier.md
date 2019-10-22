@@ -1,10 +1,11 @@
 ---
 title: Poker Croupier
-path: /creation/poker-croupier
+path: /portfolio/poker-croupier
 date: 2019-09-17T14:27:42.836Z
-img: 'https://img.bfmtv.com/c/1256/708/c3d/e5d550036a2e6961dd80b55027830.jpg'
-link: 'https://poker-croupier.netlify.com/'
+img: "https://img.bfmtv.com/c/1256/708/c3d/e5d550036a2e6961dd80b55027830.jpg"
+link: "https://poker-croupier.netlify.com/"
 ---
+
 ![iphone-landscape](/img/capture-du-2019-09-21-16-33-21.png "iphone-landscape")
 
 ## Jouer au poker sans carte !

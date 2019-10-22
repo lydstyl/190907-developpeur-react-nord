@@ -31,7 +31,7 @@ const Skills = () => {
 
   const mainSkills = main
     .map(mainSkill => {
-      return mainSkill.title + ": " + mainSkill.rate + "/5"
+      return mainSkill.title + ": " + mainSkill.rate + "/10"
     })
     .join(", ")
 

@@ -12,7 +12,9 @@ export default function Template({
   },
 }) {
   const services = edges
+
     .filter(edge => edge.node.frontmatter.show)
+
     .map(({ node: { id, frontmatter, excerpt, path } }) => {
       return (
         <ShadowBoxWrapper key={id}>

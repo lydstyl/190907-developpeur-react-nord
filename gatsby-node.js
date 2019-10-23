@@ -8,21 +8,12 @@ const path = require(`path`)
 const { createFilePath } = require("gatsby-source-filesystem")
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
-
-  const creationTemplate = path.resolve(
-    `src/templates/creation-template/creation-template.js`
-  )
-
-  const serviceTemplate = path.resolve(
-    `src/templates/service-template/service-template.js`
-  )
-
   const result = await graphql(`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
+        filter: { frontmatter: { show: { ne: false } } }
       ) {
         edges {
           node {
@@ -35,6 +26,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
 
+  const { createPage } = actions
+
+  const creationTemplate = path.resolve(
+    `src/templates/creation-template/creation-template.js`
+  )
+
+  const serviceTemplate = path.resolve(
+    `src/templates/service-template/service-template.js`
+  )
+
   // Handle errors
   if (result.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
@@ -42,6 +43,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    // if (!node.frontmatter.show) return null
+
     const path = node.frontmatter.path
 
     const template = path.includes("/services/")
@@ -53,6 +56,24 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       component: template,
       context: {}, // additional data can be passed via context
     })
+
+    // let template = null
+    // if (path.includes("/services/")) {
+    //   // if (!node.frontmatter.show === false) {
+    //   template = serviceTemplate
+    //   createPage({
+    //     path: node.frontmatter.path,
+    //     component: template,
+    //     context: {},
+    //   })
+    // } else {
+    //   template = creationTemplate
+    //   createPage({
+    //     path: node.frontmatter.path,
+    //     component: template,
+    //     context: {}, // additional data can be passed via context
+    //   })
+    // }
   })
 
   // Create creations-list pages

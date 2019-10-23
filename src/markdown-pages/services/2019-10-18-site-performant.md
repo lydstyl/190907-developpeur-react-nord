@@ -12,3 +12,5 @@ Un site vitrine responsive accès sur la performance.
 * **Fiabilité optimale** : contrairement à un site WordPress qui pourrait ne plus fonctionner après une mise à jour, votre site est robuste.
 * **Sécurité avancée** : plus sûr que tous les sites WordPress et que la plupart des autres sites.
 * **Modifier vous-même votre contenu** sans avoir besoin de coder via un CMS simple.
+
+![site web rapide](/img/criticalcss-optimised-website-illustration.svg)

@@ -11,7 +11,7 @@ module.exports = {
       options: {
         host: "https://www.developpeur-react-nord.com",
         sitemap: "https://www.developpeur-react-nord.com/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/" }],
+        policy: [{ userAgent: "*", allow: "/", disallow: ["/agenda", "/2"] }],
       },
     },
     {
@@ -44,7 +44,7 @@ module.exports = {
           allSitePage.edges
             // .filter(edge => edge.node.path !== "/agenda/")
             .map(edge => {
-              if (edge.node.path.includes("/services/")) {
+              if (edge.node.path.includes("/services")) {
                 return {
                   url: site.siteMetadata.siteUrl + edge.node.path,
                   changefreq: `daily`,
@@ -52,7 +52,7 @@ module.exports = {
                 }
               }
 
-              if (edge.node.path.includes("/cv/")) {
+              if (edge.node.path.includes("/cv")) {
                 return {
                   url: site.siteMetadata.siteUrl + edge.node.path,
                   changefreq: `weekly`,

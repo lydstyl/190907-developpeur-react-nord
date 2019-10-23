@@ -36,7 +36,7 @@ export default class BlogList extends React.Component {
 
         <div className="portfolio">
           <div className="shadow p-3 mt-5 mb-5 bg-white rounded">
-            <p>Bienvenue sur mon portfolio.</p>
+            <h2>Bienvenue sur mon portfolio.</h2>
             <p>Ci-dessous mes dernières créations.</p>
           </div>
 

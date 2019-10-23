@@ -13,4 +13,4 @@ Un site vitrine responsive accès sur la performance.
 * **Sécurité avancée** : plus sûr que tous les sites WordPress et que la plupart des autres sites.
 * **Modifier vous-même votre contenu** sans avoir besoin de coder via un CMS simple.
 
-![site web rapide](/img/criticalcss-optimised-website-illustration.svg)
+![Site web rapide](/img/criticalcss-optimised-website-illustration.svg "Site web rapide")

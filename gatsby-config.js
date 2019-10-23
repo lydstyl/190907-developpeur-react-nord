@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://www.example.com",
-        sitemap: "https://www.example.com/sitemap.xml",
+        host: "https://www.developpeur-react-nord.com",
+        sitemap: "https://www.developpeur-react-nord.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
@@ -40,14 +40,14 @@ module.exports = {
               }
             }
         }`,
-        // serialize: ({ site, allSitePage }) =>
-        //   allSitePage.edges.map(edge => {
-        //     return {
-        //       url: site.siteMetadata.siteUrl + edge.node.path,
-        //       changefreq: `daily`,
-        //       priority: 0.7,
-        //     }
-        //   })
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.edges.map(edge => {
+            return {
+              url: site.siteMetadata.siteUrl + edge.node.path,
+              changefreq: `daily`,
+              priority: 0.7,
+            }
+          }),
       },
     },
     `gatsby-plugin-react-helmet`,

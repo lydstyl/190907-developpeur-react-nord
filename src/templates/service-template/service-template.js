@@ -23,7 +23,7 @@ export default function Template({
         <h2>{title}</h2>
       </div>
 
-      <ShadowBoxWrapper>
+      <ShadowBoxWrapper addClass="service">
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </ShadowBoxWrapper>
 

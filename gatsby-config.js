@@ -32,7 +32,7 @@ module.exports = {
               }
             }
   
-            allSitePage {
+            allSitePage(filter: {path: { regex: "/^/services/[a-z].*|^/$|^/portfolio/.*|^/cv/"}}) {
               edges {
                 node {
                   path
@@ -41,13 +41,48 @@ module.exports = {
             }
         }`,
         serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => {
-            return {
-              url: site.siteMetadata.siteUrl + edge.node.path,
-              changefreq: `daily`,
-              priority: 0.7,
-            }
-          }),
+          allSitePage.edges
+            // .filter(edge => edge.node.path !== "/agenda/")
+            .map(edge => {
+              if (edge.node.path.includes("/services/")) {
+                return {
+                  url: site.siteMetadata.siteUrl + edge.node.path,
+                  changefreq: `daily`,
+                  priority: 0.9,
+                }
+              }
+
+              if (edge.node.path.includes("/cv/")) {
+                return {
+                  url: site.siteMetadata.siteUrl + edge.node.path,
+                  changefreq: `weekly`,
+                  priority: 0.7,
+                }
+              }
+
+              // portfolio
+              if (edge.node.path === "/") {
+                return {
+                  url: site.siteMetadata.siteUrl + edge.node.path,
+                  changefreq: `weekly`,
+                  priority: 0.6,
+                }
+              }
+              if (edge.node.path.includes("/portfolio/")) {
+                return {
+                  url: site.siteMetadata.siteUrl + edge.node.path,
+                  changefreq: `monthly`,
+                  priority: 0.5,
+                }
+              }
+
+              // other pages
+              return {
+                url: site.siteMetadata.siteUrl + edge.node.path,
+                changefreq: `monthly`,
+                priority: 0.1,
+              }
+            }),
       },
     },
     `gatsby-plugin-react-helmet`,

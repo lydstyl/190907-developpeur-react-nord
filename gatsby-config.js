@@ -1,19 +1,57 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: "https://www.developpeur-react-nord.com",
     title: `Développeur React.js Nord`,
-    description: `CV et Portfolio de Gabriel BRUN, developpeur JavaScript, React.js, Gatsby.js, Node.js et Express.js dans le Nord de la France.`,
+    description: `Création de votre web app ou site Internet rapide et performant. CV et Portfolio de Gabriel BRUN, developpeur JavaScript, React.js, Gatsby.js dans le Nord.`,
     author: `Gabriel BRUN`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        host: "https://www.example.com",
+        sitemap: "https://www.example.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        // output: `/some-other-sitemap.xml`,
+
+        // Exclude specific pages or groups of pages using glob parameters
+        // See: https://github.com/isaacs/minimatch
+        // The example below will exclude the single `path/to/page` and all routes beginning with `category`
+
+        // exclude: ["/category/*", `/path/to/page`],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+  
+            allSitePage {
+              edges {
+                node {
+                  path
+                }
+              }
+            }
+        }`,
+        // serialize: ({ site, allSitePage }) =>
+        //   allSitePage.edges.map(edge => {
+        //     return {
+        //       url: site.siteMetadata.siteUrl + edge.node.path,
+        //       changefreq: `daily`,
+        //       priority: 0.7,
+        //     }
+        //   })
+      },
+    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -37,6 +75,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/markdown-pages`,
         name: `markdown-pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     `gatsby-transformer-remark`,

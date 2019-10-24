@@ -17,7 +17,7 @@ export default function Template({
 
   return (
     <Layout>
-      <SEO title={title} />
+      <SEO title={title} description="Services de création de site Internet et Web App par un développeur JavaScript, React.js." />
 
       <div className="shadow p-3 mt-5 mb-5 bg-white rounded">
         <h2>{title}</h2>

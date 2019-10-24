@@ -10,7 +10,7 @@ import Experiences from "../components/Experiences/Experiences"
 export default function Template({ data }) {
   return (
     <Layout showPortfolioLink="true">
-      <SEO title="CV" />
+      <SEO title="CV" description="CV Gabriel Brun, ou curriculum vitae d'un developpeur JavaScript, React.js, Gatsby.js dans le Nord." />
 
       <CVDescriptionBox />
 

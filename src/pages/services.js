@@ -28,7 +28,7 @@ export default function Template({
 
   return (
     <Layout showPortfolioLink="true">
-      <SEO title="Services" />
+      <SEO title="Services" descriptions="Services de création de votre web app et de votre site Internet rapide et performant." />
 
       <ShadowBoxWrapper>
         <h2>Mes services</h2>

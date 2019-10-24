@@ -15,7 +15,7 @@ export default function Template({
 
   return (
     <Layout>
-      <SEO title={title} />
+      <SEO title={title} description={`Création ${title} dans le portfolio de Gabriel Brun developpeur JavaScript.`} />
 
       <div className="shadow p-3 mt-5 mb-5 bg-white rounded">
         <h2>{title}</h2>

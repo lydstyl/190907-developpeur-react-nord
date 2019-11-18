@@ -6,6 +6,7 @@ iframe {
   display: block;
   width: 100%;
   margin: auto;
+  border-radius: 4px;
 }
 
 @media screen and (min-width: 768px) {
@@ -18,5 +19,14 @@ iframe {
   iframe {
     max-width: 1078px;
     height: 606.38px;
+  }
+}
+
+pre {
+  background: black;
+  padding: 16px;
+  border-radius: 4px;
+  code {
+    color: white;
   }
 }

@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import ShadowBoxWrapper from "../../components/ShadowBoxWrapper/ShadowBoxWrapper"
 
 import "./creation-template.scss"
 
@@ -11,32 +12,46 @@ export default function Template({
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
-  const { date, img, link, title } = frontmatter
+  const { date, img, video, link, title } = frontmatter
 
   return (
     <Layout>
-      <SEO title={title} description={`Création ${title} dans le portfolio de Gabriel Brun developpeur JavaScript.`} />
+      <SEO
+        title={title}
+        description={`Création ${title} dans le portfolio de Gabriel Brun developpeur JavaScript.`}
+      />
 
-      <div className="shadow p-3 mt-5 mb-5 bg-white rounded">
+      <div className='shadow p-3 mt-5 mb-5 bg-white rounded'>
         <h2>{title}</h2>
         <p>Cette création a débuté le {date}</p>
       </div>
 
-      <div className="shadow p-3 mb-5 bg-white rounded">
+      <div className='shadow p-3 mb-5 bg-white rounded'>
         <img
           src={img}
-          alt="img"
+          alt='img'
           style={{ display: "block", maxWidth: "100%", margin: "auto" }}
         />
       </div>
 
-      <div className="creation-html shadow p-3 mb-5 bg-white rounded text-justify">
+      {video && (
+        <ShadowBoxWrapper>
+          <iframe
+            src={video}
+            frameBorder='0'
+            allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+            allowFullScreen
+          ></iframe>
+        </ShadowBoxWrapper>
+      )}
+
+      <div className='creation-html shadow p-3 mb-5 bg-white rounded text-justify'>
         {link && (
-          <div className="mb-3 text-right">
+          <div className='mb-3 text-right'>
             <a
-              className="text-decoration-none"
-              target="_blank"
-              rel="noopener noreferrer"
+              className='text-decoration-none'
+              target='_blank'
+              rel='noopener noreferrer'
               href={link}
             >
               Lien vers la création en ligne
@@ -46,7 +61,7 @@ export default function Template({
 
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
-        <Link className="btn btn-secondary btn-sm align-top" to="/">
+        <Link className='btn btn-secondary btn-sm align-top' to='/'>
           Retour à la liste des créations
         </Link>
       </div>
@@ -61,6 +76,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "DD/MM/YYYY")
         img
+        video
         link
         title
         path

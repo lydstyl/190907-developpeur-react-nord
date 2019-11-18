@@ -1,3 +1,22 @@
 img {
   border-radius: 4px;
 }
+
+iframe {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  iframe {
+    max-width: 658px;
+    height: 370.13px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  iframe {
+    max-width: 1078px;
+    height: 606.38px;
+  }
+}

@@ -18,16 +18,16 @@ const CVDescriptionBox = () => {
   const { date, description } = data.markdownRemark.frontmatter
 
   return (
-    <div className="cv-description-box shadow p-3 mt-5 bg-white rounded">
-      <h2 className="d-none">
+    <div className='cv-description-box shadow p-3 mt-5 bg-white rounded'>
+      <h2 className='d-none'>
         CV Gabriel Brun ou curriculum vitae développeur React.js
       </h2>
       <img
-        src="https://media.licdn.com/dms/image/C4E03AQHnYrk8fffMFw/profile-displayphoto-shrink_200_200/0?e=1573689600&v=beta&t=QsruEIIjPag1WnfHE27ejIJ8-No84k7FWz6HJjuX9gg"
-        alt="Gabriel BRUN"
+        src='https://media.licdn.com/dms/image/C4E03AQHnYrk8fffMFw/profile-displayphoto-shrink_200_200/0?e=1579737600&v=beta&t=UzAJpxLKXeArByebp3gZUVt_PQyRVjyAisWWQj9lGY8'
+        alt='Gabriel BRUN'
       />
-      <p className="text-justify">{description}</p>
-      <p className="text-right font-italic">Mise à jour le {date}</p>
+      <p className='text-justify'>{description}</p>
+      <p className='text-right font-italic'>Mise à jour le {date}</p>
     </div>
   )
 }

@@ -6,6 +6,6 @@ img: "https://www.ra-sante.com/wp-content/uploads/2017/01/insomnie_J_Horrocks.jp
 link: "https://sleep-setter.netlify.com/"
 ---
 
-![sleep-setter](/img/wepb_1078/capture-du-2019-09-16-13-59-55.webp "sleep-setter")
+![sleep-setter](/img/capture-du-2019-09-16-13-59-55.png "sleep-setter")
 
 Cette application vous aidera à obtenir le rythme de sommeil souhaité. Elle est idéale si vous êtes très décalé.

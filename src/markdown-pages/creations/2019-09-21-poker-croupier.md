@@ -12,7 +12,7 @@ link: "https://poker-croupier.netlify.com/"
 
 Vous voulez jouer au poker, mais sans distribuer les cartes ? Cette web app est faite pour vous. Votre device se transformera en croupier hyper rapide.
 
-![Sam cards](/img/wepb_1078/capture-du-2019-09-21-16-34-02.webp "Sam cards")
+![Sam cards](/img/capture-du-2019-09-21-16-34-02.png "Sam cards")
 
 ![add player](/img/wepb_1078/capture-du-2019-09-21-16-36-18.webp "add player")
 

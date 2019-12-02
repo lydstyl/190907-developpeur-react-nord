@@ -9,29 +9,20 @@ const PostLink = ({ post }) => {
   const { img, isImageFile, images, path, title, date } = post.frontmatter
 
   let image = ""
+  let theSytle = {}
 
-  if (isImageFile && images) {
+  if (images) {
     image = <Image src={images.replace("/src/images/", "")} />
   } else if (img) {
-    image = (
-      <img
-        src={img}
-        alt="img"
-        style={{ display: "block", maxWidth: "100%", margin: "auto" }}
-      />
-    )
+    theSytle = {
+      backgroundImage: `url("${img}")`,
+    }
   }
 
   return (
-    <li
-      className="PostLink"
-      style={{
-        backgroundImage: `url("${img}")`,
-      }}
-    >
-      {/* {image} */}
-
+    <li className="PostLink" style={theSytle}>
       <Link to={path}>
+        {image}
         <div className="title-box">
           <span className="title">{title} </span>
           <span className="text-warning">débuté le {date}</span>

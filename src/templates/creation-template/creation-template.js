@@ -31,6 +31,7 @@ export default function Template({
       <ShadowBoxWrapper>
         <div>test zone</div>
 
+        <Image src="gatsby-astronaut.png" />
         <Image src="portfolio/e5d550036a2e6961dd80b55027830.jpg" />
       </ShadowBoxWrapper>
 

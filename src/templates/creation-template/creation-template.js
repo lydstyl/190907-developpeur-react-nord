@@ -5,6 +5,8 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import ShadowBoxWrapper from "../../components/ShadowBoxWrapper/ShadowBoxWrapper"
 
+import Image from "../../components/Image/Image"
+
 import "./creation-template.scss"
 
 export default function Template({
@@ -12,8 +14,26 @@ export default function Template({
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
-  const { date, img, video, link, title } = frontmatter
+  const { date, img, isImageFile, images, video, link, title } = frontmatter
 
+  // virer /src/images/
+  // const img = images.replace("/src/images/", "") // replace old url with image file to feed the Image component
+
+  let image = ""
+  if (isImageFile && images) {
+    image = <Image src={images.replace("/src/images/", "")} />
+  } else if (img) {
+    image = (
+      <img
+        src={img}
+        alt="img"
+        style={{ display: "block", maxWidth: "100%", margin: "auto" }}
+      />
+    )
+  }
+
+  // <Image src="gatsby-astronaut.png" />
+  // <Image src="portfolio/e5d550036a2e6961dd80b55027830.jpg" />
   return (
     <Layout>
       <SEO
@@ -26,12 +46,20 @@ export default function Template({
         <p>Cette création a débuté le {date}</p>
       </div>
 
+      {/* <ShadowBoxWrapper>
+        <div>test zone</div>
+
+        <div></div>
+      </ShadowBoxWrapper> */}
+
       <div className="shadow p-3 mb-5 bg-white rounded">
+        {/* <Image src={img} />
         <img
           src={img}
           alt="img"
           style={{ display: "block", maxWidth: "100%", margin: "auto" }}
-        />
+        /> */}
+        {image}
       </div>
 
       {video && (
@@ -77,6 +105,8 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "DD/MM/YYYY")
         img
+        isImageFile
+        images
         video
         link
         title

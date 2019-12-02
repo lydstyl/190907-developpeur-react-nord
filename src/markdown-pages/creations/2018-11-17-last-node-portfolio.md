@@ -1,5 +1,6 @@
 ---
 img: "https://miro.medium.com/max/1200/1*NW5Hhpv4Gckxynr5U-MZwA.jpeg"
+isImageFile: false
 link: "https://gabriel-brun-portfolio.herokuapp.com"
 title: Mon portfolio de 2018
 date: 2018-11-17T13:00:53.323Z

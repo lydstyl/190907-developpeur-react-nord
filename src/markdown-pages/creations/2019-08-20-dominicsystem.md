@@ -1,5 +1,6 @@
 ---
 isImageFile: true
+img: false # keep this for no bug lol
 images: /src/images/memo.jpeg
 link: "https://dominic-system.herokuapp.com/"
 title: Dominic System

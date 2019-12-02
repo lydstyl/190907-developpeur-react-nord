@@ -32,7 +32,10 @@ export default class BlogList extends React.Component {
 
     return (
       <Layout>
-        <SEO title="Portfolio" description="Bienvenue sur le portfolio de Gabriel Brun développeur JavaScript, React.js." />
+        <SEO
+          title="Portfolio"
+          description="Bienvenue sur le portfolio de Gabriel Brun développeur JavaScript, React.js."
+        />
 
         <div className="portfolio">
           <div className="shadow p-3 mt-5 mb-5 bg-white rounded">
@@ -86,6 +89,8 @@ export const blogListQuery = graphql`
             path
             title
             img
+            isImageFile
+            images
           }
         }
       }

@@ -2,7 +2,6 @@
 title: Poker Croupier
 path: /portfolio/poker-croupier
 date: 2019-09-17T14:27:42.836Z
-# img: "/src/images/new_auto_1078/poker.webp" # /src/images/new_auto_1078/poker.webp
 isImageFile: true
 images: /src/images/poker.webp
 link: "https://poker-croupier.netlify.com/"

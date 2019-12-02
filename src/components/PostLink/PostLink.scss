@@ -15,7 +15,9 @@
   }
 
   a {
-    display: block;
+    display: flex; /* contexte sur le parent */
+    flex-direction: column; /* direction d'affichage verticale */
+    justify-content: center; /* alignement vertical */
     width: 100%;
     min-height: $minH;
     position: relative;
@@ -31,6 +33,10 @@
       .title {
         color: white;
       }
+    }
+
+    .gatsby-image-wrapper {
+      position: unset;
     }
   }
   a:hover {

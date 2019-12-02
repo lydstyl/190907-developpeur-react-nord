@@ -2,11 +2,11 @@
 title: E-commerce crwn clothing
 path: /portfolio/e-commerce-crwn
 date: 2019-09-22T15:46:18.393Z
-img: >-
-  https://doofindermedia.s3.amazonaws.com/blog/2018/05/07/085124-que-es-ecommerce.jpg
-link: "https://gabriel-crwn-cloth.herokuapp.com/"
+img: ''
+isImageFile: true
+images: /src/images/commerce.jpg
+link: 'https://gabriel-crwn-cloth.herokuapp.com/'
 ---
-
 Un e-commerce pour m’entraîner à réaliser un "gros" projet en React.js en faisant attention à l'architecture.
 
 Ce site n'a pas vocation à être responsive, c'est une formation.

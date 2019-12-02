@@ -1,5 +1,6 @@
 ---
-img: "https://miro.medium.com/max/1200/1*QJOs4wu2Xr4FH-y-lMYD5w.jpeg"
+isImageFile: true
+images: /src/images/memo.jpeg
 link: "https://dominic-system.herokuapp.com/"
 title: Dominic System
 date: "2019-08-20"

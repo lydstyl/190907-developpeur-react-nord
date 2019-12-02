@@ -1,5 +1,6 @@
 ---
-img: "http://www.cegecol.com/media/contact.jpg"
+isImageFile: true
+images: /src/images/contact.jpg
 link: "https://fathomless-plains-22742.herokuapp.com"
 title: Contact Keeper
 date: "2019-08-03"

@@ -1,5 +1,6 @@
 ---
-img: "https://miro.medium.com/max/1000/1*G9aVAI3aezHLw_JsiCfB1Q.jpeg"
+isImageFile: true
+images: /src/images/oldportfo.jpeg
 title: Mon nouveau portfolio et CV
 date: 2019-09-07T00:00:00.000Z
 path: /portfolio/nouveau-portfolio-2019

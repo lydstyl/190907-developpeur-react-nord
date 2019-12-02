@@ -2,8 +2,8 @@
 title: Social Network
 path: /portfolio/social-network
 date: 2019-03-25T16:57:40.146Z
-img: >-
-  https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/08/Social-Media-Blockchain-Revolution-796x442.jpg
+isImageFile: true
+images: /src/images/social.jpg
 link: "https://social-network-2019-04.herokuapp.com"
 ---
 

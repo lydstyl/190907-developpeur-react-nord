@@ -5,6 +5,8 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import ShadowBoxWrapper from "../../components/ShadowBoxWrapper/ShadowBoxWrapper"
 
+import Image from "../../components/Image/Image"
+
 import "./creation-template.scss"
 
 export default function Template({
@@ -25,6 +27,12 @@ export default function Template({
         <h2>{title}</h2>
         <p>Cette création a débuté le {date}</p>
       </div>
+
+      <ShadowBoxWrapper>
+        <div>test zone</div>
+
+        <Image src="portfolio/e5d550036a2e6961dd80b55027830.jpg" />
+      </ShadowBoxWrapper>
 
       <div className="shadow p-3 mb-5 bg-white rounded">
         <img

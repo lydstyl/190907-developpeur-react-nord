@@ -2,7 +2,9 @@
 title: Youtube watch later list deleter
 path: /portfolio/youtube-watch-later-deleter
 date: 2019-11-17T16:30:00.000Z
-img: 'https://i.ytimg.com/vi/VM_GuERfihs/maxresdefault.jpg'
+img: ''
+isImageFile: true
+images: /src/images/youtubedel.jpg
 video: 'https://www.youtube.com/embed/P9OglayxKkU'
 link: 'https://github.com/lydstyl/191117-youtubeWatchLaterDeleter'
 ---

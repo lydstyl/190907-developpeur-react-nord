@@ -2,10 +2,9 @@
 title: Snowball Rate
 path: /portfolio/snowball-rate
 date: 2019-10-09T21:56:46.657Z
-img: 'http://womenintechcomm.org/wp-content/uploads/2018/10/snowball-1.jpg'
+isImageFile: true
 images: /src/images/snowball-1.jpg
-video: dd
-link: 'https://snwoball-rate.netlify.com/'
+link: "https://snwoball-rate.netlify.com/"
 ---
 
 J'ai souvent besoin de visualiser l'impacte d'un taux sur une valeur en fonction d'un certain temps.

@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/img
-public_folder: /img
+media_folder: src/images
+# public_folder: /img
 
 collections:
   - name: "creations"
@@ -26,6 +26,15 @@ collections:
           name: "img",
           widget: "string",
           default: "https://content-static.upwork.com/blog/uploads/sites/3/2015/05/05084031/MOB_native-vs-web-app-whats-the-diff-which-do-i-need_M.png",
+        }
+      - {
+          - label: "Images"
+            name: "images"
+            widget: "image"
+            default: "/portfolio/chocolate-dogecoin.jpg"
+            media_library:
+              config:
+                multiple: true
         }
       - { label: "Video", name: "video", widget: "string", default: "" }
       - { label: "App Link", name: "link", widget: "string", required: false }

@@ -6,8 +6,8 @@ isImageFile: true
 images: /src/images/test1.jpg
 video: ''
 ---
-Image dans le rich text à tester
+ceci est une page test
 
-![](/src/images/test2.jpg)
+![oiseau alt](/img/test2.jpg "oiseau title")
 
-![](/src/images/test2.jpeg)
+ceci est une page test

@@ -2,7 +2,6 @@ import React from "react"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
 function renderImage(file) {
-  console.log(file)
   return <Img fluid={file.node.childImageSharp.fluid} />
 }
 const Image = function(props) {

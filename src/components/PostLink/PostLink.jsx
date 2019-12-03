@@ -6,7 +6,7 @@ import Image from "../Image/Image"
 import "./PostLink.scss"
 
 const PostLink = ({ post }) => {
-  const { img, isImageFile, images, path, title, date } = post.frontmatter
+  const { img, images, path, title, date } = post.frontmatter
 
   let image = ""
   let theSytle = {}

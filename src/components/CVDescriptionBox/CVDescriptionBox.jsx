@@ -1,6 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
+import Image from "../Image/Image"
+
 const CVDescriptionBox = () => {
   const data = useStaticQuery(
     graphql`
@@ -22,7 +24,7 @@ const CVDescriptionBox = () => {
       <h2 className="d-none">
         CV Gabriel Brun ou curriculum vitae développeur React.js
       </h2>
-      <img src="img/GabrielBrun.jpeg" alt="Gabriel BRUN" />
+      <Image src="GabrielBrun.jpeg" />
       <p className="text-justify">{description}</p>
       <p className="text-right font-italic">Mise à jour le {date}</p>
     </div>

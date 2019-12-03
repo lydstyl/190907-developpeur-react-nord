@@ -109,13 +109,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `publicimages`,
-    //     path: `${__dirname}/public/img/test`,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

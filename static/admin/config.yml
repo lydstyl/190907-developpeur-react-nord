@@ -4,7 +4,7 @@ backend:
 
 media_folder: src/images
 # public_folder: /img/test
-public_folder: /img
+public_folder: ../../images
 
 collections:
   - name: "creations"

@@ -4,10 +4,8 @@ path: /portfolio/testopti
 date: 2019-12-03T12:24:30.443Z
 isImageFile: true
 images: /src/images/test1.jpg
-video: ''
 ---
-ceci est une page test
 
-![oiseau alt](/img/test2.jpg "oiseau title")
+ceci est une page test
 
 ceci est une page test

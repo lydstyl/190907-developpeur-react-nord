@@ -16,9 +16,6 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   const { date, img, isImageFile, images, video, link, title } = frontmatter
 
-  // virer /src/images/
-  // const img = images.replace("/src/images/", "") // replace old url with image file to feed the Image component
-
   let image = ""
   if (isImageFile && images) {
     image = <Image src={images.replace("/src/images/", "")} />
@@ -32,8 +29,6 @@ export default function Template({
     )
   }
 
-  // <Image src="gatsby-astronaut.png" />
-  // <Image src="portfolio/e5d550036a2e6961dd80b55027830.jpg" />
   return (
     <Layout>
       <SEO
@@ -46,21 +41,7 @@ export default function Template({
         <p>Cette création a débuté le {date}</p>
       </div>
 
-      {/* <ShadowBoxWrapper>
-        <div>test zone</div>
-
-        <div></div>
-      </ShadowBoxWrapper> */}
-
-      <div className="shadow p-3 mb-5 bg-white rounded">
-        {/* <Image src={img} />
-        <img
-          src={img}
-          alt="img"
-          style={{ display: "block", maxWidth: "100%", margin: "auto" }}
-        /> */}
-        {image}
-      </div>
+      <div className="shadow p-3 mb-5 bg-white rounded">{image}</div>
 
       {video && (
         <ShadowBoxWrapper>

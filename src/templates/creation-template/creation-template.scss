@@ -9,6 +9,12 @@ iframe {
   border-radius: 4px;
 }
 
+.creation-html {
+  span.gatsby-resp-image-background-image {
+    border-radius: 0.25rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   iframe {
     max-width: 658px;

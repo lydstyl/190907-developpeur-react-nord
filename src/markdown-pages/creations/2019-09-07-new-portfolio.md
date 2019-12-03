@@ -14,6 +14,6 @@ Il est **super rapide** et donc agréable à utiliser, car c'est un site puremen
 
 À mon avis, cette technologie pourrait remplacer, pour le meilleur, et dans de nombreux cas, peut être 80% des cas, les traditionnels CMS tel que Wordpress.
 
-![Screenshot de ce post dans le CMS](/img/wepb_1078/capture-du-2019-09-09-18-27-08.webp "Interface du CMS")
+![Screenshot de ce post dans le CMS](../../images/capture-du-2019-09-09-18-27-08.webp "Interface du CMS")
 
 Comme vous pouvez le voir, il est aussi possible d'upload et d'afficher une image via le CMS ou encore de travailler à plusieurs en invitant par e-mail des collaborateurs.

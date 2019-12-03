@@ -7,7 +7,7 @@ images: /src/images/poker.webp
 link: "https://poker-croupier.netlify.com/"
 ---
 
-![iphone-landscape](/img/wepb_1078/capture-du-2019-09-21-16-33-21.webp "iphone-landscape")
+![iphone-landscape](../../images/capture-du-2019-09-21-16-33-21.webp "iphone-landscape")
 
 ## Jouer au poker sans carte !
 
@@ -15,8 +15,8 @@ Vous voulez jouer au poker, mais sans distribuer les cartes ? Cette web app est 
 
 ![Sam cards](/img/capture-du-2019-09-21-16-34-02.png "Sam cards")
 
-![add player](/img/wepb_1078/capture-du-2019-09-21-16-36-18.webp "add player")
+![add player](../../images/capture-du-2019-09-21-16-36-18.webp "add player")
 
-![delete player](/img/wepb_1078/capture-du-2019-09-21-17-02-00.webp "delete player")
+![delete player](../../images/capture-du-2019-09-21-17-02-00.webp "delete player")
 
 Cette application est réalisée avec React.js + Redux.js. [Voir le code](https://github.com/lydstyl/190917-poker-croupier).

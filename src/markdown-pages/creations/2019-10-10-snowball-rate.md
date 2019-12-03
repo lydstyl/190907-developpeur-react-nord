@@ -13,8 +13,8 @@ Cette application génère 2 graphiques modifiables en live afin de pouvoir comp
 
 Peut être que cette outil vous servira aussi.
 
-![chart in tablet](/img/wepb_1078/capture-du-2019-10-09-23-55-38.webp "chart in tablet")
+![chart in tablet](../../images/capture-du-2019-10-09-23-55-38.webp "chart in tablet")
 
-![chart in phone](/img/wepb_1078/capture-du-2019-10-09-23-55-14.webp "chart in phone")
+![chart in phone](../../images/capture-du-2019-10-09-23-55-14.webp "chart in phone")
 
 Réalisé en React.js avec l'utilisation de [Chart.js](https://www.chartjs.org/)

@@ -1,11 +1,13 @@
 .PostLink {
   $minH: 223px;
 
+  display: flex;
   min-height: $minH;
   margin-bottom: 16px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 1px solid darkgray;
   border-radius: 4px;
 
   transition: 2s;

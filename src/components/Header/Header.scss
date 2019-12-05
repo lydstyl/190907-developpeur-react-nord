@@ -1,6 +1,24 @@
 header {
+  .header-menu {
+    display: block;
+  }
+
+  a.site-title {
+    h1 {
+      .gatsby-image-wrapper {
+        display: block;
+        width: 226px;
+        margin: auto;
+      }
+      .title-box {
+        margin-top: 16px;
+      }
+    }
+  }
+
   nav.top-menu {
     height: 0;
+    padding: 0;
     transition: 0.4s;
 
     & * {
@@ -23,7 +41,6 @@ header {
 
     @media screen and (min-width: 1024px) {
       &.opened {
-        flex-direction: row;
         height: 200px;
         justify-content: space-around;
         transition: 0.4s;
@@ -52,6 +69,51 @@ header {
     color: #fff;
     &:hover {
       color: #fff;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .header-menu,
+    .header-title {
+      margin-bottom: 0 !important;
+    }
+    .header-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      min-width: 160px;
+    }
+    .space {
+      width: 48px;
+      padding: 16px;
+    }
+    .header-title {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+
+      a h1 {
+        display: flex !important;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin: 0 !important;
+
+        .gatsby-image-wrapper {
+          margin-left: 16px;
+        }
+        .title-box {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0;
+        }
+      }
     }
   }
 }

@@ -56,24 +56,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       component: template,
       context: {}, // additional data can be passed via context
     })
-
-    // let template = null
-    // if (path.includes("/services/")) {
-    //   // if (!node.frontmatter.show === false) {
-    //   template = serviceTemplate
-    //   createPage({
-    //     path: node.frontmatter.path,
-    //     component: template,
-    //     context: {},
-    //   })
-    // } else {
-    //   template = creationTemplate
-    //   createPage({
-    //     path: node.frontmatter.path,
-    //     component: template,
-    //     context: {}, // additional data can be passed via context
-    //   })
-    // }
   })
 
   // Create creations-list pages

@@ -1,6 +1,6 @@
 ---
 path: /
-date: 2019-09-21T00:00:00.000Z
+date: 2019-12-05T01:00:00.000Z
 title: CV
 description: >-
   Bonjour, je m'appelle Gabriel Brun. Je suis autodidacte et je me suis initié

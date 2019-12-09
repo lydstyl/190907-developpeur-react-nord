@@ -7,7 +7,7 @@ images: /src/images/snowball-1.jpg
 link: "https://snwoball-rate.netlify.com/"
 ---
 
-J'ai souvent besoin de visualiser l'impacte d'un taux sur une valeur en fonction d'un certain temps.
+J'ai souvent besoin de visualiser l'impact d'un taux sur une valeur en fonction d'un certain temps.
 
 Cette application génère 2 graphiques modifiables en live afin de pouvoir comparer les 2 courbes.
 

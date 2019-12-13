@@ -72,7 +72,7 @@ experience:
       * Hooks (useState, useEffect, useRef, useReducer)
       * Context et Redux
     company: FREELANCE
-    end: 2019-09-09T20:15:00.000Z
+    end:
     ismycurrentjob: true
     job: Développeur React.js
 ---

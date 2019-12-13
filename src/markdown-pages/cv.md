@@ -71,9 +71,8 @@ experience:
       * Functional component
       * Hooks (useState, useEffect, useRef, useReducer)
       * Context et Redux
-    company: FORMATION REACT.JS
+    company: FREELANCE
     end: 2019-09-09T20:15:00.000Z
     ismycurrentjob: true
     job: Développeur React.js
 ---
-

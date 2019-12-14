@@ -12,7 +12,11 @@ const PostLink = ({ post }) => {
   let theSytle = {}
 
   if (images) {
-    image = <Image src={images.replace("/src/images/", "")} />
+    image = (
+      <Image
+        src={images.replace("/src/images/", "").replace("/../../images/", "")}
+      />
+    )
   } else if (img) {
     theSytle = {
       backgroundImage: `url("${img}")`,

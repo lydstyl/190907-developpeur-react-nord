@@ -18,7 +18,11 @@ export default function Template({
 
   let image = ""
   if (isImageFile && images) {
-    image = <Image src={images.replace("/src/images/", "")} />
+    image = (
+      <Image
+        src={images.replace("/src/images/", "").replace("/../../images/", "")}
+      />
+    )
   } else if (img) {
     image = (
       <img

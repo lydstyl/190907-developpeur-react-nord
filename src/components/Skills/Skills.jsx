@@ -64,6 +64,17 @@ const Skills = () => {
     })
     .join(", ")
 
+  const options = {
+    legend: {
+      position: "top",
+    },
+    scale: {
+      ticks: {
+        beginAtZero: true,
+      },
+    },
+  }
+
   return (
     <div className="skills shadow p-3 mt-5 bg-white rounded">
       <h2>
@@ -77,7 +88,7 @@ const Skills = () => {
           <p className="mainSkills text-justify">{mainSkills}</p>
 
           <div className="radar">
-            <Radar data={radarData} />
+            <Radar data={radarData} options={options} />
           </div>
         </li>
 

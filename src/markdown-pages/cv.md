@@ -21,8 +21,6 @@ skills:
       title: Node.js / Express.js
     - rate: 5
       title: MongoDB & MySQL & PostgreSQL
-    - rate: 1
-      title: Svelte.js
   main:
     - rate: 9
       title: HTML / CSS / Sass
@@ -36,8 +34,6 @@ skills:
       title: Node.js & Express.js
     - rate: 4
       title: MongoDB & MySQL & PostgreSQL
-    - rate: 0
-      title: Svelte.js
   other:
     - title: Git
     - title: Redux
@@ -76,4 +72,3 @@ experience:
     ismycurrentjob: true
     job: Développeur React.js
 ---
-

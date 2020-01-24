@@ -1,19 +1,19 @@
 ---
 path: /
-date: 2019-12-05T01:00:00.000Z
+date: 2020-01-24T01:00:00.000Z
 title: CV
 description: >-
   Bonjour, je m'appelle Gabriel Brun. Je suis autodidacte et je me suis initié
   seul avec Python et PHP. J'ai ensuite suivi une formation de développeur
   full-stack avant de travailler plus de 2 années en JavaScript front et back.
-objectif: coder en React.js dans le Nord maximum 4 jours sur 5.
+objectif: coder en React.js dans le Nord.
 skills:
   goal:
     - rate: 10
       title: HTML / CSS / Sass
     - rate: 9
       title: JavaScript & React.js
-    - rate: 7
+    - rate: 9
       title: Firebase
     - rate: 8
       title: Gatsby.js
@@ -28,7 +28,7 @@ skills:
       title: HTML / CSS / Sass
     - rate: 8
       title: JavaScript / React.js
-    - rate: 5
+    - rate: 8
       title: Firebase
     - rate: 8
       title: Gatsby.js
@@ -69,10 +69,11 @@ experience:
     body: |-
       * Class component
       * Functional component
-      * Hooks (useState, useEffect, useRef, useReducer)
+      * Hooks (useState, useEffect, useReducer, etc.)
       * Context et Redux
     company: FREELANCE
-    end:
+    end: 2020-01-24T10:53:07.182Z
     ismycurrentjob: true
     job: Développeur React.js
 ---
+

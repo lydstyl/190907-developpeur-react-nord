@@ -12,9 +12,28 @@ import "./creation-template.scss"
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  const { markdownRemark } = data // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark
+  const { markdownRemark, allMarkdownRemark } = data // data.markdownRemark holds our post data
+  const { frontmatter, html, id: creationId } = markdownRemark
   const { date, img, isImageFile, images, video, link, title } = frontmatter
+
+  function getBackHref() {
+    let positionHref = null // this will be / or /1 or /2 for the backlink of a creation
+    allMarkdownRemark.edges.forEach((edge, index) => {
+      if (edge.node.id === creationId) {
+        positionHref = index + 1
+      }
+    })
+
+    positionHref = Math.ceil(positionHref / 9)
+
+    if (positionHref === 1) {
+      positionHref = "/"
+    } else {
+      positionHref = "/" + positionHref
+    }
+
+    return positionHref
+  }
 
   let image = ""
   if (isImageFile && images) {
@@ -75,7 +94,7 @@ export default function Template({
 
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
-        <Link className="btn btn-secondary btn-sm align-top" to="/">
+        <Link className="btn btn-secondary btn-sm align-top" to={getBackHref()}>
           Retour à la liste des créations
         </Link>
       </div>
@@ -86,6 +105,7 @@ export default function Template({
 export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
+      id
       html
       frontmatter {
         date(formatString: "DD/MM/YYYY")
@@ -96,6 +116,22 @@ export const pageQuery = graphql`
         link
         title
         path
+      }
+    }
+
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/creations/" } }
+    ) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            path
+            title
+          }
+        }
       }
     }
   }

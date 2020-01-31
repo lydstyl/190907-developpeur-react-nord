@@ -1,4 +1,10 @@
 body {
+  @import url("https://fonts.googleapis.com/css?family=Open%20Sans");
+  @import url("https://fonts.googleapis.com/css?family=Permanent%20Marker");
+  @import url("https://fonts.googleapis.com/css?family=Bangers");
+
+  font-family: "Open Sans";
+
   background-color: darkgrey;
 }
 .cv-description-box .gatsby-image-wrapper {

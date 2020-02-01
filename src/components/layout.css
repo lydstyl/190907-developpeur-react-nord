@@ -90,23 +90,37 @@ body {
   margin: auto;
 }
 
+/* fix outer container height */
+#outer-container {
+  height: 100vh;
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  left: 6px;
+  top: 6px;
+  /* top: 108px; */
+}
+@media screen and (min-width: 1366px) {
+  .bm-burger-button {
+    /* top: 48px; */
+
+    left: calc(50% - 570px - 36px - 48px);
+  }
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  /* background: #373a47; */
+  background: #007bff;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #a90000;
+  background: #373a47;
 }
 
 /* Position and sizing of clickable cross button */

@@ -7,7 +7,8 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
+
 import { scaleRotate as Menu } from "react-burger-menu"
 
 import Header from "./Header/Header"
@@ -24,28 +25,23 @@ const Layout = ({ children }) => {
     }
   `)
 
-  function showSettings(event) {
-    event.preventDefault()
-    // .
-    // .
-    // .
-  }
-
   return (
     <div id="outer-container">
       <Menu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
-        <a id="home" className="menu-item" href="/">
-          Home
-        </a>
-        <a id="about" className="menu-item" href="/about">
-          About
-        </a>
-        <a id="contact" className="menu-item" href="/contact">
-          Contact
-        </a>
-        <a onClick={showSettings} className="menu-item--small" href="">
-          Settings
-        </a>
+        <Link className="menu-item btn btn-secondary btn-sm align-top" to="/cv">
+          CV
+        </Link>
+
+        <Link className="menu-item btn btn-secondary btn-sm align-top" to="/">
+          Portfolio
+        </Link>
+
+        <Link
+          className="menu-item btn btn-secondary btn-sm align-top"
+          to="/services"
+        >
+          Services
+        </Link>
       </Menu>
 
       <main id="page-wrap" className="container">

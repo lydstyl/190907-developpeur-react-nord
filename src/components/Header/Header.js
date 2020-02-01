@@ -9,10 +9,8 @@ import Image from "../Image/Image"
 import "./Header.scss"
 
 const Header = ({ siteTitle }) => {
-  const [menuOpened, setMenuOpened] = useState(false)
-
   const triggerMenu = () => {
-    setMenuOpened(!menuOpened)
+    document.querySelector(".bm-burger-button > button").click()
   }
 
   return (
@@ -20,31 +18,8 @@ const Header = ({ siteTitle }) => {
       <header className="text-center">
         <ShadowBoxWrapper addClass="header-menu">
           <div className="menu-box">
-            <nav className={`top-menu navbar ${menuOpened ? "opened" : ""}`}>
-              <Link className="btn btn-secondary btn-sm align-top" to="/cv">
-                CV
-              </Link>
-
-              <Link className="btn btn-secondary btn-sm align-top" to="/">
-                Portfolio
-              </Link>
-
-              <Link
-                className="btn btn-secondary btn-sm align-top"
-                to="/services"
-              >
-                Services
-              </Link>
-
-              <span className="close" onClick={triggerMenu}>
-                X
-              </span>
-            </nav>
-
             <a
-              className={`btn open-menu btn-secondary btn-sm align-top ${
-                menuOpened ? "opened" : ""
-              }`}
+              className="btn open-menu btn-secondary btn-sm align-top"
               onClick={triggerMenu}
             >
               Menu

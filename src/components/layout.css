@@ -97,20 +97,19 @@ body {
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
+  display: none;
+  /* position: fixed;
   width: 36px;
   height: 30px;
   left: 6px;
-  top: 6px;
-  /* top: 108px; */
+  top: 6px; */
 }
-@media screen and (min-width: 1366px) {
+/* @media screen and (min-width: 1366px) {
   .bm-burger-button {
-    /* top: 48px; */
 
     left: calc(50% - 570px - 36px - 48px);
   }
-}
+} */
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
@@ -148,6 +147,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+}
+.bm-menu > nav.bm-item-list {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
 }
 
 /* Morph shape necessary with bubble or elastic */

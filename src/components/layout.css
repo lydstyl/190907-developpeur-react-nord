@@ -5,6 +5,8 @@ body {
 
   font-family: "Open Sans";
 
+  line-height: 2;
+
   background-color: darkgrey;
 }
 .cv-description-box .gatsby-image-wrapper {
@@ -45,7 +47,7 @@ body {
 
 .cv-description-box,
 .jobs li {
-  line-height: 30px;
+  /* line-height: 30px; */
 }
 
 @media print {

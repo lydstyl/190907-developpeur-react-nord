@@ -2,7 +2,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useEffect } from "react"
-import gsap, { TweenMax, Power3 } from "gsap"
+import gsap from "gsap"
 
 import ShadowBoxWrapper from "../ShadowBoxWrapper/ShadowBoxWrapper"
 import Image from "../Image/Image"
@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => {
   }
 
   useEffect(() => {
-    var tl = gsap.timeline({ defaults: { duration: 0.5, ease: "elastic" } })
+    const tl = gsap.timeline({ defaults: { duration: 0.5, ease: "elastic" } })
     tl.from(".rounded", { rotation: 9 })
       .from("h2", {
         x: 50,
@@ -34,7 +34,6 @@ const Header = ({ siteTitle }) => {
         stagger: 0.2,
         rotation: -20,
         scale: 0.7,
-        duration: 1,
         delay: -0.1,
       })
   }, [])

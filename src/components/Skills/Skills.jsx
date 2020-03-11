@@ -2,6 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Radar } from "react-chartjs-2"
 
+import SkillsBox from "./style"
+
 const Skills = () => {
   const data = useStaticQuery(
     graphql`
@@ -76,7 +78,7 @@ const Skills = () => {
   }
 
   return (
-    <div className="skills shadow p-3 mt-5 bg-white rounded">
+    <SkillsBox className="skills shadow p-3 mt-5 bg-white rounded">
       <h2>
         <i className="far fa-check-square"></i> Compétences:
       </h2>
@@ -96,8 +98,17 @@ const Skills = () => {
           <h3>Autres:</h3>
           <p className="text-justify">{otherSkills}</p>
         </li>
+
+        <li>
+          <h3>Certificat:</h3>
+          <p className="text-justify">
+            <a href="https://skillvalue.com/en/certificate/ZZPZSS18ShQp4BM8FprEW8zj9KqJVIGpGsIDonbYmi8pRqFhY14c3KmTZUeV">
+              ReactJS Certified License n° 454156
+            </a>
+          </p>
+        </li>
       </ul>
-    </div>
+    </SkillsBox>
   )
 }
 

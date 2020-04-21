@@ -1,15 +1,12 @@
 ---
 path: /
-date: 2020-03-14T01:00:00.000Z
+date: 2020-04-21
 title: CV
 description: >-
-  Bonjour, je m'appelle Gabriel Brun. je suis autodidacte et j'ai suivi une
+  Bonjour, je m'appelle Gabriel Brun. Autodidacte j'ai aussi suivi une
   formation de développeur full-stack avant de travailler plus de 2 années en
-  JavaScript front et back en entreprise. Je suis disponible pour vous coder du
-  HTML, CSS, JavaScript et React.js en full remote les jours où je serai le plus
-  efficace, donc suite à la fermeture des écoles, les semaines dont le numéro
-  est impair.
-objectif: coder en React.js
+  JavaScript front et back en entreprise. Je peux vous coder des web apps en React.js.
+objectif: coder des web apps en React.js
 skills:
   goal:
     - rate: 10
@@ -75,4 +72,3 @@ experience:
     ismycurrentjob: true
     job: Développeur React.js
 ---
-

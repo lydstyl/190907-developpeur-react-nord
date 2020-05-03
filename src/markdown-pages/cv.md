@@ -37,6 +37,7 @@ skills:
   other:
     - title: Git
     - title: Redux
+    - title: Styled-Components
     - title: PWA
     - title: Netlify CMS
     - title: Bootstrap

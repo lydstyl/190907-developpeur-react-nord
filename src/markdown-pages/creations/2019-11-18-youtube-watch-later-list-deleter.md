@@ -4,19 +4,16 @@ path: /portfolio/youtube-watch-later-deleter
 date: 2019-11-17T16:30:00.000Z
 isImageFile: true
 images: /src/images/youtubedel.jpg
-# video: "https://www.youtube.com/embed/P9OglayxKkU"
-# video: "https://youtu.be/qFkhoADhhGA"
-video: "https://www.youtube.com/embed/qFkhoADhhGA"
-link: "https://github.com/lydstyl/191117-youtubeWatchLaterDeleter"
+video: 'https://www.youtube.com/embed/qFkhoADhhGA'
+link: 'https://github.com/lydstyl/191117-youtubeWatchLaterDeleter'
 ---
-
 Comment supprimer votre liste YouTube de vidéos à regarder plus tard avec JavaScript ?
 
 Je vous explique comment vider votre liste de vidéos YouTube à regarder plus tard à l'aide du script ci-dessous.
 
-```
-// Paste all this code in your console when you are in your Watch later list page and press enter if you whant to delete it
+Update du 03/05/2020: utilisez uniquement la façon la plus simple via copié-collé du script mis à jour ci-dessous dans la console de votre navigateur. Je ne maintiens pas l'extension de Chrome.
 
+```
 function clickFirstVideo() {
   document
     .querySelector('.style-scope ytd-playlist-video-renderer button')
@@ -24,11 +21,17 @@ function clickFirstVideo() {
 }
 
 function clickDeleteButton() {
-  document
-    .querySelector(
-      'path[d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"]'
-    )
-    .parentElement.parentElement.parentElement.click(); // a lot of parentElement but it is difficult to select the correct button without it
+  const menuWithSeparator = document.querySelector(
+    'paper-listbox [has-separator_]+ytd-menu-service-item-renderer'
+  );
+
+  if (menuWithSeparator) {
+    menuWithSeparator.click();
+  } else {
+    document
+      .querySelector('paper-item .style-scope.yt-formatted-string')
+      .click();
+  }
 }
 
 setInterval(() => {

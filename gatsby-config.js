@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.developpeur-react-nord.com",
-    title: `Développeur React.js Nord`,
+    title: `Développeur React Nord`,
     description: `Création de votre web app ou site Internet rapide et performant. CV et Portfolio de Gabriel BRUN, developpeur JavaScript, React.js, Gatsby.js dans le Nord (département 59).`,
     author: `Gabriel BRUN`,
   },

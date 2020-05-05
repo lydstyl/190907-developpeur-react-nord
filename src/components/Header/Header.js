@@ -5,6 +5,7 @@ import React, { useEffect } from "react"
 import gsap from "gsap"
 
 import ShadowBoxWrapper from "../ShadowBoxWrapper/ShadowBoxWrapper"
+import { QRContactMe } from "./QRContactMe/QRContactMe"
 import Image from "../Image/Image"
 
 import "./Header.scss"
@@ -58,6 +59,8 @@ const Header = ({ siteTitle }) => {
           <Link className="site-title" to="/">
             <h1 className="d-inline align-text-bottom mr-4">
               <Image src="logo_eagle/logo_eagle.png" />
+
+              <QRContactMe />
 
               <div className="title-box">
                 <span>{siteTitle}</span>

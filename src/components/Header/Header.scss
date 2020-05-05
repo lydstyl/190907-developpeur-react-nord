@@ -21,7 +21,6 @@ header {
         margin: auto;
       }
       .title-box {
-        margin-top: 16px;
         span {
           font-family: "Permanent Marker";
         }
@@ -97,8 +96,6 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      min-width: 160px;
     }
     .space {
       width: 48px;
@@ -117,16 +114,40 @@ header {
         margin: 0 !important;
 
         .gatsby-image-wrapper {
-          margin-left: 16px;
+          width: 118px;
         }
+
         .title-box {
           display: flex;
-          width: 100%;
+          width: 238px;
           flex-direction: column;
           justify-content: center;
           margin: 0;
         }
       }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .header-menu {
+      min-width: 160px;
+    }
+    .header-title {
+      a h1 {
+        .gatsby-image-wrapper {
+          width: 226px;
+        }
+
+        .title-box {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .gatsby-image-wrapper + img {
+      margin-right: 30px;
     }
   }
 }

@@ -4,7 +4,7 @@ path: /portfolio/glocus
 date: 2020-05-03T00:36:42.905Z
 isImageFile: true
 images: /../../images/glocus.png
-video: ''
+video: 'https://www.youtube.com/embed/cgA02islOXw'
 link: 'https://glocus.netlify.app/'
 ---
 Ne passez plus à côté de vos clients et prospectez comme le dieu Glaucus péchait.
@@ -17,4 +17,4 @@ Ne perdez plus vos potentiels clients, mais laissez vous guider par cette webapp
 
 ![paramètres](/../../images/capture-du-2020-05-19-02-47-14.png "paramètres")
 
-React.js, Redux, Redux Thunk, Firebase, Styled Components, PWA
+React, Redux, Redux Thunk, Firebase, Styled Components, PWA

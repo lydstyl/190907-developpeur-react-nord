@@ -24,7 +24,7 @@ const CVDescriptionBox = () => {
       <h2 className="d-none">
         CV Gabriel Brun ou curriculum vitae développeur React.js
       </h2>
-      <Image src="GabrielBrun.jpeg" />
+      <Image src="photo_profil_gabriel_brun_github.jpg" />
       <p className="text-justify">{description}</p>
       <p className="text-right font-italic">Mise à jour le {date}</p>
     </div>

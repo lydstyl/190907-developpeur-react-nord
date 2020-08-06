@@ -17,9 +17,9 @@ skills:
       title: Firebase
     - rate: 8
       title: Gatsby.js
-    - rate: 5
+    - rate: 9
       title: Node.js / Express.js
-    - rate: 5
+    - rate: 8
       title: MongoDB & MySQL & PostgreSQL
   main:
     - rate: 9
@@ -30,9 +30,9 @@ skills:
       title: Firebase
     - rate: 8
       title: Gatsby.js
-    - rate: 5
+    - rate: 7
       title: Node.js & Express.js
-    - rate: 4
+    - rate: 6
       title: MongoDB & MySQL & PostgreSQL
   other:
     - title: Git

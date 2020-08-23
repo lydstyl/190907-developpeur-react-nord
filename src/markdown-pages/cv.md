@@ -43,13 +43,13 @@ skills:
     - title: Styled-Components
     - title: Bootstrap
     - title: PWA
-    - title: Notions de tests unitaires avec Jest.js
-    - title: Notions TypeScript
+    - title: notions de tests unitaires avec Jest.js
+    - title: notions de TypeScript
     - title: 'CMS (Netflify CMS, DatoCMS, Contentful, WordPress)'
-    - title: Notions de Vue.js
+    - title: notions de Vue.js
     - title: JQuery
-    - title: Notions de Python et Django
-    - title: 'Notions de PHP (Laravel, Symfony, Codeigniter, WordPress)'
+    - title: notions de Python & Django
+    - title: 'notions de PHP (Laravel, Symfony, Codeigniter, WordPress)'
     - title: 'SQL, MySQL'
     - title: SalesForce Commerce Cloud (JS)
 experience:

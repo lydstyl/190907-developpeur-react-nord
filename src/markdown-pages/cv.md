@@ -1,15 +1,17 @@
 ---
 path: /
-date: 2020-05-03T00:00:00.000Z
+date: 2020-08-23T00:00:00.000Z
 title: CV
 description: >-
-  Bonjour, je m'appelle Gabriel Brun. Autodidacte j'ai aussi suivi une formation
-  de développeur full-stack avant de travailler plus de 2 années en JavaScript
-  front et back en entreprise. Je peux vous coder des web apps en React.js.
-objectif: coder des web apps en React.js
+  Bonjour, je m'appelle Gabriel Brun. Je peux vous créer votre web app ou votre
+  site Internet, contactez moi ! Autodidacte, j'ai aussi suivi une formation de
+  développeur full-stack avant de travailler plusieurs années en JS front et
+  back en entreprise. Les technologies que j'aime utiliser sont la MERN stack et
+  la Jamstack.
+objectif: coder des web apps en Node et / ou React
 skills:
   goal:
-    - rate: 10
+    - rate: 9
       title: HTML / CSS / Sass
     - rate: 9
       title: JavaScript & React.js
@@ -20,9 +22,9 @@ skills:
     - rate: 9
       title: Node.js / Express.js
     - rate: 8
-      title: MongoDB & MySQL & PostgreSQL
+      title: MongoDB
   main:
-    - rate: 9
+    - rate: 8
       title: HTML / CSS / Sass
     - rate: 8
       title: JavaScript / React.js
@@ -30,23 +32,24 @@ skills:
       title: Firebase
     - rate: 8
       title: Gatsby.js
-    - rate: 7
+    - rate: 8
       title: Node.js & Express.js
-    - rate: 6
-      title: MongoDB & MySQL & PostgreSQL
+    - rate: 7
+      title: MongoDB
   other:
     - title: Git
+    - title: API REST avec Express.js
     - title: Redux
     - title: Styled-Components
-    - title: PWA
-    - title: Netlify CMS
     - title: Bootstrap
-    - title: WordPress
-    - title: API REST
-    - title: Pug ISML Smarty
-    - title: PHP Codeigniter
+    - title: PWA
+    - title: Notions de tests unitaires avec Jest.js
+    - title: 'CMS (Netflify CMS, DatoCMS, Contentful, WordPress)'
+    - title: Notions de Vue.js
     - title: JQuery
-    - title: SalesForce Commerce Cloud (JavaScript)
+    - title: Notions de Python et Django
+    - title: 'Notions de PHP (Laravel, Symfony, Codeigniter, WordPress)'
+    - title: SalesForce Commerce Cloud (JS)
 experience:
   - begin: 2017-03-09T20:15:00.000Z
     body: >-

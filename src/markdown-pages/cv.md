@@ -6,49 +6,51 @@ description: >-
   Bonjour, je m'appelle Gabriel Brun. Je peux vous créer votre web app ou votre
   site Internet, contactez moi ! Autodidacte, j'ai aussi suivi une formation de
   développeur full-stack avant de travailler plusieurs années en JS front et
-  back en entreprise. Les technologies que j'aime utiliser sont la MERN stack et
-  la Jamstack.
+  back en entreprise. Les technologies que j'aime utiliser sont la MERN et la
+  JAMStack.
 objectif: coder des web apps en Node et / ou React
 skills:
   goal:
-    - rate: 9
+    - rate: 10
       title: HTML / CSS / Sass
     - rate: 9
-      title: JavaScript & React.js
-    - rate: 9
+      title: JavaScript & React
+    - rate: 8
       title: Firebase
     - rate: 8
-      title: Gatsby.js
+      title: Gatsby.js & GraphQL
     - rate: 9
-      title: Node.js / Express.js
-    - rate: 8
+      title: Node & Express
+    - rate: 9
       title: MongoDB
   main:
-    - rate: 8
+    - rate: 9
       title: HTML / CSS / Sass
     - rate: 8
-      title: JavaScript / React.js
+      title: JavaScript / React
     - rate: 8
       title: Firebase
     - rate: 8
-      title: Gatsby.js
-    - rate: 8
-      title: Node.js & Express.js
+      title: Gatsby.js & GraphQL
+    - rate: 7
+      title: Node & Express
     - rate: 7
       title: MongoDB
   other:
     - title: Git
-    - title: API REST avec Express.js
+    - title: API REST
     - title: Redux
     - title: Styled-Components
     - title: Bootstrap
     - title: PWA
     - title: Notions de tests unitaires avec Jest.js
+    - title: Notions TypeScript
     - title: 'CMS (Netflify CMS, DatoCMS, Contentful, WordPress)'
     - title: Notions de Vue.js
     - title: JQuery
     - title: Notions de Python et Django
     - title: 'Notions de PHP (Laravel, Symfony, Codeigniter, WordPress)'
+    - title: 'SQL, MySQL'
     - title: SalesForce Commerce Cloud (JS)
 experience:
   - begin: 2017-03-09T20:15:00.000Z

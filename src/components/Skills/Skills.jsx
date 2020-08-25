@@ -100,12 +100,29 @@ const Skills = () => {
         </li>
 
         <li>
-          <h3>Certificat:</h3>
-          <p className="text-justify">
-            <a href="https://skillvalue.com/en/certificate/ZZPZSS18ShQp4BM8FprEW8zj9KqJVIGpGsIDonbYmi8pRqFhY14c3KmTZUeV">
-              ReactJS Certified License n° 454156
-            </a>
-          </p>
+          <h3>Certificats:</h3>
+
+          <div className="certificates">
+            <p className="text-justify">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://skillvalue.com/en/certificate/ZZPZSS18ShQp4BM8FprEW8zj9KqJVIGpGsIDonbYmi8pRqFhY14c3KmTZUeV"
+              >
+                ReactJS Certified License n° 454156
+              </a>
+            </p>
+
+            <p className="text-justify">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://ude.my/UC-d5bbdc9f-62a2-4fe3-98ed-a8ac642f0880"
+              >
+                NodeJS API With Express & MongoDB certificate
+              </a>
+            </p>
+          </div>
         </li>
       </ul>
     </SkillsBox>

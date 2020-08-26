@@ -107,9 +107,19 @@ const Skills = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
+                href="https://www.udemy.com/certificate/UC-2CPLK9HX/"
+              >
+                React Front To Back
+              </a>
+            </p>
+
+            <p className="text-justify">
+              <a
+                target="_blank"
+                rel="noreferrer"
                 href="https://skillvalue.com/en/certificate/ZZPZSS18ShQp4BM8FprEW8zj9KqJVIGpGsIDonbYmi8pRqFhY14c3KmTZUeV"
               >
-                ReactJS Certified License n° 454156
+                Certificat Skill Value
               </a>
             </p>
 
@@ -119,7 +129,7 @@ const Skills = () => {
                 rel="noreferrer"
                 href="https://ude.my/UC-d5bbdc9f-62a2-4fe3-98ed-a8ac642f0880"
               >
-                NodeJS API With Express & MongoDB certificate
+                NodeJS API With Express & MongoDB
               </a>
             </p>
           </div>

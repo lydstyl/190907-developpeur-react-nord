@@ -153,7 +153,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu > nav.bm-item-list {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+}
+.bm-menu > nav a {
+  margin-top: 50px;
 }
 
 /* Morph shape necessary with bubble or elastic */

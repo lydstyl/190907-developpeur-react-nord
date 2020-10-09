@@ -1,6 +1,6 @@
 ---
 path: /
-date: 2020-08-23T00:00:00.000Z
+date: 2020-10-09T00:00:00.000Z
 title: CV
 description: >-
   Bonjour, je m'appelle Gabriel Brun. Je peux vous créer votre web app ou votre
@@ -45,12 +45,12 @@ skills:
     - title: PWA
     - title: notions de tests unitaires avec Jest.js
     - title: notions de TypeScript
-    - title: 'CMS (Netflify CMS, DatoCMS, Contentful, WordPress)'
+    - title: "CMS (Netflify CMS, DatoCMS, Contentful, WordPress)"
     - title: notions de Vue.js
     - title: JQuery
     - title: notions de Python & Django
-    - title: 'notions de PHP (Laravel, Symfony, Codeigniter, WordPress)'
-    - title: 'SQL, MySQL'
+    - title: "notions de PHP (Laravel, Symfony, Codeigniter, WordPress)"
+    - title: "SQL, MySQL"
     - title: SalesForce Commerce Cloud (JS)
 experience:
   - begin: 2017-03-09T20:15:00.000Z
@@ -79,4 +79,3 @@ experience:
     ismycurrentjob: true
     job: Développeur React.js
 ---
-

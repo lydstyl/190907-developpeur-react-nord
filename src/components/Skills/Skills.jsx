@@ -117,6 +117,16 @@ const Skills = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
+                href="/assets/CodinGame-Gabriel_BRUN.pdf"
+              >
+                Test Codin Game
+              </a>
+            </p>
+
+            <p className="text-justify">
+              <a
+                target="_blank"
+                rel="noreferrer"
                 href="https://skillvalue.com/en/certificate/ZZPZSS18ShQp4BM8FprEW8zj9KqJVIGpGsIDonbYmi8pRqFhY14c3KmTZUeV"
               >
                 Certificat Skill Value

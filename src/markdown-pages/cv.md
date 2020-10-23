@@ -38,8 +38,9 @@ skills:
       title: MongoDB
   other:
     - title: 'Git 7/10 '
-    - title: API REST 7/10
     - title: Redux 8/10
+    - title: API REST 7/10
+    - title: 'SQL, MySQL 6/10'
     - title: Styled-Components 8/10
     - title: Bootstrap 7/10
     - title: PWA 5/10
@@ -50,7 +51,6 @@ skills:
     - title: JQuery 5/10
     - title: Python & Django 2/10
     - title: 'PHP (Laravel, Symfony, Codeigniter, WordPress) 2/10'
-    - title: 'SQL, MySQL 6/10'
     - title: SalesForce Commerce Cloud (JS) 5/10
 experience:
   - begin: 2017-03-09T20:15:00.000Z

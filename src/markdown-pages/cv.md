@@ -17,7 +17,7 @@ skills:
       title: JavaScript & React
     - rate: 8
       title: Firebase
-    - rate: 8
+    - rate: 7
       title: Gatsby.js & GraphQL
     - rate: 9
       title: Node & Express

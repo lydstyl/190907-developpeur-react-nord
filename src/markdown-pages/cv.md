@@ -21,7 +21,7 @@ skills:
       title: Gatsby.js & GraphQL
     - rate: 9
       title: Node & Express
-    - rate: 9
+    - rate: 8
       title: MongoDB
   main:
     - rate: 9
@@ -30,28 +30,28 @@ skills:
       title: JavaScript / React
     - rate: 8
       title: Firebase
-    - rate: 8
-      title: Gatsby.js & GraphQL
     - rate: 7
+      title: Gatsby.js & GraphQL
+    - rate: 8
       title: Node & Express
     - rate: 7
       title: MongoDB
   other:
-    - title: Git
-    - title: API REST
-    - title: Redux
-    - title: Styled-Components
-    - title: Bootstrap
-    - title: PWA
-    - title: notions de tests unitaires avec Jest.js
-    - title: notions de TypeScript
-    - title: "CMS (Netflify CMS, DatoCMS, Contentful, WordPress)"
-    - title: notions de Vue.js
-    - title: JQuery
-    - title: notions de Python & Django
-    - title: "notions de PHP (Laravel, Symfony, Codeigniter, WordPress)"
-    - title: "SQL, MySQL"
-    - title: SalesForce Commerce Cloud (JS)
+    - title: 'Git 7/10 '
+    - title: API REST 7/10
+    - title: Redux 8/10
+    - title: Styled-Components 8/10
+    - title: Bootstrap 7/10
+    - title: PWA 5/10
+    - title: Tests unitaires avec Jest.js 2/10
+    - title: TypeScript 2/10
+    - title: 'CMS (Netflify CMS, DatoCMS, Contentful, WordPress) 5/10'
+    - title: Vue.js 2/10
+    - title: JQuery 5/10
+    - title: Python & Django 2/10
+    - title: 'PHP (Laravel, Symfony, Codeigniter, WordPress) 2/10'
+    - title: 'SQL, MySQL 5/10'
+    - title: SalesForce Commerce Cloud (JS) 5/10
 experience:
   - begin: 2017-03-09T20:15:00.000Z
     body: >-
@@ -79,3 +79,4 @@ experience:
     ismycurrentjob: true
     job: Développeur React.js
 ---
+

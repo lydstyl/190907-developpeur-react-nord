@@ -1,6 +1,6 @@
 ---
 path: /
-date: 2020-10-09T00:00:00.000Z
+date: 2020-10-23T00:00:00.000Z
 title: CV
 description: >-
   Bonjour, je m'appelle Gabriel Brun. Je peux vous créer votre web app ou votre
@@ -34,7 +34,7 @@ skills:
       title: Gatsby.js & GraphQL
     - rate: 8
       title: Node & Express
-    - rate: 7
+    - rate: 6
       title: MongoDB
   other:
     - title: 'Git 7/10 '
@@ -50,7 +50,7 @@ skills:
     - title: JQuery 5/10
     - title: Python & Django 2/10
     - title: 'PHP (Laravel, Symfony, Codeigniter, WordPress) 2/10'
-    - title: 'SQL, MySQL 5/10'
+    - title: 'SQL, MySQL 6/10'
     - title: SalesForce Commerce Cloud (JS) 5/10
 experience:
   - begin: 2017-03-09T20:15:00.000Z

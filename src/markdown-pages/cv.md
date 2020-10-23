@@ -13,7 +13,7 @@ skills:
   goal:
     - rate: 10
       title: HTML / CSS / Sass
-    - rate: 9
+    - rate: 8
       title: JavaScript & React
     - rate: 8
       title: Firebase

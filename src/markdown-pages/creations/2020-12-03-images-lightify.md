@@ -4,7 +4,7 @@ path: /portfolio/images-lightify
 date: 2020-07-01T09:17:03.325Z
 isImageFile: true
 images: /../../images/capture.png
-video: 'https://youtu.be/kUCL3nUbKfQ'
+video: 'https://www.youtube.com/embed/kUCL3nUbKfQ'
 link: 'https://github.com/lydstyl/200701-electron-images-lightify'
 ---
 Il est souvent indispensable de redimensionner et de changer le format de nombreuses images. C'est ce que permet cette application desktop.

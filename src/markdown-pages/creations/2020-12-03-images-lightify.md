@@ -3,7 +3,7 @@ title: Images Lightify
 path: /portfolio/images-lightify
 date: 2020-07-01T09:17:03.325Z
 isImageFile: true
-images: /../../images/capture.png
+images: /../../images/maxresdefault.webp
 video: 'https://www.youtube.com/embed/kUCL3nUbKfQ'
 link: 'https://github.com/lydstyl/200701-electron-images-lightify'
 ---

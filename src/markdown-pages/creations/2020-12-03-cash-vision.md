@@ -11,7 +11,7 @@ Application en progression (WIP).
 
 ![Ajout et modification de comptes](/../../images/capture-d’écran-du-2020-12-03-09-33-50.png "Ajout et modification de comptes")
 
-Je refais l'application que j'avais créée en Vue.js pour progresser en back-end.
+Je recode l'application que j'avais créée en Vue.js pour progresser en back-end.
 
 Au lieu d'utiliser la MERN stack et MongoDB comme je l'avais fait avec l'application Dominic System, cette fois, j'utilise **MySQL**, **Node**, **Express**, **JWT** et **React**.
 

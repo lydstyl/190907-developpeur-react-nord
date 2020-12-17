@@ -8,8 +8,6 @@ video: ''
 ---
 Application en construction.
 
-![Work in progress](/../../images/wip-logo.png "WIP")
-
 <img src="blob:https://www.developpeur-react-nord.com/08d93cc1-adaf-48fd-b08d-c3c00a7b5fea" width="200" />
 
 Création d'un site Internet pour un marchand de fruits et légumes.

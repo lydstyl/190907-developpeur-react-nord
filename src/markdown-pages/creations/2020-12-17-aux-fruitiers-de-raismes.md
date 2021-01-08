@@ -3,17 +3,24 @@ title: Aux fruitiers de Raismes
 path: /portfolio/aux-fruitier
 date: 2020-12-17T18:59:24.163Z
 isImageFile: true
-images: /../../images/aux-fruitiers-de-raismes-2020-12-17-18-07-58.png
+images: /../../images/capture-d’écran-du-2021-01-08-23-39-41.png
 video: ''
+link: 'https://auxfruitiersderaismes.netlify.app/'
 ---
 Application en construction.
 
-<img src="blob:https://www.developpeur-react-nord.com/08d93cc1-adaf-48fd-b08d-c3c00a7b5fea" width="200" />
+![Strapi CMS](/../../images/capture-d’écran-du-2021-01-08-23-45-50.png "Strapi CMS")
 
 Création d'un site Internet pour un marchand de fruits et légumes.
 
 J'utilise la **JAM Stack** avec uniquement de l'open source et du bon : **Strapi**, un **Headless CMS** pour le backend et **Gatsby** pour le frontend.
 
-Hébergement sur **Heroku** pour le back et sur **Netlify** pour le front. Je pense que je vais utiliser **AWS S3** pour les images.
+![mobile](/../../images/capture-d’écran-du-2021-01-08-23-42-38.png "mobile")
 
-J'attends un retour du client car je ne sais pas ce qu'il veut pour le moment.
+Mon code permet au gérant d'ajouter des **produits** et des **catégories** qui deviendront des **filtres** pour l'internaute. Il peut aussi modifier les autres pages de son site.
+
+![tablette](/../../images/capture-d’écran-du-2021-01-08-23-38-15.png "tablette")
+
+Hébergement sur **Heroku** pour le back avec **AWS S3** pour les images et **Netlify** pour le front.
+
+![carte](/../../images/capture-d’écran-du-2021-01-08-23-38-49.png "carte")

@@ -23,4 +23,6 @@ Mon code permet au gérant d'ajouter des **produits** et des **catégories** qui
 
 Hébergement sur **Heroku** pour le back avec **AWS S3** pour les images et **Netlify** pour le front.
 
+![Performance](/../../images/capture-d’écran-du-2021-01-09-20-46-55.png "Performance")
+
 ![carte](/../../images/capture-d’écran-du-2021-01-08-23-38-49.png "carte")

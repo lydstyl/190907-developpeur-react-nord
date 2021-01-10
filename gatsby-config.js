@@ -1,21 +1,21 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.developpeur-react-nord.com",
-    title: `Développeur React Nord`,
-    description: `Création de votre web app ou site Internet rapide et performant. CV et Portfolio de Gabriel BRUN, developpeur JavaScript, React.js, Gatsby.js dans le Nord (département 59).`,
-    author: `Gabriel BRUN`,
+    siteUrl: 'https://www.developpeur-react-nord.com',
+    title: 'Développeur React Nord',
+    description: 'Création de votre web app ou site Internet rapide et performant. CV et Portfolio de Gabriel BRUN, developpeur JavaScript, React.js, Gatsby.js dans le Nord (département 59).',
+    author: 'Gabriel BRUN'
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-robots-txt",
+      resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: "https://www.developpeur-react-nord.com",
-        sitemap: "https://www.developpeur-react-nord.com/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/", disallow: ["/agenda", "/2"] }],
-      },
+        host: 'https://www.developpeur-react-nord.com',
+        sitemap: 'https://www.developpeur-react-nord.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/', disallow: ['/agenda', '/2'] }]
+      }
     },
     {
-      resolve: `gatsby-plugin-sitemap`,
+      resolve: 'gatsby-plugin-sitemap',
       options: {
         query: `
           {
@@ -35,119 +35,120 @@ module.exports = {
         }`,
         serialize: ({ site, allSitePage }) =>
           allSitePage.edges.map(edge => {
-            if (edge.node.path.includes("/services")) {
+            if (edge.node.path.includes('/services')) {
               return {
                 url: site.siteMetadata.siteUrl + edge.node.path,
-                changefreq: `daily`,
-                priority: 0.9,
+                changefreq: 'daily',
+                priority: 0.9
               }
             }
 
-            if (edge.node.path.includes("/cv")) {
+            if (edge.node.path.includes('/cv')) {
               return {
                 url: site.siteMetadata.siteUrl + edge.node.path,
-                changefreq: `weekly`,
-                priority: 0.7,
+                changefreq: 'weekly',
+                priority: 0.7
               }
             }
 
             // portfolio
-            if (edge.node.path === "/") {
+            if (edge.node.path === '/') {
               return {
                 url: site.siteMetadata.siteUrl + edge.node.path,
-                changefreq: `weekly`,
-                priority: 0.6,
+                changefreq: 'weekly',
+                priority: 0.6
               }
             }
-            if (edge.node.path.includes("/portfolio/")) {
+            if (edge.node.path.includes('/portfolio/')) {
               return {
                 url: site.siteMetadata.siteUrl + edge.node.path,
-                changefreq: `monthly`,
-                priority: 0.5,
+                changefreq: 'monthly',
+                priority: 0.5
               }
             }
 
             // other pages
             return {
               url: site.siteMetadata.siteUrl + edge.node.path,
-              changefreq: `monthly`,
-              priority: 0.1,
+              changefreq: 'monthly',
+              priority: 0.1
             }
-          }),
-      },
+          })
+      }
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
-    `gatsby-transformer-sharp`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-transformer-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        name: 'gatsby-starter-default',
+        short_name: 'starter',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
         // icon: `src/images/dev-icon.png`, // This path is relative to the root of the site.
-        icon: `src/images/logo_eagle/logo_eagle.png`, // This path is relative to the root of the site.
-      },
+        // icon: `src/images/logo_eagle/logo_eagle.png`, // This path is relative to the root of the site.
+        icon: 'src/images/why_logo/logo.png' // This path is relative to the root of the site.
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    `gatsby-plugin-netlify-cms`,
+    'gatsby-plugin-netlify-cms',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/markdown-pages`,
-        name: `markdown-pages`,
-      },
+        name: 'markdown-pages'
+      }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        name: 'images',
+        path: `${__dirname}/src/images`
+      }
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "UA-150201460-1",
-      },
+        trackingId: 'UA-150201460-1'
+      }
     },
-    `gatsby-plugin-sharp`,
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 1078,
-            },
+              maxWidth: 1078
+            }
           },
-          `gatsby-remark-copy-linked-files`,
+          'gatsby-remark-copy-linked-files',
           {
-            resolve: `@raae/gatsby-remark-oembed`,
+            resolve: '@raae/gatsby-remark-oembed',
             options: {
               // usePrefix defaults to false
               // usePrefix: true is the same as ["oembed"]
-              usePrefix: ["oembed", "video"],
+              usePrefix: ['oembed', 'video'],
               providers: {
                 // Important to exclude providers
                 // that adds js to the page.
                 // If you do not need them.
-                exclude: ["Reddit"],
-              },
-            },
-          },
-        ],
-      },
-    },
+                exclude: ['Reddit']
+              }
+            }
+          }
+        ]
+      }
+    }
     // {
     //   resolve: `gatsby-transformer-remark`,
     //   options: {
@@ -169,5 +170,5 @@ module.exports = {
     //     ]
     //   }
     // },
-  ],
+  ]
 }

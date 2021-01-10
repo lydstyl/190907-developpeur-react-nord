@@ -78,7 +78,8 @@ const Header = ({ siteTitle }) => {
         <ShadowBoxWrapper addClass="header-title">
           <Link className="site-title" to="/">
             <h1 className="d-inline align-text-bottom mr-4">
-              <Image src="logo_eagle/logo_eagle.png" />
+              {/* <Image src="logo_eagle/logo_eagle.png" /> */}
+              <Image src="why_logo/logo.png" />
 
               <QRContactMe />
 

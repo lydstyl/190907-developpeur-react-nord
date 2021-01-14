@@ -37,16 +37,17 @@ skills:
     - rate: 6
       title: MongoDB / MySQL
   other:
-    - title: 'Git 7/10 '
     - title: Redux 8/10
+    - title: 'Git 7/10 '
+    - title: TypeScript 5/10
+    - title: Tests unitaires avec Jest.js 4/10
     - title: API REST 6/10
     - title: 'SQL, MySQL 6/10'
     - title: Styled-Components 8/10
     - title: Bootstrap 7/10
     - title: PWA 5/10
-    - title: Tests unitaires avec Jest.js 2/10
-    - title: TypeScript 3/10
-    - title: 'CMS (Netflify CMS, DatoCMS, Contentful, WordPress) 5/10'
+    - title: Strapi CMS 6/10
+    - title: 'Other CMS (Netflify CMS, DatoCMS, Contentful, WordPress) 5/10'
     - title: Vue.js 2/10
     - title: JQuery 5/10
     - title: Python & Django 2/10

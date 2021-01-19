@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { Radar } from 'react-chartjs-2'
 
 import SkillsBox from './style'
+import { Certificates } from '../Certificates/Certificates'
 
 const Skills = () => {
   const data = useStaticQuery(
@@ -99,51 +100,7 @@ const Skills = () => {
           <p className='text-justify'>{otherSkills}</p>
         </li>
 
-        <li>
-          <h3>Certificats:</h3>
-
-          <div className='certificates'>
-            <p className='text-justify'>
-              <a
-                target='_blank'
-                rel='noopener noreferrer'
-                href='https://www.udemy.com/certificate/UC-2CPLK9HX/'
-              >
-                React Front To Back
-              </a>
-            </p>
-
-            <p className='text-justify'>
-              <a
-                target='_blank'
-                rel='noopener noreferrer'
-                href='/assets/CodinGame-Gabriel_BRUN.pdf'
-              >
-                Test Codin Game
-              </a>
-            </p>
-
-            <p className='text-justify'>
-              <a
-                target='_blank'
-                rel='noopener noreferrer'
-                href='https://skillvalue.com/en/certificate/ZZPZSS18ShQp4BM8FprEW8zj9KqJVIGpGsIDonbYmi8pRqFhY14c3KmTZUeV'
-              >
-                Certificat Skill Value
-              </a>
-            </p>
-
-            <p className='text-justify'>
-              <a
-                target='_blank'
-                rel='noopener noreferrer'
-                href='https://ude.my/UC-d5bbdc9f-62a2-4fe3-98ed-a8ac642f0880'
-              >
-                NodeJS API With Express & MongoDB
-              </a>
-            </p>
-          </div>
-        </li>
+        <Certificates />
       </ul>
     </SkillsBox>
   )

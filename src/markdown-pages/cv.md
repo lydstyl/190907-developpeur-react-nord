@@ -39,8 +39,8 @@ skills:
   other:
     - title: Redux 8/10
     - title: 'Git 7/10 '
-    - title: TypeScript 5/10
-    - title: Tests unitaires avec Jest.js 4/10
+    - title: TypeScript 6/10
+    - title: Tests unitaires avec Jest.js 5/10
     - title: API REST 6/10
     - title: 'SQL, MySQL 6/10'
     - title: Styled-Components 8/10

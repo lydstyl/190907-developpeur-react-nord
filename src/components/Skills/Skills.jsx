@@ -4,6 +4,7 @@ import { Radar } from 'react-chartjs-2'
 
 import SkillsBox from './style'
 import { Certificates } from '../Certificates/Certificates'
+import { WordCloud } from '../WordCloud/WordCloud'
 
 const Skills = () => {
   const data = useStaticQuery(
@@ -61,11 +62,11 @@ const Skills = () => {
     ]
   }
 
-  const otherSkills = other
-    .map(mainSkill => {
-      return mainSkill.title
-    })
-    .join(', ')
+  // const otherSkills = other
+  //   .map(mainSkill => {
+  //     return mainSkill.title
+  //   })
+  //   .join(', ')
 
   const options = {
     legend: {
@@ -97,7 +98,9 @@ const Skills = () => {
 
         <li>
           <h3>Autres:</h3>
-          <p className='text-justify'>{otherSkills}</p>
+          {/* <p className='text-justify'>{otherSkills}</p> */}
+
+          <WordCloud data={other} />
         </li>
 
         <Certificates />

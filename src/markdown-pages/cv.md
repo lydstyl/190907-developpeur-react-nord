@@ -1,6 +1,6 @@
 ---
 path: /
-date: 2020-10-23T00:00:00.000Z
+date: 2021-01-27T00:00:00.000Z
 title: CV
 description: >-
   Bonjour, je m'appelle Gabriel Brun. Je peux vous créer votre web app ou votre
@@ -11,48 +11,71 @@ description: >-
 objectif: coder des web apps en Node et / ou React
 skills:
   goal:
+    - rate: 9
+      title: HTML 5
     - rate: 10
-      title: HTML / CSS / Sass
+      title: CSS 3
+    - rate: 9
+      title: JavaScript
+    - rate: 9
+      title: React
+    - rate: 9
+      title: TypeScript
     - rate: 8
-      title: JavaScript & React
-    - rate: 8
-      title: Firebase
+      title: Jest
     - rate: 7
-      title: Gatsby.js & GraphQL
-    - rate: 8
       title: Node & Express
-    - rate: 8
-      title: MongoDB / MySQL
+    - rate: 7
+      title: MongoDB
+    - rate: 6
+      title: MySQL / PostgreSQL
   main:
     - rate: 9
-      title: HTML / CSS / Sass
+      title: HTML 5
+    - rate: 9
+      title: CSS 3
     - rate: 8
-      title: JavaScript / React
+      title: JavaScript
     - rate: 8
-      title: Firebase
-    - rate: 7
-      title: Gatsby.js & GraphQL
-    - rate: 7
-      title: Node & Express
+      title: React
     - rate: 6
-      title: MongoDB / MySQL
+      title: TypeScript
+    - rate: 5
+      title: Jest
+    - rate: 6
+      title: Node & Express
+    - rate: 5
+      title: MongoDB
+    - rate: 5
+      title: MySQL / PostgreSQL
   other:
+    - title: Sass 8/10
     - title: Redux 8/10
-    - title: 'Git 7/10 '
-    - title: TypeScript 6/10
-    - title: Tests unitaires avec Jest.js 5/10
+    - title: Gatsby 7/10
+    - title: Firebase 7/10
+    - title: Git 7/10
     - title: API REST 6/10
-    - title: 'SQL, MySQL 6/10'
-    - title: Styled-Components 8/10
-    - title: Bootstrap 7/10
+    - title: SQL 5/10
+    - title: MySQL 5/10
+    - title: PostgreSQL 5/10
+    - title: Styled-Components 6/10
+    - title: Bootstrap 6/10
     - title: PWA 5/10
-    - title: Strapi CMS 6/10
-    - title: 'Other CMS (Netflify CMS, DatoCMS, Contentful, WordPress) 5/10'
-    - title: Vue.js 2/10
-    - title: JQuery 5/10
-    - title: Python & Django 2/10
-    - title: 'PHP (Laravel, Symfony, Codeigniter, WordPress) 2/10'
-    - title: SalesForce Commerce Cloud (JS) 5/10
+    - title: Strapi 7/10
+    - title: Netflify CMS 5/10
+    - title: DatoCMS 5/10
+    - title: Contentful 5/10
+    - title: WordPress 4/10
+    - title: GraphQL 3/10
+    - title: Vue.js 3/10
+    - title: JQuery 4/10
+    - title: Python 3/10
+    - title: Django 2/10
+    - title: PHP 3/10
+    - title: Laravel 2/10
+    - title: Symfony 2/10
+    - title: Codeigniter 2/10
+    - title: SFCC 4/10
 experience:
   - begin: 2017-03-09T20:15:00.000Z
     body: >-

@@ -12,11 +12,11 @@ const Experiences = () => {
 
       <DownLoadCVBox>
         <div className="downLoadCV">
-          <a href="/assets/cv.docx">au format Word</a>
+          <a href="/assets/cv.docx">Word</a>
         </div>
         <div className="downLoadCV">
           <a target="_blank" href="/assets/cv.pdf">
-            au format PDF
+            PDF
           </a>
         </div>
       </DownLoadCVBox>

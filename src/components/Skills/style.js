@@ -5,10 +5,13 @@ const SkillsBox = styled.div`
     text-decoration: none;
   }
 
-  .certificates {
-    display: flex;
-    justify-content: space-around;
+  @media screen and (min-width: 1024px) {
+    .certificates {
+      display: flex;
+      justify-content: space-around;
+    }
   }
+
 `
 
 export default SkillsBox

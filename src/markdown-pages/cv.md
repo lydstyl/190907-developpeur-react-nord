@@ -71,6 +71,7 @@ skills:
     - title: GreenSock 4/10
     - title: AWS 4/10
     - title: GraphQL 4/10
+    - title: Next 3/10
     - title: Vue 3/10
     - title: Python 3/10
     - title: Stripe 3/10

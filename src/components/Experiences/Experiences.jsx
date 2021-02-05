@@ -1,6 +1,7 @@
 import React from "react"
 
 // import Jobs from "../Jobs/Jobjs"
+import {DocResume} from '../DocResume/DocResume'
 import DownLoadCVBox from "./style"
 
 const Experiences = () => {
@@ -11,6 +12,7 @@ const Experiences = () => {
       </h2>
 
       <DownLoadCVBox>
+        <DocResume />
         <div className="downLoadCV">
           <a href="/assets/cv.docx">Word</a>
         </div>

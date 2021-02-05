@@ -9,6 +9,25 @@ function loadFile(url, callback) {
   PizZipUtils.getBinaryContent(url, callback);
 }
 
+function stars(frontmatter) {
+  frontmatter.skills.main = frontmatter.skills.main.map(s=>{
+    let fullStars = s.rate
+    s.stars = '' 
+    for (let i = 0; i < 10; i++) {
+      if (fullStars < 1) {
+        s.stars += '☆'
+      } else {
+        s.stars += '★'
+      }
+      fullStars --
+    }
+
+    return s
+  })
+
+  return frontmatter
+}
+
 export const DocResume = () => {
   const data = useStaticQuery(
     graphql`
@@ -44,7 +63,11 @@ export const DocResume = () => {
     `
   )
 
-  const { frontmatter } = data.markdownRemark
+  let { frontmatter } = data.markdownRemark
+  
+  
+  frontmatter = stars(frontmatter)
+  
   console.log('🚀 ~ DocResume ~ frontmatter', frontmatter)
 
 

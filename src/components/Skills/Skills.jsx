@@ -62,12 +62,6 @@ const Skills = () => {
     ]
   }
 
-  // const otherSkills = other
-  //   .map(mainSkill => {
-  //     return mainSkill.title
-  //   })
-  //   .join(', ')
-
   const options = {
     legend: {
       position: 'top'

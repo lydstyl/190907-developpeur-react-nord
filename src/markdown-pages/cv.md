@@ -3,12 +3,8 @@ path: /
 date: 2021-01-27T00:00:00.000Z
 title: CV
 description: >-
-  Bonjour, je m'appelle Gabriel Brun. Je peux vous créer votre web app ou votre
-  site Internet, contactez moi ! Autodidacte, j'ai aussi suivi une formation de
-  développeur full-stack avant de travailler plusieurs années en JS front et
-  back en entreprise. Les technologies que j'aime utiliser sont la MERN et la
-  JAMStack.
-objectif: coder des web apps en React
+  Passionné par les technologies, j'aime coder des applications pour améliorer la vie de leurs utilisateurs. Après avoir découvert la programmation pendant mes loisirs, il y a 6 ans, j'ai suivi une formation de développeur full-stack. J'ai travaillé plus de 2 années en JS front et back en entreprise. Depuis plus d'1 an, je me spécialise sur React et son vaste écosystème. Je sais entre autres utiliser la MERN et la JAMStack.
+objectif: coder des web apps
 skills:
   goal:
     - rate: 9

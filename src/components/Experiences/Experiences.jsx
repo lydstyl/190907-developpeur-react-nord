@@ -12,7 +12,12 @@ const Experiences = () => {
       </h2>
 
       <DownLoadCVBox>
-        <DocResume />
+        <DocResume data={{
+          first_name: "John",
+          last_name: "Doe",
+          phone: "0652455478",
+          description: "New Website"
+        }} />
         <div className="downLoadCV">
           <a href="/assets/cv.docx">Word</a>
         </div>

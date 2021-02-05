@@ -10,9 +10,14 @@ function loadFile(url, callback) {
 }
 
 export const DocResume = class App extends React.Component {
+
   render() {
+
+    const {data} = this.props
+    console.log('🚀 ~ App ~ render ~ data', data)
+
     const generateDocument = () => {
-      loadFile("https://docxtemplater.com/tag-example.docx", function(
+      loadFile("http://localhost:8000/assets/resume-template.docx", function(
         error,
         content
       ) {
@@ -21,12 +26,7 @@ export const DocResume = class App extends React.Component {
         }
         var zip = new PizZip(content);
         var doc = new Docxtemplater().loadZip(zip);
-        doc.setData({
-          first_name: "John",
-          last_name: "Doe",
-          phone: "0652455478",
-          description: "New Website"
-        });
+        doc.setData(data);
         try {
           // render the document (replace all occurences of {first_name} by John, {last_name} by Doe, ...)
           doc.render();

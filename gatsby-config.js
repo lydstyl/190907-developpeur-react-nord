@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://www.developpeur-react-nord.com',
@@ -88,14 +90,9 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        // icon: `src/images/dev-icon.png`, // This path is relative to the root of the site.
-        // icon: `src/images/logo_eagle/logo_eagle.png`, // This path is relative to the root of the site.
         icon: 'src/images/why_logo/logo.png' // This path is relative to the root of the site.
       }
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
     'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-source-filesystem',
@@ -125,9 +122,6 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
               maxWidth: 1078
             }
           },
@@ -135,40 +129,26 @@ module.exports = {
           {
             resolve: '@raae/gatsby-remark-oembed',
             options: {
-              // usePrefix defaults to false
-              // usePrefix: true is the same as ["oembed"]
               usePrefix: ['oembed', 'video'],
               providers: {
-                // Important to exclude providers
-                // that adds js to the page.
-                // If you do not need them.
                 exclude: ['Reddit']
               }
             }
           }
         ]
       }
+    },
+    {
+      resolve: 'gatsby-source-strapi',
+      options: {
+        apiURL: process.env.API_URL || 'http://localhost:1337',
+        // apiURL: 'https://auxfruitiers.herokuapp.com',
+        contentTypes: [
+          'skill',
+        ],
+        // singleTypes: ['contact', 'home'],
+        queryLimit: 1000
+      }
     }
-    // {
-    //   resolve: `gatsby-transformer-remark`,
-    //   options: {
-    //     plugins: [
-    //       {
-    //         resolve: `@raae/gatsby-remark-oembed`,
-    //         options: {
-    //           // usePrefix defaults to false
-    //           // usePrefix: true is the same as ["oembed"]
-    //           usePrefix: ["oembed", "video"],
-    //           providers: {
-    //             // Important to exclude providers
-    //             // that adds js to the page.
-    //             // If you do not need them.
-    //             exclude: ["Reddit"]
-    //           }
-    //         }
-    //       }
-    //     ]
-    //   }
-    // },
   ]
 }

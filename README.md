@@ -2,4 +2,4 @@
 
 ## [Let's see it.](https://www.developpeur-react-nord.com/)
 
-Works with node v12.18.0
+Works with node v14.15.0

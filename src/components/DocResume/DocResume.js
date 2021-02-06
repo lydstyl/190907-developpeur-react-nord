@@ -10,7 +10,7 @@ function loadFile(url, callback) {
   PizZipUtils.getBinaryContent(url, callback);
 }
 
-function stars(frontmatter) {
+function addStarsToMainSkills(frontmatter) {
   frontmatter.skills.main = frontmatter.skills.main.map(s=>{
     let fullStars = s.rate
     s.stars = '' 
@@ -33,6 +33,20 @@ function formateDates(frontmatter) {
   frontmatter.date = dayjs().format('DD/MM/YYYY')
   frontmatter.experience = frontmatter.experience.map(e => ({...e, begin: dayjs(e.begin).format('DD/MM/YYYY'), end: dayjs(e.end).format('DD/MM/YYYY')}))
   
+  return frontmatter
+}
+
+function filterOtherSkills(frontmatter) {
+  frontmatter.skills.other = frontmatter.skills.other.filter(s=>{
+    const rate = /([0-9])\//gm.exec(s.title)[1]
+    
+    if (rate >= 6) {
+      return true
+    }
+
+    return false
+  })
+
   return frontmatter
 }
 
@@ -74,11 +88,10 @@ export const DocResume = () => {
   let { frontmatter } = data.markdownRemark
   
   
-  frontmatter = stars(frontmatter)
-
+  frontmatter = addStarsToMainSkills(frontmatter)
   frontmatter = formateDates(frontmatter)
+  frontmatter = filterOtherSkills(frontmatter)
   
-  console.log('🚀 ~ DocResume ~ frontmatter', frontmatter)
 
 
   const generateDocument = () => {

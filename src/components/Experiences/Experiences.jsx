@@ -12,15 +12,19 @@ const Experiences = () => {
       </h2>
 
       <DownLoadCVBox>
-        <DocResume />
+
+        {/* <DocResume /> */}
+
         <div className="downLoadCV">
           <a href="/assets/cv.docx">Word</a>
         </div>
+
         <div className="downLoadCV">
           <a target="_blank" href="/assets/cv.pdf">
             PDF
           </a>
         </div>
+
       </DownLoadCVBox>
     </div>
   )

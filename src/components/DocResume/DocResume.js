@@ -147,8 +147,8 @@ export const DocResume = () => {
   };
 
   return (
-    <div className="p-2">
-        <button onClick={generateDocument}>Nouveau : générer mon CV Word</button>
-      </div>
+    <div className="generate-resume">
+      <button onClick={generateDocument}>Nouveau : générer mon CV Word</button>
+    </div>
   )
 }

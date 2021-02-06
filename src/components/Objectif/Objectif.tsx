@@ -4,11 +4,9 @@ import { useStaticQuery, graphql } from "gatsby"
 const Objectif = () => {
   const data = useStaticQuery(
     graphql`
-      query {
-        markdownRemark(fileAbsolutePath: { regex: "/cv/" }) {
-          frontmatter {
-            objectif
-          }
+      {
+        strapiAbout {
+          goal
         }
       }
     `
@@ -18,13 +16,8 @@ const Objectif = () => {
     <h2 className="shadow p-3 mt-5 bg-white rounded">
       <i className="fas fa-bullseye"></i> Objectif :{" "}
       <span style={{ fontSize: "1.5rem" }}>
-        {data.markdownRemark.frontmatter.objectif}{" "}
+        {data.strapiAbout.goal}{" "}
       </span>
-      {/* <span>
-        <Link className="btn btn-secondary btn-sm" to="/agenda">
-          Disponibilités
-        </Link>
-      </span> */}
     </h2>
   )
 }

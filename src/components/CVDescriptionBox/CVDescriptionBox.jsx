@@ -7,12 +7,6 @@ const CVDescriptionBox = () => {
   const data = useStaticQuery(
     graphql`
       {
-        markdownRemark(fileAbsolutePath: { regex: "/cv/" }) {
-          frontmatter {
-            date(formatString: "DD/MM/YYYY")
-            description
-          }
-        }
         strapiAbout {
           description
           picture {
@@ -30,7 +24,7 @@ const CVDescriptionBox = () => {
     `
   )
 
-  const { description, updatedAt, youtube, goal } = data.strapiAbout
+  const { description, updatedAt, youtube } = data.strapiAbout
 
   return (
     <div className='cv-description-box shadow p-3 mt-5 bg-white rounded'>

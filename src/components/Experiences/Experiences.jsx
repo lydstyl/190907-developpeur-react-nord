@@ -1,7 +1,7 @@
 import React from "react"
 
 // import Jobs from "../Jobs/Jobjs"
-import {DocResume} from '../DocResume/DocResume'
+// import {DocResume} from '../DocResume/DocResume'
 import DownLoadCVBox from "./style"
 
 const Experiences = () => {

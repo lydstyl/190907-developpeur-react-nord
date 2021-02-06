@@ -69,6 +69,7 @@ skills:
     - title: GraphQL 4/10
     - title: Next 3/10
     - title: Vue 3/10
+    - title: Cloudinary 3/10
     - title: Python 3/10
     - title: Stripe 3/10
     - title: PWA 3/10
@@ -81,7 +82,14 @@ skills:
     - title: Django 2/10
     - title: Laravel 2/10
     - title: Symfony 2/10
-    - title: Codeigniter 2/10
+    - title: Gulp 2/10
+    - title: Pug 2/10
+    - title: ISML 2/10
+    - title: Smarty 2/10
+    - title: Twig 2/10
+    - title: VBA 2/10
+    - title: Shell 2/10
+    - title: Lua 1/10
 experience:
   - begin: 2017-03-09T20:15:00.000Z
     body: >-

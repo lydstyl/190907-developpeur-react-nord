@@ -1,8 +1,8 @@
 import React from "react";
 import { useStaticQuery, graphql } from 'gatsby'
 import Docxtemplater from "docxtemplater";
-import PizZip from "pizzip";
-import PizZipUtils from "pizzip/utils/index.js";
+// import PizZip from "pizzip";
+// import PizZipUtils from "pizzip/utils/index.js";
 import { saveAs } from "file-saver";
 import * as dayjs from 'dayjs'
 

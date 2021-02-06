@@ -142,13 +142,13 @@ export const DocResume = () => {
         mimeType:
           "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
       }); //Output the document using Data-URI
-      saveAs(out, "output.docx");
+      saveAs(out, `cv-dev-react-nord-Gabriel-Brun-généré-le-${dayjs().format('DD-MM-YYYY')}.docx`);
     });
   };
 
   return (
     <div className="p-2">
-        <button onClick={generateDocument}>Generate document</button>
+        <button onClick={generateDocument}>Nouveau : générer mon CV Word</button>
       </div>
   )
 }

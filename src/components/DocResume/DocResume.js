@@ -4,6 +4,7 @@ import Docxtemplater from "docxtemplater";
 import PizZip from "pizzip";
 import PizZipUtils from "pizzip/utils/index.js";
 import { saveAs } from "file-saver";
+import * as dayjs from 'dayjs'
 
 function loadFile(url, callback) {
   PizZipUtils.getBinaryContent(url, callback);
@@ -25,6 +26,13 @@ function stars(frontmatter) {
     return s
   })
 
+  return frontmatter
+}
+
+function formateDates(frontmatter) {
+  frontmatter.date = dayjs().format('DD/MM/YYYY')
+  frontmatter.experience = frontmatter.experience.map(e => ({...e, begin: dayjs(e.begin).format('DD/MM/YYYY'), end: dayjs(e.end).format('DD/MM/YYYY')}))
+  
   return frontmatter
 }
 
@@ -67,6 +75,8 @@ export const DocResume = () => {
   
   
   frontmatter = stars(frontmatter)
+
+  frontmatter = formateDates(frontmatter)
   
   console.log('🚀 ~ DocResume ~ frontmatter', frontmatter)
 

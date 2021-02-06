@@ -13,11 +13,24 @@ const CVDescriptionBox = () => {
             description
           }
         }
+        strapiAbout {
+          description
+          picture {
+            childImageSharp {
+              fixed(toFormat: JPG, width: 200) {
+                src
+              }
+            }
+          }
+          goal
+          updatedAt(formatString: "DD/MM/YYYY")
+          youtube
+        }
       }
     `
   )
 
-  const { date, description } = data.markdownRemark.frontmatter
+  const { description, updatedAt, youtube, goal } = data.strapiAbout
 
   return (
     <div className='cv-description-box shadow p-3 mt-5 bg-white rounded'>
@@ -26,16 +39,16 @@ const CVDescriptionBox = () => {
       </h2>
 
       <Image src='photo_profil_gabriel_brun_github.jpg' />
-
+      
       <p className='text-justify'>{description}</p>
 
-      <p className='text-right font-italic'>Mise à jour le {date}</p>
+      <p className='text-right font-italic'>Mise à jour le {updatedAt}</p>
 
       <iframe
         title='cv vidéo'
         width='560'
         height='315'
-        src='https://www.youtube-nocookie.com/embed/u4LuxFWGtf0'
+        src={`https://www.youtube-nocookie.com/embed/${youtube}`}
         frameBorder='0'
         allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
         allowFullScreen

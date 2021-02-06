@@ -146,7 +146,7 @@ module.exports = {
         contentTypes: [
           'skill',
         ],
-        // singleTypes: ['contact', 'home'],
+        singleTypes: ['about'],
         queryLimit: 1000
       }
     }

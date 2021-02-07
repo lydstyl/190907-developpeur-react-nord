@@ -10,20 +10,11 @@ const Skills = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        markdownRemark(fileAbsolutePath: { regex: "/cv/" }) {
-          frontmatter {
-            skills {
-              main {
-                title
-                rate
-              }
-              goal {
-                title
-                rate
-              }
-              other {
-                title
-              }
+        allStrapiSkill(filter: {labels: {elemMatch: {name: {eq: "other"}}}, score: {gte: 1}}, sort: {order: DESC, fields: score}) {
+          edges {
+            node {
+              name
+              score
             }
           }
         }
@@ -31,7 +22,8 @@ const Skills = () => {
     `
   )
 
-  const { other } = data.markdownRemark.frontmatter.skills
+  let {edges: otherSkills} = data.allStrapiSkill
+  otherSkills = otherSkills.map(s => ({title: `${s.node.name} ${s.node.score}/10`}))
 
   return (
     <SkillsBox className='skills shadow p-3 mt-5 bg-white rounded'>
@@ -45,7 +37,7 @@ const Skills = () => {
         <li>
           <h3>Autres:</h3>
 
-          <WordCloud data={other} />
+          <WordCloud data={otherSkills} />
         </li>
 
         <Certificates />

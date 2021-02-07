@@ -144,7 +144,7 @@ module.exports = {
         apiURL: process.env.API_URL || 'http://localhost:1337',
         // apiURL: 'https://auxfruitiers.herokuapp.com',
         contentTypes: [
-          'skill',
+          'skill', 'certificat'
         ],
         singleTypes: ['about'],
         queryLimit: 1000

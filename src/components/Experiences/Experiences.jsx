@@ -16,11 +16,11 @@ const Experiences = () => {
         {/* <DocResume /> */}
 
         <div className="downLoadCV">
-          <a href="/assets/cv.docx">Word</a>
+          <a href="/assets/CV Gabriel Brun développeur React.docx">Word</a>
         </div>
 
         <div className="downLoadCV">
-          <a target="_blank" href="/assets/cv.pdf">
+          <a target="_blank" href="/assets/CV Gabriel Brun développeur React.pdf">
             PDF
           </a>
         </div>

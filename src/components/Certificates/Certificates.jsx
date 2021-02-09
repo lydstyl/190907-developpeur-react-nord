@@ -15,7 +15,7 @@ export const Certificates = () => {
     `)
 
     const certificats = data.allStrapiCertificat.nodes.map(c => 
-      <p className='text-justify'>
+      <p key={c.name} className='text-justify'>
         <a
           target='_blank'
           rel='noopener noreferrer'
@@ -27,7 +27,7 @@ export const Certificates = () => {
 
     return (
         <li>
-          <h3>Certificats:</h3>
+          <h3>Certificats & recommandations:</h3>
 
           <div className='certificates'>
             {certificats}

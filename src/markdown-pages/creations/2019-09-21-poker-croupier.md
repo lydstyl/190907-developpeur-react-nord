@@ -4,7 +4,8 @@ path: /portfolio/poker-croupier
 date: 2019-09-17T14:27:42.836Z
 isImageFile: true
 images: /src/images/poker.webp
-link: "https://poker-croupier.netlify.com/"
+video: https://www.youtube.com/embed/VE0CHEynVWg
+link: https://poker-croupier.netlify.com/
 ---
 
 ![iphone-landscape](../../images/capture-du-2019-09-21-16-33-21.webp "iphone-landscape")

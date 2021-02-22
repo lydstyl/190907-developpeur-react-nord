@@ -4,8 +4,8 @@ path: /portfolio/aux-fruitier
 date: 2020-12-17T18:59:24.163Z
 isImageFile: true
 images: /../../images/capture-d’écran-du-2021-01-08-23-39-41.png
-video: ''
-link: 'https://www.auxfruitiersderaismes.com/'
+video: https://www.youtube.com/embed/M96E4JZCpQ4
+link: https://www.auxfruitiersderaismes.com/
 ---
 Application en construction.
 

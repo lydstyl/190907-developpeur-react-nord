@@ -4,8 +4,8 @@ path: /portfolio/therapieflorale
 date: 2020-08-22T07:39:01.261Z
 isImageFile: true
 images: /../../images/capture-d’écran-du-2020-12-03-09-36-05.png
-video: ''
-link: 'https://www.therapieflorale.com/'
+video: https://www.youtube.com/embed/M96E4JZCpQ4
+link: https://www.therapieflorale.com/
 ---
 ![Dato CMS](/../../images/capture-d’écran-du-2020-12-03-09-38-16.png "Dato CMS")
 

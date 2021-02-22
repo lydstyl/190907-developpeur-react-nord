@@ -1,9 +1,10 @@
 ---
+title: Mon nouveau portfolio et CV
+path: /portfolio/nouveau-portfolio-2019
+date: 2019-09-07T00:00:00.000Z
 isImageFile: true
 images: /src/images/oldportfo.jpeg
-title: Mon nouveau portfolio et CV
-date: 2019-09-07T00:00:00.000Z
-path: /portfolio/nouveau-portfolio-2019
+video: https://www.youtube.com/embed/nxA5GSs-lzE
 ---
 
 Ce site est mon nouveau portfolio + CV. Il est fait en **Gatsby.js**, en **JAM Stack** avec une **connexion à un CMS** pour la modification de tous ses contenus (par exemple les skills et les expériences du CV ou les créations dans le portfolio).

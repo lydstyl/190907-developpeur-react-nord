@@ -4,8 +4,8 @@ path: /portfolio/cash-vision
 date: 2020-10-16T08:04:34.165Z
 isImageFile: true
 images: /../../images/capture-d’écran-du-2020-12-03-09-34-21.png
-video: ''
-link: 'https://cash-vision.netlify.app'
+video: https://www.youtube.com/embed/vQs1u9tmxTw
+link: https://cash-vision.netlify.app
 ---
 Comme le disent de nombreux investisseurs, "Cash is king". Cependant, il peut être compliqué de savoir si votre argent disponible augmente ou décroit en particulier si vous avez beaucoup de comptes. Cela est souvent le cas si vous avez des actions, des crypto monnaies, de l'argent liquide, des comptes courants, des comptes de SCI ou d'autres entreprises, etc. 
 

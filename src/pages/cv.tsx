@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CVDescriptionBox from "../components/CVDescriptionBox/CVDescriptionBox"
@@ -12,7 +11,10 @@ import Experiences from "../components/Experiences/Experiences"
 export default function Template({ data }) {
   return (
     <Layout>
-      <SEO title="CV" description="CV Gabriel Brun, ou curriculum vitae d'un developpeur JavaScript, React.js, Gatsby.js dans le Nord." />
+      <SEO
+        title="CV"
+        description="CV développeur full stack JS Gabriel Brun. Curriculum vitae developpeur JavaScript, React, Node, Gatsby, Strapi dans le Nord."
+      />
 
       <CVDescriptionBox />
 

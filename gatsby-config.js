@@ -7,6 +7,7 @@ module.exports = {
     description:
       "Portfolio et CV de Gabriel BRUN, developpeur JavaScript, ReactJS, Node, Gatsby, Strapi dans le Nord (département 59) disponible à temps partiel pour une mission dans l'univers JS. Création de web app ou site Internet.",
     author: "Gabriel BRUN",
+    // googleSiteVerification: "zzYpDzeLpBLpBdkCaE791aFMXawx9MY73LrKoc14pLE",
   },
   plugins: [
     {

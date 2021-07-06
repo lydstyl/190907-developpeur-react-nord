@@ -7,6 +7,7 @@ import CVDescriptionBox from "../components/CVDescriptionBox/CVDescriptionBox"
 import Objectif from "../components/Objectif/Objectif"
 import Skills from "../components/Skills/Skills"
 import Experiences from "../components/Experiences/Experiences"
+import Availability from "../components/Availability/Availability"
 
 export default function Template({ data }) {
   return (
@@ -23,6 +24,8 @@ export default function Template({ data }) {
       <Skills />
 
       <Experiences />
+
+      <Availability />
     </Layout>
   )
 }

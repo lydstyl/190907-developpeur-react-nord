@@ -51,7 +51,9 @@ const Layout = ({ children }) => {
         />
 
         <Header siteTitle={data.site.siteMetadata.title} />
+
         <main>{children}</main>
+
         <footer className="shadow p-3 mt-5 mb-5 bg-white rounded">
           <div className="row">
             <div className="col-md">
@@ -59,6 +61,7 @@ const Layout = ({ children }) => {
                 <i className="fas fa-mobile-alt"></i> 07 81 15 45 03
               </a>
             </div>
+
             <div className="col-md">
               <a
                 className="text-decoration-none"
@@ -67,6 +70,7 @@ const Layout = ({ children }) => {
                 <i className="far fa-envelope"></i> lydstyl@gmail.com
               </a>
             </div>
+
             <div className="col-md">
               <a
                 className="text-decoration-none"

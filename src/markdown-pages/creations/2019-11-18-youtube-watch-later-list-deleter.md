@@ -4,8 +4,8 @@ path: /portfolio/youtube-watch-later-deleter
 date: 2019-11-17T16:30:00.000Z
 isImageFile: true
 images: /src/images/youtubedel.jpg
-video: 'https://www.youtube.com/embed/qFkhoADhhGA'
-link: 'https://github.com/lydstyl/191117-youtubeWatchLaterDeleter'
+video: https://www.youtube.com/embed/qFkhoADhhGA
+link: https://github.com/lydstyl/191117-youtubeWatchLaterDeleter
 ---
 Comment supprimer votre liste YouTube de vidéos à regarder plus tard avec JavaScript ?
 
@@ -21,17 +21,7 @@ function clickFirstVideo() {
 }
 
 function clickDeleteButton() {
-  const menuWithSeparator = document.querySelector(
-    'paper-listbox [has-separator_]+ytd-menu-service-item-renderer'
-  );
-
-  if (menuWithSeparator) {
-    menuWithSeparator.click();
-  } else {
-    document
-      .querySelector('paper-item .style-scope.yt-formatted-string')
-      .click();
-  }
+  document.querySelectorAll('ytd-menu-service-item-renderer')[2].click()
 }
 
 setInterval(() => {

@@ -21,7 +21,7 @@ const NotFoundPage = () => (
         scrolling="no"
       ></iframe>
 
-      <iframe
+      {/* <iframe
         title="Chart2"
         className="calendar"
         src="https://calendar.google.com/calendar/embed?showTitle=0&mode=WEEK&showCalendars=0&bgcolor=%23eae9e7&src=jjuro8f0flunl7jqb58kbp797g%40group.calendar.google.com&ctz=Europe%2FParis"
@@ -30,6 +30,17 @@ const NotFoundPage = () => (
         height="600"
         frameBorder="0"
         scrolling="no"
+      ></iframe> */}
+
+      <iframe
+        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FParis&src=amp1cm84ZjBmbHVubDdqcWI1OGticDc5N2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%238E24AA"
+        style="border:solid 1px #777"
+        style={{ border: "solid 1px #777" }}
+        width="800"
+        height="600"
+        frameborder="0"
+        scrolling="no"
+        className="calendar"
       ></iframe>
     </div>
   </Layout>

@@ -28,19 +28,23 @@ const Layout = ({ children }) => {
   return (
     <div id="outer-container">
       <Menu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
+        <Link className="menu-item btn btn-secondary btn-sm align-top" to="/agenda">
+          Disponibilités
+        </Link>
+        
+        <Link
+          className="menu-item btn btn-secondary btn-sm align-top"
+          to="/services"
+        >
+          Services
+        </Link>
+
         <Link className="menu-item btn btn-secondary btn-sm align-top" to="/cv">
           CV
         </Link>
 
         <Link className="menu-item btn btn-secondary btn-sm align-top" to="/">
           Portfolio
-        </Link>
-
-        <Link
-          className="menu-item btn btn-secondary btn-sm align-top"
-          to="/services"
-        >
-          Services
         </Link>
       </Menu>
 

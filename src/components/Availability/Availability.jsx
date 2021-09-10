@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 const Availability = () => {
   const data = useStaticQuery(
@@ -21,6 +21,12 @@ const Availability = () => {
       </h2>
 
       <p className="text-justify">{availability}</p>
+
+      <Link
+        to="/agenda"
+      >
+        Voir mes disponibilités sur un agenda
+      </Link>
     </div>
   )
 }

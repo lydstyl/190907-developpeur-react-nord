@@ -38,15 +38,15 @@ const CVDescriptionBox = () => {
 
       <p className='text-right font-italic'>Mise à jour le {updatedAt}</p>
 
-      <iframe
-        title='cv vidéo'
-        width='560'
-        height='315'
-        src={`https://www.youtube-nocookie.com/embed/${youtube}`}
-        frameBorder='0'
-        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-        allowFullScreen
-       />
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/Xh0guBgyqJ8" 
+        title="recommandation" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+      />
     </div>
   )
 }

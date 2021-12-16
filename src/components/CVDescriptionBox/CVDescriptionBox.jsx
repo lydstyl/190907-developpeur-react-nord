@@ -27,25 +27,25 @@ const CVDescriptionBox = () => {
   const { description, updatedAt, youtube } = data.strapiAbout
 
   return (
-    <div className='cv-description-box shadow p-3 mt-5 bg-white rounded'>
-      <h2 className='d-none'>
+    <div className="cv-description-box shadow p-3 mt-5 bg-white rounded">
+      <h2 className="d-none">
         CV Gabriel Brun ou curriculum vitae développeur React.js
       </h2>
 
-      <Image src='photo_profil_gabriel_brun_github.jpg' />
-      
-      <p className='text-justify'>{description}</p>
+      <Image src="photo_profil_gabriel_brun_github.jpg" />
 
-      <p className='text-right font-italic'>Mise à jour le {updatedAt}</p>
+      <p className="text-justify">{description}</p>
 
-      <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/Xh0guBgyqJ8" 
-        title="recommandation" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen
+      <p className="text-right font-italic">Mise à jour le {updatedAt}</p>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Xh0guBgyqJ8"
+        title="recommandation"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
       />
     </div>
   )

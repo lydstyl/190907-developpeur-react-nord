@@ -6,12 +6,11 @@ const SkillsBox = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    .certificates {
-      display: flex;
-      justify-content: space-around;
+    .certificates p {
+      display: inline;
+      margin: 0 60px 0 0;
     }
   }
-
 `
 
 export default SkillsBox

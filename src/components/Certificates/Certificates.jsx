@@ -1,5 +1,5 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 export const Certificates = () => {
   const data = useStaticQuery(
@@ -12,26 +12,22 @@ export const Certificates = () => {
           }
         }
       }
-    `)
+    `
+  )
 
-    const certificats = data.allStrapiCertificat.nodes.map(c => 
-      <p key={c.name} className='text-justify'>
-        <a
-          target='_blank'
-          rel='noopener noreferrer'
-          href={c.url}
-        >
-          {c.name}
-        </a>
-      </p>)
+  const certificats = data.allStrapiCertificat.nodes.map(c => (
+    <p key={c.name} className="text-justify">
+      <a target="_blank" rel="noopener noreferrer" href={c.url}>
+        {c.name}
+      </a>
+    </p>
+  ))
 
-    return (
-        <li>
-          <h3>Certificats & recommandations:</h3>
+  return (
+    <li>
+      <h3>Certificates & recommendations:</h3>
 
-          <div className='certificates'>
-            {certificats}
-          </div>
-        </li>
-    )
+      <div className="certificates">{certificats}</div>
+    </li>
+  )
 }

@@ -11,7 +11,7 @@
       "bootstrap": "^4.6.0",
       "chart.js": "^2.9.4",
       "dayjs": "^1.10.4",
-      "docxtemplater": "^3.19.9",
+      "docxtemplater": "^3.31.6",
       "dotenv": "^8.2.0",
       "event-source-polyfill": "^1.0.16",
       "file-saver": "^2.0.5",
